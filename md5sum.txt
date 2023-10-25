@@ -22,4 +22,4 @@
 "learners/reference.md" "d976a57639fa49361d9c8431850cde6a" "site/built/reference.md" "2023-10-25"
 "learners/setup.md" "19ccf15a75716fe39f1116abf68a380d" "site/built/setup.md" "2023-10-25"
 "profiles/learner-profiles.md" "60b93493cf1da06dfd63255d73854461" "site/built/learner-profiles.md" "2023-10-25"
-"renv/profiles/lesson-requirements/renv.lock" "d49742b54b90a2af42dd438b4db8daf1" "site/built/renv.lock" "2023-10-25"
+"renv/profiles/lesson-requirements/renv.lock" "22ad5370e87653dff6fc86945255778f" "site/built/renv.lock" "2023-10-25"
