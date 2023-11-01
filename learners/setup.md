@@ -2,6 +2,10 @@
 title: Setup
 ---
 
+## Install R and Rstudio
+
+Follow these instructions <https://posit.co/download/rstudio-desktop/>
+
 ## Installing Git
 
 Since several Carpentries lessons rely on Git, please see
@@ -44,6 +48,7 @@ Several options exist for setting up 2FA, which are summarised here:
 
 The GitHub documentation provides [more details about configuring 2FA](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication).
 
+<!--
 ----------------
 
 ## Preparing Your Working Directory
@@ -54,6 +59,7 @@ We'll do our work in the `Desktop` folder so make sure you change your working d
 $ cd
 $ cd Desktop
 ```
+-->
 
 [workshop-setup]: https://carpentries.github.io/workshop-template/install_instructions/#git
 
