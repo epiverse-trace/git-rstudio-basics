@@ -1,7 +1,7 @@
 ---
 title: Automated Version Control
-teaching: 5
-exercises: 0
+teaching: 15
+exercises: 10
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
@@ -17,20 +17,61 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-We'll start by exploring how version control can be used
-to keep track of what one person did and when.
+## Tracking changes
+
+We'll start by exploring how we are usually introduced to version control to keep track of what one person did and when.
 Even if you aren't collaborating with other people,
-automated version control is much better than this situation:
+version control may have look like this situation:
 
-!["notFinal.doc" by Jorge Cham, <https://www.phdcomics.com>](fig/phd101212s.png){alt='Comic: a PhD student sends "FINAL.doc" to their supervisor, but after several increasingly intense and frustrating rounds of comments and revisions they end up with a file named "FINAL_rev.22.comments49.corrections.10.#@$%WHYDIDCOMETOGRADSCHOOL????.doc"'}
+![Tracking changes for the `manuscript.docx` file.](fig/git-manual-version-system.png){alt='One same files called manuscript with modification dates as prefix and what a person did as sufix.'}
 
-We've all been in this situation before: it seems unnecessary to have
-multiple nearly-identical versions of the same document. Some word
+::::::::::::::::::: instructor
+
+### A popular comic
+
+The example above looks much better than [this other situation](https://phdcomics.com/comics/archive.php?comicid=1531).
+
+::::::::::::::::::::::::::::::
+
+Probably we all started by replicating the Version control system of our initial community. 
+When we needed to differentiate files from previous versions, or from different colleagues (supervisors or reviewers), we choose to tag each version to keep track of what one person did (e.g., with suffix) or when (e.g., with prefix). 
+
+We've all been in this situation before: it seems unnecessary to have multiple nearly-identical versions of the same document. But This Version system opens one possibility: going back to each of these versions in case your erased something that now you think now is important.
+
+::::::::::::::::: testimonial
+
+### Is this “file naming” structure familiar to you?
+
+Write down:
+
+- What was the "manual" version control system that you first used?
+
+Share your favorite prefix or suffix!
+
+:::::::::::::::::::::::::::::
+
+Some word
 processors let us deal with this a little better, such as Microsoft
 Word's
 [Track Changes](https://support.office.com/en-us/article/Track-changes-in-Word-197ba630-0f5f-4a8e-9a77-3712475e806a),
 Google Docs' [version history](https://support.google.com/docs/answer/190843?hl=en), or
-LibreOffice's [Recording and Displaying Changes](https://help.libreoffice.org/Common/Recording_and_Displaying_Changes).
+LibreOffice's [Recording and Displaying Changes](https://help.libreoffice.org/Common/Recording_and_Displaying_Changes). Let's illustrate how Google Docs works.
+
+![Tracking changes for the `git-test` file.](fig/gdocs-01.png)
+
+In the `File` option we find the `Version history` option. This highlights the new content added to the file in that version only.
+
+![The most recent version of the `git-test` file is called "third version".](fig/gdocs-03.png)
+
+We can manually moved to previous version, tagged with two metadata values: the modification date and the name of the author.
+
+![We can view and restore the "first version" of the file `git-test`.](fig/gdocs-04.png)
+
+Google Docs’ version history tool is an automatic Version control system for single Word/Doc files that works online.
+
+![The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: <https://zenodo.org/doi/10.5281/zenodo.3332807>.](fig/ProjectHistory.jpg)
+
+## Version control systems
 
 Version control systems start with a base version of the document and
 then record changes you make each step of the way. You can
@@ -61,7 +102,19 @@ metadata make up a [repository](../learners/reference.md#repository).
 Repositories can be kept in sync across different computers, facilitating
 collaboration among different people.
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+::::::::::::::::: checklist
+
+### Version control system help us to track changes
+
+1. Keep the entire history of a file and inspect a file throughout its lifetime.
+
+2. Tag a particular version so you can go back to them easily.
+
+> In this checklist, and throughout the tutorial, we are going to track the key features of a Version control system!
+
+:::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::  instructor
 
 ## The Long History of Version Control Systems
 
@@ -79,9 +132,46 @@ the same files concurrently.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+## Version control with R
+
+For code-like files like R and Rmd files, we can not use Google docs. The software and strategy to track changes in a project depends on the **file type**.
+
+- Google Docs’ version history tool is a Version control system optimized for single [binary files](https://www.r4epi.com/importing-binary-files) like Word/Doc files that works online
+
+- `Git` is the Version control system optimized for [plain text files](https://www.r4epi.com/importing-plain-text-files.html) that works offline and online.
+
+Plain text files can be text, code, and data. Example for each of these are Markdown files (`.md`), R files (`.R`), and `.csv` or `.tsv` files, respectively.
+
+![Examples of Binary and Plain text files.](fig/plain-text-files.png)
+
+::::::::::::::::: callout
+
+We can use `Git` to track changes of these plain text files. However, for data files (like `.csv` and `.tsv`) we prefer different version control systems.
+
+:::::::::::::::::::::::::
+
+Plain text files like Markdown files (`.md`) and R files (`.R`) are integrated in Rmarkdown files (`.Rmd`) to generate manuscripts, websites, and R packages. These three products are outputs of **Open Science** projects, that leads to *Reproducible research* and *Sustainable software*.
+
+
+![We can increase the reproducibility of our Open science projects with version control sytems like `Git`. Text and final results can be connected and executable by Data and code. From: "Ciencia reproducible: qué, por qué, cómo" <https://www.revistaecosistemas.net/index.php/ecosistemas/article/view/1178>](fig/gradient-reproducibility.png)
+
+::::::::::::::::: discussion
+
+### Excersice!
+
+Tell us about your Open Science project and its file types!
+
+- Briefly share about one Open Science project in which they are involved or would like to start soon (e.g. thesis, current project, or work);
+- Identify the most relevant file types (.PDF, .JPEG, .CSV, .XLSX, .R, .DOCX, .RMD) involved in it and classify them as Non-Plain or Plain text files;
+- Discuss which ones can use a Version control software like Git? 
+
+::::::::::::::::::::::::::::
+
+
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Paper Writing
+## Challenge: Paper Writing
 
 - Imagine you drafted an excellent paragraph for a paper you are writing, but later ruin
   it. How would you retrieve the *excellent* version of your conclusion? Is it even possible?
