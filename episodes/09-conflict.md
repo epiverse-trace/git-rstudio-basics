@@ -17,6 +17,32 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+## intro from 01-basic
+
+Version control systems start with a base version of the document and
+then record changes you make each step of the way. You can
+think of it as a recording of your progress: you can rewind to start at the base
+document and play back each change you made, eventually arriving at your
+more recent version.
+
+![](fig/play-changes.svg){alt='Changes Are Saved Sequentially'}
+
+Once you think of changes as separate from the document itself, you
+can then think about "playing back" different sets of changes on the base document, ultimately
+resulting in different versions of that document.
+
+For example, two users can make independent
+sets of changes on the same document.
+
+![](fig/versions.svg){alt='Different Versions Can be Saved'}
+
+Unless multiple users make changes to the same section of the document - a conflict - you can
+incorporate two sets of changes into the same base document.
+
+![](fig/merge.svg){alt='Multiple Versions Can be Merged'}
+
+## this episode starts here
+
 As soon as people can work in parallel, they'll likely step on each other's
 toes.  This will even happen with a single person: if we are working on
 a piece of software on both our laptop and a server in the lab, we could make

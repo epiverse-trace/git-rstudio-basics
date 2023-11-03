@@ -75,15 +75,7 @@ more recent version.
 
 Once you think of changes as separate from the document itself, you
 can then think about "playing back" different sets of changes on the base document, ultimately
-resulting in different versions of that document. For example, two users can make independent
-sets of changes on the same document.
-
-![](fig/versions.svg){alt='Different Versions Can be Saved'}
-
-Unless multiple users make changes to the same section of the document - a conflict - you can
-incorporate two sets of changes into the same base document.
-
-![](fig/merge.svg){alt='Multiple Versions Can be Merged'}
+resulting in different versions of that document.
 
 A version control system is a tool that keeps track of these changes for us,
 effectively creating different versions of our files. It allows us to decide
