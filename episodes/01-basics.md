@@ -121,17 +121,17 @@ the same files concurrently.
 
 For code-like files like R and Rmd files, we can not use Google docs. The software and strategy to track changes in a project depends on the **file type**.
 
-- Google Docs’ version history tool is a Version control system optimized for single [binary files](https://www.r4epi.com/importing-binary-files) like Word/Doc files that works online
+- Google Docs’ version history tool is a Version control software optimized for single [non-plain text files](https://github.com/epiverse-trace/git-rstudio-basics/discussions/11) like Word/Doc files that works online
 
-- `Git` is the Version control system optimized for [plain text files](https://www.r4epi.com/importing-plain-text-files.html) that works offline and online.
+- `Git` is the Version control software optimized for [plain text files](https://en.wikipedia.org/wiki/Plain_text) that works offline and online.
 
 Plain text files can be text, code, and data. Example for each of these are Markdown files (`.md`), R files (`.R`), and `.csv` or `.tsv` files, respectively.
 
-![Examples of Binary and Plain text files.](fig/plain-text-files.png)
+![Examples of non-plain and plain text files.](fig/plain-text-files.png)
 
 ::::::::::::::::: callout
 
-We can use `Git` to track changes of these plain text files. However, for data files (like `.csv` and `.tsv`) we prefer different version control systems.
+We can use `Git` to track changes of these plain text files. However, for [plain-text data files](https://www.r4epi.com/importing-plain-text-files.html) (like `.csv` and `.tsv`) we prefer different version control systems.
 
 :::::::::::::::::::::::::
 
@@ -142,15 +142,21 @@ Plain text files like Markdown files (`.md`) and R files (`.R`) are integrated i
 
 ::::::::::::::::: discussion
 
-### Excersice!
+### Exercise!
 
 Tell us about your Open Science project and its file types!
 
 - Briefly share about one Open Science project in which they are involved or would like to start soon (e.g. thesis, current project, or work);
-- Identify the most relevant file types (.PDF, .JPEG, .CSV, .XLSX, .R, .DOCX, .RMD) involved in it and classify them as Non-Plain or Plain text files;
+- Identify the most relevant file types (`.pdf`, `.jpge`, `.csv`, `.xlsx`, `.R`, `.docx`, `.Rmd`) involved in it and classify them as non-plain or plain text files;
 - Discuss which ones can use a Version control software like Git? 
 
 ::::::::::::::::::::::::::::
+
+::::::::::::::::::: instructor
+
+This exercise can be solved in the shared document of the training.
+
+::::::::::::::::::::::::::::::
 
 
 :::::::::::::::::::::::::::::::::::::::  challenge
