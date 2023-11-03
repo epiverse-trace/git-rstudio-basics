@@ -18,6 +18,40 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+## from the 01-basics episode
+
+Version control also allows many people to work in parallel
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Challenge: Paper Writing
+
+- Imagine you have 5 co-authors. How would you manage the changes and comments
+  they make to your paper?  If you use LibreOffice Writer or Microsoft Word, what happens if
+  you accept changes made using the `Track Changes` option? Do you have a
+  history of those changes?
+
+:::::::::::::::  solution
+
+## Solution
+
+- Collaborative writing with traditional word processors is cumbersome.
+  Either every collaborator has to work on a document sequentially
+  (slowing down the process of writing), or you have to send out a
+  version to all collaborators and manually merge their comments into
+  your document. The 'track changes' or 'record changes' option can
+  highlight changes for you and simplifies merging, but as soon as you
+  accept changes you will lose their history. You will then no longer
+  know who suggested that change, why it was suggested, or when it was
+  merged into the rest of the document. Even online word processors like
+  Google Docs or Microsoft Office Online do not fully resolve these
+  problems.
+
+:::::::::::::::::::::::::
+
+
+## episode starts here
+
 For the next step, get into pairs.  One person will be the "Owner" and the other
 will be the "Collaborator". The goal is that the Collaborator add changes into
 the Owner's repository. We will switch roles at the end, so both persons will
