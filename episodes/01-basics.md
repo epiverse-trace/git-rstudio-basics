@@ -25,14 +25,6 @@ version control may have look like this situation:
 
 ![Tracking changes for the `manuscript.docx` file.](fig/git-manual-version-system.png){alt='One same files called manuscript with modification dates as prefix and what a person did as sufix.'}
 
-::::::::::::::::::: instructor
-
-### A popular comic
-
-The example above looks much better than [this other situation](https://phdcomics.com/comics/archive.php?comicid=1531).
-
-::::::::::::::::::::::::::::::
-
 Probably we all started by replicating the Version control system of our initial community. 
 When we needed to differentiate files from previous versions, or from different colleagues (supervisors or reviewers), we choose to tag each version to keep track of what one person did (e.g., with suffix) or when (e.g., with prefix). 
 
@@ -185,24 +177,9 @@ Tell us about your Open Science project and its file types!
 
 ## Solution
 
-- Recovering the excellent version is only possible if you created a copy
-  of the old version of the paper. The danger of losing good versions
-  often leads to the problematic workflow illustrated in the PhD Comics
-  cartoon at the top of this page.
+- Recovering the excellent version is only possible if you created a copy of the old version of the paper. The danger of losing good versions often leads to the problematic workflow illustrated in [this popular PhD Comics cartoon](https://phdcomics.com/comics/archive.php?comicid=1531).
 
-- Collaborative writing with traditional word processors is cumbersome.
-  Either every collaborator has to work on a document sequentially
-  (slowing down the process of writing), or you have to send out a
-  version to all collaborators and manually merge their comments into
-  your document. The 'track changes' or 'record changes' option can
-  highlight changes for you and simplifies merging, but as soon as you
-  accept changes you will lose their history. You will then no longer
-  know who suggested that change, why it was suggested, or when it was
-  merged into the rest of the document. Even online word processors like
-  Google Docs or Microsoft Office Online do not fully resolve these
-  problems.
-  
-  
+- Collaborative writing with traditional word processors is cumbersome. Either every collaborator has to work on a document sequentially (slowing down the process of writing), or you have to send out a version to all collaborators and manually merge their comments into your document. The 'track changes' or 'record changes' option can highlight changes for you and simplifies merging, but as soon as you accept changes you will lose their history. You will then no longer know who suggested that change, why it was suggested, or when it was merged into the rest of the document. Even online word processors like Google Docs or Microsoft Office Online do not fully resolve these problems. Remember this for the collaboration episode!
 
 :::::::::::::::::::::::::
 
@@ -211,7 +188,11 @@ Tell us about your Open Science project and its file types!
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - Version control is like an unlimited 'undo'.
+- `Git` is a Version control software optimized for plain text files, like `.R` and `.Rmd` files, that works offline and online.
+
+<!--
 - Version control also allows many people to work in parallel.
+-->
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
