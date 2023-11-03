@@ -94,8 +94,6 @@ collaboration among different people.
 
 2. Tag a particular version so you can go back to them easily.
 
-> In this checklist, and throughout the tutorial, we are going to track the key features of a Version control system!
-
 :::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::::  instructor
