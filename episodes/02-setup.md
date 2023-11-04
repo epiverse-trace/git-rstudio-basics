@@ -252,9 +252,13 @@ issues, it's safer to view the configuration with:
 $ git config --list
 ```
 
+::::::::::::::::::::::::::::::
+
 And if necessary, change your configuration using the
-same commands to choose another editor or update your email address.
+same commands to update your email address.
 This can be done as many times as you want.
+
+<!--
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -277,6 +281,10 @@ $ git config --global --unset https.proxy
 ```
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+-->
+
+<!--
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -301,12 +309,41 @@ $ git help
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-[git-privacy]: https://help.github.com/articles/keeping-your-email-address-private/
+-->
 
+::::::::::::::::: callout
+
+When using `usethis::git_sitrep()`, check if there is no `✖ ...` line in the output with an error message. 
+
+An example with two errors is below:
+
+```r
+usethis::git_sitrep()
+```
+
+```error
+✖ Token lacks recommended scopes:
+  - 'user:email': needed to read user's email addresses
+  Consider re-creating your PAT with the missing scopes.
+  `create_github_token()` defaults to the recommended scopes.
+✖ Can't retrieve registered email addresses from GitHub.
+  Consider re-creating your PAT with the 'user' or at least 'user:email' scope.
+```
+
+These is a really common error to get. [Follow the steps in this other tutorial to solve it](https://epiverse-trace.github.io/research-compendium/#configure-git-and-github).
+
+:::::::::::::::::::::::::
+
+When using the [terminal](https://glosario.carpentries.org/en/#console), this steps is known as `git config` with the `--global` option. If you are interested on this, [take a look to this chapter of the happygitwithr ebook](https://happygitwithr.com/hello-git).
+
+[git-privacy]: https://help.github.com/articles/keeping-your-email-address-private/
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- Use `git config` with the `--global` option to configure a user name, email address, editor, and other preferences once per machine.
+- Use the `{usethis}` package to configure a user name, email address, and other preferences once per machine.
+- Use `usethis::use_git_config()` to configure git in Rstudio.
+- Use `usethis::git_default_branch_configure()` to define default branch name.
+- Use `usethis::git_sitrep()` to verify your configuration.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
