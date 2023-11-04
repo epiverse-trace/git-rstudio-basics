@@ -1,38 +1,78 @@
 ---
 title: Setting Up Git
-teaching: 5
+teaching: 10
 exercises: 0
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
 - Configure `git` the first time it is used on a computer.
-- Understand the meaning of the `--global` configuration flag.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
 - How do I get set up to use Git?
+- What is a `commit`?
+- What is a `repository`?
+- What is a `branch`?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+## The `Git` workflow
+
+A version control system is a tool that keeps track of these changes for us, effectively creating different versions of our files. Each record of these changes is called a [commit](../learners/reference.md#commit). Each keeps useful metadata about them. Instead of _saving copies_ with different file names, we are _making commits_ in the same file. Consecutive commits generate a linear history of changes.
+
+![Each record of changes is
+called a `commit`.](fig/git-commit.png){alt='Changes Are Saved Sequentially'}
+
+The complete history of commits for a particular project and their
+metadata make up a [repository](../learners/reference.md#repository).
+Repositories can be kept in sync across different computers, facilitating
+collaboration among different people.
+
+Before creating our first repository, we need to setup Git. So, let's open Rstudio and introduce yourself to Git!
+
+<!--
+![Each record of changes is
+called a `commit`.](fig/play-changes.svg){alt='Changes Are Saved Sequentially'}
+-->
+
+## Set up `Git`
+
 When we use Git on a new computer for the first time,
-we need to configure a few things. Below are a few examples
-of configurations we will set as we get started with Git:
+we need to configure a few things. Below are a few examples of configurations we will set as we get started with Git:
 
 - our name and email address,
-- what our preferred text editor is,
+<!--- what our preferred text editor is,-->
 - and that we want to use these settings globally (i.e. for every project).
 
+You can set your Git user name and email from within R using the `{usethis}` package.
+
+So here is how Dracula sets up his new laptop:
+
+```r
+# install if needed (do this exactly once):
+# install.packages("usethis")
+
+usethis::use_git_config(
+  user.name = "Vlad Dracula",
+  user.email = "vlad@tran.sylvan.ia")
+```
+
+Substitute this chunk with your name and __the email associated with your GitHub account__.
+
+::::::::::::::::::: instructor
+
 On a command line, Git commands are written as `git verb options`,
-where `verb` is what we actually want to do and `options` is additional optional information which may be needed for the `verb`. So here is how
-Dracula sets up his new laptop:
+where `verb` is what we actually want to do and `options` is additional optional information which may be needed for the `verb`. 
 
 ```bash
 $ git config --global user.name "Vlad Dracula"
 $ git config --global user.email "vlad@tran.sylvan.ia"
 ```
+
+::::::::::::::::::::::::::::::
 
 Please use your own name and email address instead of Dracula's. This user name and email will be associated with your subsequent Git activity,
 which means that any changes pushed to

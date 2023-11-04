@@ -85,13 +85,17 @@ can then think about "playing back" different sets of changes on the base docume
 resulting in different versions of that document.
 
 A version control system is a tool that keeps track of these changes for us,
-effectively creating different versions of our files. It allows us to decide
+effectively creating different versions of our files. 
+
+<!--
+It allows us to decide
 which changes will be made to the next version (each record of these changes is
 called a [commit](../learners/reference.md#commit)), and keeps useful metadata
 about them. The complete history of commits for a particular project and their
 metadata make up a [repository](../learners/reference.md#repository).
 Repositories can be kept in sync across different computers, facilitating
 collaboration among different people.
+-->
 
 ::::::::::::::::: checklist
 
