@@ -25,20 +25,21 @@ version control may have look like this situation:
 
 ![Tracking changes for the `manuscript.docx` file.](fig/git-manual-version-system.png){alt='One same files called manuscript with modification dates as prefix and what a person did as sufix.'}
 
-Probably we all started by replicating the Version control system of our initial community. 
-When we needed to differentiate files from previous versions, or from different colleagues (supervisors or reviewers), we choose to tag each version to keep track of what one person did (e.g., with suffix) or when (e.g., with prefix). 
+We all started by replicating the Version control system of our initial community. We all need to differentiate files from previous versions or different colleagues (supervisors or reviewers). For those reasons, we tag each version to track what one person did (e.g., with a suffix) or when (e.g., with a prefix).
 
-We've all been in this situation before: it seems unnecessary to have multiple nearly-identical versions of the same document. But This Version system opens one possibility: going back to each of these versions in case your erased something that now you think now is important.
+Does it seem unnecessary to you to have multiple nearly identical versions of the same document? Possibly yes. But this Version control system opens the possibility of returning to a specific version in case you erased something that you think now is essential.
 
-::::::::::::::::: testimonial
+::::::::::::::::: discussion
 
-### Is this “file naming” structure familiar to you?
+### File names to track changes
 
 Write down:
 
-- What was the "manual" version control system that you first used?
+- Is there any file naming convention that is familiar to you?
 
-Share your favorite prefix or suffix!
+- What was the version control system that you first used?
+
+- Share with us your favorite prefix or suffix!
 
 :::::::::::::::::::::::::::::
 
