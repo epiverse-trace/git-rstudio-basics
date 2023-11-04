@@ -21,6 +21,20 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+## previous content
+
+A set of consecutive commits generate a linear history of changes. 
+
+![A linear history of changes with version control.](fig/main-branch.png)
+
+A non-linear development of your project with branches
+
+![An illustration of a development and main branch in git.](fig/one-branch.png)
+
+![Two development branches and one main branch in Git.](fig/two-branches.png)
+
+## episode starts here
+
 As we saw in the previous episode, we can refer to commits by their
 identifiers.  You can refer to the *most recent commit* of the working
 directory by using the identifier `HEAD`.

@@ -17,6 +17,38 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+## previous related content
+
+First, double check your configuration. Please, [follow the steps in this tutorial to verify this](https://epiverse-trace.github.io/research-compendium/#configure-git-and-github).
+
+To configure your GitHub account, run:
+
+```r
+gert::git_config_global_set(name = "github.user", value = "vlad")
+```
+
+To verify that this step was done correctly, check with `gh::gh_whoami()` 
+
+```r
+# install if needed (do this exactly once):
+# install.packages("gh")
+
+gh::gh_whoami()
+```
+
+```
+{
+  "name": "Vlad Dracula",
+  "login": "vlad",
+  "html_url": "https://github.com/vlad",
+  "scopes": "delete_repo, gist, repo, user, workflow",
+  "token": "ghp_...hYBX"
+} 
+```
+
+
+## episode starts here
+
 Version control really comes into its own when we begin to collaborate with
 other people.  We already have most of the machinery we need to do this; the
 only thing missing is to copy changes from one repository to another.
