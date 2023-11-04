@@ -163,15 +163,36 @@ If you want to save your changes and quit, press <kbd>Esc</kbd> then type `:wq` 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+-->
+
+## Set up a default `branch` name
+
+As we mentioned before, the complete history of `commits` for a particular project and their metadata make up a `repository`. A [`branch`](https://glosario.carpentries.org/en/#git_branch) is a snapshot of a version of a repository. In that sense, a repository can have more that one branch. WHAT?!! How is that possible? We are going to see that in coming episodes!
+
+![Version history within a single branch.](fig/main-branch.png)
+
 Git (2.28+) allows configuration of the name of the branch created when you
 initialize any new repository.  Dracula decides to use that feature to set it to `main` so
 it matches the cloud service he will eventually use.
+
+Run the code chunk below:
+
+```r
+usethis::git_default_branch_configure(name = "main")
+```
+
+::::::::::::::::::: instructor
+
+On a command line
 
 ```bash
 $ git config --global init.defaultBranch main
 ```
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+::::::::::::::::::::::::::::::
+
+
+:::::::::::::::::::::::::::::::::::::::::  instructor
 
 ## Default Git branch naming
 
