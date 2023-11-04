@@ -60,7 +60,7 @@ contact: 'andree.valle-campos@lshtm.ac.uk'
 # Order of episodes in your lesson
 episodes:
 - 01-basics.md
-# - 02-setup.md
+- 02-setup.md
 # - 03-create.md
 # - 04-changes.md
 # - 05-history.md
