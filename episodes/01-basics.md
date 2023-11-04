@@ -95,11 +95,13 @@ collaboration among different people.
 
 ::::::::::::::::: checklist
 
-### Version control system help us to track changes
+### Version control systems to track changes
+
+A version control system:
 
 1. Keep the entire history of a file and inspect a file throughout its lifetime.
 
-2. Tag a particular version so you can go back to them easily.
+2. Tag a particular version so you can return to them easily.
 
 :::::::::::::::::::::::::::
 
