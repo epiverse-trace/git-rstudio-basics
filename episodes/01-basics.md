@@ -62,9 +62,9 @@ In the `File` option we find the `Version history` option. This highlights the n
 
 ![The most recent version of the `git-test` file is called "third version".](fig/gdocs-03.png)
 
-We can manually moved to previous version, tagged with two metadata values: the modification date and the name of the author.
+We can move to any previous version tagged with two metadata values: the modification date and the name of the author.
 
-![We can view and restore the "first version" of the file `git-test`.](fig/gdocs-04.png)
+![We can view the "first version" of the file `git-test`. We can also restore it with the `Restore this version` button.](fig/gdocs-04.png)
 
 Google Docs’ version history tool is an automatic Version control system for single Word/Doc files that works online.
 
