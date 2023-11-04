@@ -145,12 +145,13 @@ the same files concurrently.
 
 :::::::::::::::::::::::::
 
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Version control with R
 
-For code-like files like R and Rmd files, we can not use Google docs. The software and strategy to track changes in a project depends on the **file type**.
+For code-like files like `.R` and `.Rmd` files, we can not use Google docs. The software and strategy to track changes in a project depends on the **file type**.
 
-- Google Docs’ version history tool is a Version control software optimized for single [non-plain text files](https://github.com/epiverse-trace/git-rstudio-basics/discussions/11) like Word/Doc files that works online
+- Google Docs’ version history tool is a Version control software optimized for single [non-plain text files](https://github.com/epiverse-trace/git-rstudio-basics/discussions/11) like Word/Doc files that works online.
 
 - `Git` is the Version control software optimized for [plain text files](https://en.wikipedia.org/wiki/Plain_text) that works offline and online.
 
@@ -160,7 +161,7 @@ Plain text files can be text, code, and data. Example for each of these are Mark
 
 ::::::::::::::::: callout
 
-We can use `Git` to track changes of these plain text files. However, for [plain-text data files](https://www.r4epi.com/importing-plain-text-files.html) (like `.csv` and `.tsv`) we prefer different version control systems.
+We can use `Git` to track changes of these plain text files. However, for [plain text data files](https://www.r4epi.com/importing-plain-text-files.html) (like `.csv` and `.tsv`) we prefer different version control systems.
 
 :::::::::::::::::::::::::
 
@@ -168,6 +169,14 @@ Plain text files like Markdown files (`.md`) and R files (`.R`) are integrated i
 
 
 ![We can increase the reproducibility of our Open science projects with version control sytems like `Git`. Text and final results can be connected and executable by Data and code. From: "Ciencia reproducible: qué, por qué, cómo" <https://www.revistaecosistemas.net/index.php/ecosistemas/article/view/1178>](fig/gradient-reproducibility.png)
+
+::::::::::::::::::: instructor
+
+### Concept map
+
+![Concept map for automatic version control.](fig/git-concept-03.drawio.png)
+
+::::::::::::::::::::::::::::::
 
 ::::::::::::::::: discussion
 
@@ -186,9 +195,6 @@ Tell us about your Open Science project and its file types!
 This exercise can be solved in the shared document of the training.
 
 ::::::::::::::::::::::::::::::
-
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
