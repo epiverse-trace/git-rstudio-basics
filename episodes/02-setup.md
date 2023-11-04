@@ -93,6 +93,8 @@ If you elect to use a private email address with GitHub, then use that same emai
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+<!--
+
 :::::::::::::::::::::::::::::::::::::::::  callout
 
 ## Line Endings
@@ -123,6 +125,10 @@ $ git config --global core.autocrlf true
 ```
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+-->
+
+<!--
 
 Dracula also has to set his favorite text editor, following this table:
 
