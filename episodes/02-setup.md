@@ -215,10 +215,31 @@ configuration, the `init.defaultBranch` value defaults to `master`.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-The five commands we just ran above only need to be run once: the flag `--global` tells Git
-to use the settings for every project, in your user account, on this computer.
+::::::::::::::::: checklist
 
-Let's review those settings and test our `core.editor` right away:
+### Only once
+
+The commands we just ran above only need to be run once: Git will use this settings for every project, in your user account, on this computer. 
+
+:::::::::::::::::::::::::::
+
+Let's review those settings with `usethis::git_sitrep()`
+
+```r
+usethis::git_sitrep()
+```
+
+The two first lines of the output should look like this:
+
+```
+── Git global (user) 
+• Name: 'Vlad Dracula'
+• Email: 'vlad@tran.sylvan.ia'
+```
+
+::::::::::::::::::: instructor
+
+With git commands:
 
 ```bash
 $ git config --global --edit
