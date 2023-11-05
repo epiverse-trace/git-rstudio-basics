@@ -18,6 +18,8 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+<!--
+
 ## from the 01-basics episode
 
 Version control also allows many people to work in parallel
@@ -50,7 +52,29 @@ Version control also allows many people to work in parallel
 :::::::::::::::::::::::::
 
 
+copy content or slides from these link: https://speakerdeck.com/alicebartlett/git-for-humans?slide=67
+
+::::::::::::::::: checklist
+
+### Checklist
+
+Key characteristics of Version control systems are:
+
+1. Keep the entire history of a file and inspect a file throughout its lifetime.
+
+2. Tag a particular version so you can return to them easily.
+
+3. Experiment with code and feature without breaking the main project
+
+4. Facilitates collaborations and makes contributions transparent
+
+:::::::::::::::::::::::::::
+
+
+
 ## episode starts here
+
+-->
 
 For the next step, get into pairs.  One person will be the "Owner" and the other
 will be the "Collaborator". The goal is that the Collaborator add changes into

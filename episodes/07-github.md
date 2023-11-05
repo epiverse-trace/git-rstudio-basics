@@ -17,6 +17,8 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+<!--
+
 ## previous related content
 
 First, double check your configuration. Please, [follow the steps in this tutorial to verify this](https://epiverse-trace.github.io/research-compendium/#configure-git-and-github).
@@ -48,6 +50,8 @@ gh::gh_whoami()
 
 
 ## episode starts here
+
+-->
 
 Version control really comes into its own when we begin to collaborate with
 other people.  We already have most of the machinery we need to do this; the

@@ -17,6 +17,167 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+<!--
+
+## previous
+
+previously
+
+Git is the Version control software for PLAIN text files that works offline and online
+
+now
+
+Git is the Version control software for multiple PLAIN text files in a single project that works offline and online
+
+Paste new files of summative assessment (link to Drive folder) to project folder.
+
+git status
+
+::::::::::::::::: checklist
+
+### Good practice box
+
+- When using git, some cases we can ignore non-plain files
+
+- But above all, we do need to ignore Regenerable Files (ones that are a product of plain text files) like HTML, PDF, PNG
+
+- Files you'll typically want to ignore: .DS_store, Excel file
+
+- List of pre-made gitignore files for many different languages: https://github.com/github/gitignore 
+
+:::::::::::::::::::::::::::
+
+Opportunity to practice how to create an .gitignore file by using Rstudio check list
+
+Configuración de proyecto, según principios sobre buenas prácticas en computación científica (ref)
+* Tratar datos originales como “solo lectura”
+* Todo lo generado por scripts debe ser “descartable” y capaz de regenerarse a partir de los mismos scripts
+adaptado de: https://talesofr.wordpress.com/2017/12/12/a-minimal-project-tree-in-r/ 
+
+::::::::::::::::: testimonial
+
+### TESTIMONIAL
+
+Refer also to the section of “What Not to Put Under Version Control” from the following manuscript by G. Wilson et al. 2017 Good Enough Practices in Scientific Computing (swcarpentry.github.io), 
+
+https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/#what-not-to-put-under-version-control
+
+which enphazise, among other notes, in: 
+version control systems are optimized for plain text files; 
+avoid raw data, since it should not change;
+avoid intermediate files or results that can be re-generated from raw data and software.
+
+
+:::::::::::::::::::::::::::::
+
+What happens when we run the Rmd file? it generates new files
+
+edit .gitignore file
+
+git add specific files
+
+::::::::::::::::::::::::::::::::: challenge
+
+### Exercise!
+
+Let’s solve this question
+Click here https://www.menti.com/alcraf5dm9kp 
+
+::::::::::::::::: hint
+
+### HINT (`hint`)
+
+...
+
+::::::::::::::::::::::
+
+::::::::::::::::: solution
+
+### SOLUTION (`solution`)
+
+...
+
+::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::
+
+a good commit message (evaluate if this can go in 04-changes.md)
+
+::::::::::::::::: checklist
+
+### Good practice box
+
+- Start with an infinitive verb. 
+
+  - It recalls an specific action.
+
+
+- Keep commit messages short
+
+  - GitHub suggests no more than 50 characters for the first line
+
+  - Then you can add more context lines below
+
+
+:::::::::::::::::::::::::::
+
+Edit the Rmd file
+
+::::::::::::::::::::::::::::::::: challenge
+
+### Exercise!
+
+- In breakout rooms
+
+- Modify three different types of information in the Rmd file
+  - Replace the PNG figure
+  - Erase the text “US” in the list of countries
+  - Replace the input file for the drop US country
+
+- By turns, each member have to share it screen and choose to make only one of these modifications.
+
+- If there are more than 3 people, modifications can be repeated
+
+- When finished, share your commit messages in the Google Doc file
+
+::::::::::::::::: hint
+
+### HINT (`hint`)
+
+...
+
+::::::::::::::::::::::
+
+::::::::::::::::: solution
+
+### SOLUTION (`solution`)
+
+...
+
+::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::
+
+::::::::::::::::: checklist
+
+### Good practice box
+
+- Make atomic commits
+
+- What is atomic or not atomic?
+
+  - it is not about quantity of changes, but one unit of change
+
+- “Stage chunk” in Rstudio helps to make atomic commits, even if you change a lot of lines!
+
+
+:::::::::::::::::::::::::::
+
+
+## episode starts here
+
+-->
+
 What if we have files that we do not want Git to track for us,
 like backup files created by our editor
 or intermediate files created during data analysis?

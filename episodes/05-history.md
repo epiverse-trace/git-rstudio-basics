@@ -21,6 +21,8 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+<!--
+
 ## previous content
 
 A set of consecutive commits generate a linear history of changes. 
@@ -33,7 +35,94 @@ A non-linear development of your project with branches
 
 ![Two development branches and one main branch in Git.](fig/two-branches.png)
 
+## from slides
+
+### git diff
+
+edit the Rmd file in two lines
+
+git status
+
+git diff
+
+git add
+
+git commit 
+
+git diff pre post
+
+![`git commit` your changes to the Local repository.](fig/cut-git-verb_map-04.png).
+
+-->
+
+<!--
+### stage chunk
+
+with rstudio (evaluate to include later as extra)
+
+![](fig/git-rstudio-32.png)
+![](fig/git-rstudio-33.png)
+![](fig/git-rstudio-34.png)
+![](fig/git-rstudio-35.png)
+![](fig/git-rstudio-36.png)
+![](fig/git-rstudio-37.png)
+![](fig/git-rstudio-38.png)
+![](fig/git-rstudio-39.png)
+![](fig/git-rstudio-40.png)
+![](fig/git-rstudio-41.png)
+
+::::::::::::::::::::::::::::::::: challenge
+
+### Exercise!
+
+- In breakout rooms:
+
+- From the previous exercise:
+
+  - Modify three different types of information in the Rmd file
+
+    - Replace the PNG figure
+    - Erase the text “US” in the list of countries
+    - Replace the input file for the drop US country
+
+- Share your screen and make your complementary two modifications,
+- Use “Stage Chunk” to make different commits from the same edit process
+- When finished, share your commit messages in the Google Doc file
+
+::::::::::::::::: hint
+
+### HINT (`hint`)
+
+...
+
+::::::::::::::::::::::
+
+::::::::::::::::: solution
+
+### SOLUTION (`solution`)
+
+...
+
+::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::
+
+::::::::::::::::: checklist
+
+### Good practice box
+
+- You do not need to commit all your files in one commit.
+
+
+:::::::::::::::::::::::::::
+
+-->
+
+<!--
+
 ## episode starts here
+
+-->
 
 As we saw in the previous episode, we can refer to commits by their
 identifiers.  You can refer to the *most recent commit* of the working

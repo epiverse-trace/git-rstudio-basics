@@ -20,6 +20,62 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+<!--
+
+## Ask about the status your project.
+
+We can check that everything is set up correctly
+by asking Git to tell us the status of our project:
+
+```bash
+$ git status
+```
+
+```output
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+```
+
+If you are using a different version of `git`, the exact
+wording of the output might be slightly different.
+
+## previous 
+
+[introduce in 03 to the terminal in rstudio]
+
+Let’s start to TELL THE STORY of your project WHILE YOU WORK ON IT
+
+### git status add commit log
+
+git status
+
+the Environments pane, usually in the Upper right corner.
+
+git add
+
+![`git add` your changes to the Staging area.](fig/cut-git-verb_map-02.png).
+
+git status
+
+git commit
+
+read git commit message
+
+git status
+
+![`git commit` your changes to the Local repository.](fig/cut-git-verb_map-03.png).
+
+git log
+
+read components of a commit message
+
+## episode starts here
+
+-->
+
 First let's make sure we're still in the right directory.
 You should be in the `planets` directory.
 

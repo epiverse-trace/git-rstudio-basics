@@ -17,6 +17,8 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+<!--
+
 ## intro from 01-basic
 
 Version control systems start with a base version of the document and
@@ -42,6 +44,8 @@ incorporate two sets of changes into the same base document.
 ![](fig/merge.svg){alt='Multiple Versions Can be Merged'}
 
 ## this episode starts here
+
+-->
 
 As soon as people can work in parallel, they'll likely step on each other's
 toes.  This will even happen with a single person: if we are working on
