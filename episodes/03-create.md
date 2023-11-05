@@ -60,15 +60,13 @@ Courtesy NASA/JPL-Caltech.
 
 Once Git is configured, we can start using it.
 
-First, let's create a new R project.
+First, let's create a new R project. Choose the following options `New directory` > `New project`. 
 
 ![Create a new R project.](fig/git-rstudio-01.png)
 
-Choose a `New directory` > `New project`. 
+<!--![Select "New Directory".](fig/git-rstudio-02.png)-->
 
-![Select "New Directory".](fig/git-rstudio-02.png)
-
-![Select "New Project".](fig/git-rstudio-03.png)
+<!--![Select "New Project".](fig/git-rstudio-03.png)-->
 
 Write the Directory name for your R project (e.g. `folder`). If needed, browse where you want this R project to be.
 
