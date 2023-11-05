@@ -52,6 +52,17 @@ Let’s start to TELL THE STORY of your project WHILE YOU WORK ON IT
 
 git status
 
+staging area
+
+--
+on staging area
+https://coderefinery.github.io/git-intro/staging-area/#staging-area-commands
+the staging area is the middle ground between what you have done to your files (also known as the working directory) and what you had last committed (the HEAD commit). As the name implies, the staging area gives you space to prepare (stage) the changes that will be reflected on the next commit
+
+testimony
+https://stackoverflow.com/questions/49228209/whats-the-use-of-the-staging-area-in-git
+--
+
 the Environments pane, usually in the Upper right corner.
 
 git add
