@@ -139,27 +139,34 @@ nothing to commit (create/copy files and use "git add" to track)
 
 If you are using a different version of `git`, the exact
 wording of the output might be slightly different.
+-->
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
 ## Places to Create Git Repositories
 
+Let's imaging that Wolfman and Dracula want to analyze planets data in a `git` initialized project called `planets`.
+
 Along with tracking information about planets (the project we have already created),
 Dracula would also like to track information about moons.
 Despite Wolfman's concerns, Dracula creates a `moons` project inside his `planets`
-project with the following sequence of commands:
+project.
+
+Using the terminal, Dracula did the following sequence of commands:
 
 ```bash
 $ cd ~/Desktop   # return to Desktop directory
+$ mkdir planets  # make a directory planets
 $ cd planets     # go into planets directory, which is already a Git repository
-$ ls -a          # ensure the .git subdirectory is still present in the planets directory
+$ git init       # make the planets directory a Git repository
+$ ls -a          # ensure the .git subdirectory is present in the planets directory
 $ mkdir moons    # make a subdirectory planets/moons
 $ cd moons       # go into moons subdirectory
 $ git init       # make the moons subdirectory a Git repository
 $ ls -a          # ensure the .git subdirectory is present indicating we have created a new Git repository
 ```
 
-Is the `git init` command, run inside the `moons` subdirectory, required for
+THE QUESTION: Is the `git init` command, run inside the `moons` subdirectory, required for
 tracking files stored in the `moons` subdirectory?
 
 :::::::::::::::  solution
