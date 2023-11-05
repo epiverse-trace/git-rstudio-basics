@@ -58,7 +58,7 @@ LibreOffice's [Recording and Displaying Changes](https://help.libreoffice.org/Co
 
 ![Tracking changes for the `git-test` file.](fig/gdocs-01.png)
 
-In the `File` option we find the `Version history` option. This highlights the new content added to the file in that version only.
+To use Google Docs version history click `File` > `Version history` > `See version history`. This highlights the new content added to the file in that version only.
 
 ![The most recent version of the `git-test` file is called "third version".](fig/gdocs-03.png)
 
@@ -99,9 +99,9 @@ collaboration among different people.
 
 ::::::::::::::::: checklist
 
-### Version control systems to track changes
+### Checklist
 
-A version control system:
+Key characteristics of Version control systems:
 
 1. Keep the entire history of a file and inspect a file throughout its lifetime.
 
