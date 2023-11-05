@@ -54,63 +54,73 @@ Courtesy NASA/JPL-Caltech.
 © Luc Viatour / [https://lucnix.be](https://lucnix.be/) /
 [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.en).
 
-First, let's create a new directory in the `Desktop` folder for our work and then change the current working directory to the newly created one:
+-->
 
-```bash
-$ cd ~/Desktop
-$ mkdir planets
-$ cd planets
-```
+## Create a local repository
 
-Then we tell Git to make `planets` a [repository](../learners/reference.md#repository)
-\-- a place where Git can store versions of our files:
+Once Git is configured, we can start using it.
 
-```bash
-$ git init
-```
+First, let's create a new R project.
+
+![Create a new R project.](fig/git-rstudio-01.png)
+
+Choose a `New directory` > `New project`. 
+
+![Select "New Directory".](fig/git-rstudio-02.png)
+
+![Select "New Project".](fig/git-rstudio-03.png)
+
+Write the Directory name for your R project (e.g. `folder`). If needed, browse where you want this R project to be.
+
+WAIT! To initialize a local repository for your new R project, select the `Create a git repository` box. This step tells Git to make `folder` a [repository](../learners/reference.md#repository)
+\-- a place where Git can store versions of our files
+
+![Select "Create a git repository".](fig/git-rstudio-04.png)
+
+Now you have a local `git` repository. Look at the new file called `.gitignore` in the Files tab of the Output pane, usually in the Lower right corner. 
+
+![New file called `.gitignore` after creating a new project with a git repository.](fig/git-rstudio-05.png)
+
+This step is known as `git init`.
+
+![Initialize a Local Repository in your Workspace with the `git init` command verb](fig/cut-git-verb_map-01.png).
 
 It is important to note that `git init` will create a repository that
 can include subdirectories and their files---there is no need to create
-separate repositories nested within the `planets` repository, whether
+separate repositories nested within the `folder` repository, whether
 subdirectories are present from the beginning or added later. Also, note
-that the creation of the `planets` directory and its initialization as a
+that the creation of the `folder` directory and its initialization as a
 repository are completely separate processes.
 
-If we use `ls` to show the directory's contents,
-it appears that nothing has changed:
+::::::::::::::::: checklist
 
-```bash
-$ ls
-```
+### Checklist
 
-But if we add the `-a` flag to show everything,
-we can see that Git has created a hidden directory within `planets` called `.git`:
+![Set up `Git` once per computer. Initialize `Git` once per project.](fig/git-rstudio-06.png)
 
-```bash
-$ ls -a
-```
+:::::::::::::::::::::::::::
 
-```output
-.	..	.git
-```
+## New files of a local repository
+
+If we look at the Files tab to show the directory's contents, it appears that we only have one new file.
+
+But under the "cogwheel" button we get access to the "More file commands". Click to the `Show hidden files` to show everything, we can see that Git has created a hidden directory within `folder` called `.git`:
+
+![Show hidden files in an Local repository.](fig/git-rstudio-07.png)
+
+The `.git` file gives the identity to the `.git` repository also known as the Local Repository “Local Repo”.
+
+![The `.git` folder is a hidden folder in a Local repository.](fig/git-rstudio-08.png)
 
 Git uses this special subdirectory to store all the information about the project,
 including the tracked files and sub-directories located within the project's directory.
 If we ever delete the `.git` subdirectory,
 we will lose the project's history.
 
-Next, we will change the default branch to be called `main`.
-This might be the default branch depending on your settings and version
-of git.
-See the [setup episode](02-setup.md#default-git-branch-naming) for more information on this change.
+<!--
+The status is not the same for Rstudio because it creates two files that are not created by default with git only. It is Rstudio the one that creates .gitignore and .Rproj files.
 
-```bash
-$ git checkout -b main
-```
-
-```output
-Switched to a new branch 'main'
-```
+## Ask about the status your project.
 
 We can check that everything is set up correctly
 by asking Git to tell us the status of our project:
