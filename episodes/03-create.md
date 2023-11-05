@@ -23,18 +23,19 @@ exercises: 0
 
 ![Word cloud for Git from <https://thoughtbot.com/blog/recommending-blog-posts>](fig/topic-git.png)
 
-We will use the workflow bellow as template to relate Version control _actions_ that we can perform with specific _`git verb` commands_. These verbs will record your changes from one `Git` _space_ to another within your folder.
+We will locate them using this workflow bellow as template. We will relate Version control _actions_ that we can perform with specific _`git verb` commands_. These verbs will record your changes between `Git` _spaces_ associated to your folder.
 
 ![Workflow will show actions, `git verb` commands, and spaces.](fig/cut-git-verb_map-00.png)
 
-In this episode, we are going to learn how to initialize Git to create a Local Repository in our folder Workspace.
+In this episode, we are going to learn how to initialize Git to create a Local Repository in our folder, also known as Working directory or Workspace.
 
-![Initialize a Local Repository in your Workspace with the `git init` command verb](fig/cut-git-verb_map-01.png)
+![Initialize a Local Repository in your Workspace with the `git init` command verb](fig/cut-git-verb_map-01.png).
 
-## episode starts here
+Let's start a new R project in Rstudio.
 
-Once Git is configured,
-we can start using it.
+<!--
+
+## Let's imagine this scenario
 
 We will continue with the story of Wolfman and Dracula who are investigating if it
 is possible to send a planetary lander to Mars.
