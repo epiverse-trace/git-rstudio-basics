@@ -61,8 +61,8 @@ contact: 'andree.valle-campos@lshtm.ac.uk'
 episodes:
 - 01-basics.md
 - 02-setup.md
-- 03-create.md
-- 04-changes.md
+# - 03-create.md
+# - 04-changes.md
 
 # batch #1
 # - 06-ignore.md
