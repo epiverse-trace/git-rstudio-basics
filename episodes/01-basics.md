@@ -101,7 +101,7 @@ collaboration among different people.
 
 ### Checklist
 
-Key characteristics of Version control systems:
+Key characteristics of Version control systems are:
 
 1. Keep the entire history of a file and inspect a file throughout its lifetime.
 
