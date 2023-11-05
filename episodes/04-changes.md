@@ -70,7 +70,14 @@ git status
 
 git log
 
+![`git commit` your changes to the Local repository.](fig/cut-git-verb_map-04.png).
+
 read components of a commit message
+
+--
+from https://www.atlassian.com/git/tutorials/inspecting-a-repository
+The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven’t, and which files aren’t being tracked by Git. Status output does not show you any information regarding the committed project history. For this, you need to use git log.
+--
 
 ## episode starts here
 
