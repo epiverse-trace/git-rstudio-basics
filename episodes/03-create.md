@@ -1,7 +1,7 @@
 ---
 title: Creating a Repository
 teaching: 10
-exercises: 0
+exercises: 10
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
