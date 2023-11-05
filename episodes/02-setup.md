@@ -217,9 +217,9 @@ configuration, the `init.defaultBranch` value defaults to `master`.
 
 ::::::::::::::::: checklist
 
-### Only once
+### Checklist
 
-The commands we just ran above only need to be run once: Git will use this settings for every project, in your user account, on this computer. 
+We need to run these commands __only once__! Git will use this settings for every project, in your user account, on this computer. 
 
 :::::::::::::::::::::::::::
 
