@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>Version Control with Git: Instructor Notes</title>
+<title>Version Control with Git in Rstudio: Instructor Notes</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="../assets/styles.css">
 <script src="../assets/scripts.js" type="text/javascript"></script><!-- mathjax --><script type="text/x-mathjax-config">
@@ -29,12 +29,19 @@
 <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <header id="top" class="navbar navbar-expand-md navbar-light bg-white top-nav software"><a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
+    <header id="top" class="navbar navbar-expand-md navbar-light bg-white top-nav incubator"><a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
   <div class="container-fluid top-nav-container">
     <div class="col-md-6">
       <div class="large-logo">
-        <img alt="Epiverse-TRACE" src="../assets/images/epiverse-logo.svg">
-</div>
+        <img alt="Epiverse-TRACE" src="../assets/images/epiverse-logo.svg"><abbr class="badge badge-light" title="This lesson is in the alpha phase, which means that it has been taught once and lesson authors are iterating on feedback." style="background-color: #FFC700; border-radius: 5px">
+          <a href="https://cdh.carpentries.org/the-lesson-life-cycle.html#field-testing-alpha-stage" class="external-link alert-link" style="color: #383838">
+            <i aria-hidden="true" class="icon" data-feather="alert-triangle" style="border-radius: 5px"></i>
+            Alpha
+          </a>
+          <span class="visually-hidden">This lesson is in the alpha phase, which means that it has been taught once and lesson authors are iterating on feedback.</span>
+        </abbr>
+        
+      </div>
     </div>
     <div class="selector-container">
       
@@ -49,7 +56,7 @@
 </div>
     </div>
   </div>
-  <hr></header><nav class="navbar navbar-expand-xl navbar-light bg-white bottom-nav software" aria-label="Main Navigation"><div class="container-fluid nav-container">
+  <hr></header><nav class="navbar navbar-expand-xl navbar-light bg-white bottom-nav incubator" aria-label="Main Navigation"><div class="container-fluid nav-container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       <span class="menu-title">Menu</span>
@@ -58,7 +65,7 @@
       <img class="small-logo" alt="Epiverse-TRACE" src="../assets/images/epiverse-logo.svg">
 </div>
     <div class="lesson-title-md">
-      Version Control with Git
+      Version Control with Git in Rstudio
     </div>
     <div class="search-icon-sm">
       <!-- TODO: do not show until we have search
@@ -69,7 +76,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 <li class="nav-item">
           <span class="lesson-title">
-            Version Control with Git
+            Version Control with Git in Rstudio
           </span>
         </li>
         <li class="nav-item">
@@ -99,14 +106,14 @@
   </div>
 <!--/div.container-fluid -->
 </nav><div class="col-md-12 mobile-title">
-  Version Control with Git
+  Version Control with Git in Rstudio
 </div>
 
 <aside class="col-md-12 lesson-progress"><div style="width: %" class="percentage">
     %
   </div>
-  <div class="progress software">
-    <div class="progress-bar software" role="progressbar" style="width: %" aria-valuenow="" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress incubator">
+    <div class="progress-bar incubator" role="progressbar" style="width: %" aria-valuenow="" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -280,7 +287,7 @@
 <div class="accordion accordion-flush" id="accordionFlush11">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading11">
-        <a href="10-open.html">10. Open Science</a>
+        <a href="15-wrapup.html">10. Wrap-up</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -292,7 +299,7 @@
 <div class="accordion accordion-flush" id="accordionFlush12">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading12">
-        <a href="11-licensing.html">11. Licensing</a>
+        <a href="14-supplemental-rstudio.html">11. Supplemental: Using RStudio for Git</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -304,7 +311,7 @@
 <div class="accordion accordion-flush" id="accordionFlush13">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading13">
-        <a href="12-citation.html">12. Citation</a>
+        <a href="10-open.html">12. Open Science</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -316,7 +323,7 @@
 <div class="accordion accordion-flush" id="accordionFlush14">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading14">
-        <a href="13-hosting.html">13. Hosting</a>
+        <a href="11-licensing.html">13. Licensing</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -328,7 +335,19 @@
 <div class="accordion accordion-flush" id="accordionFlush15">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading15">
-        <a href="14-supplemental-rstudio.html">14. Supplemental: Using Git from RStudio</a>
+        <a href="12-citation.html">14. Citation</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush16">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading16">
+        <a href="13-hosting.html">15. Hosting</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -760,19 +779,104 @@ on GitHub. While we encourage open science, sometimes private repos are
 the only choice. It’s always interesting to mention the options to have
 web-hosted private repositories.</p>
 </section><section id="aggregate-instructor-notes"><section id="01-basics"><h2 class="section-heading"><a href="01-basics.html">Automated Version Control</a></h2>
-<hr class="half-width"></section><section id="02-setup"><h2 class="section-heading"><a href="02-setup.html">Setting Up Git</a></h2>
-<hr class="half-width"></section><section id="03-create"><h2 class="section-heading"><a href="03-create.html">Creating a Repository</a></h2>
+<hr class="half-width">
+<h3 id="01-basics-headingInstructor1">
+<a href="01-basics.html#headingInstructor1">Instructor Note</a><a class="anchor" aria-label="anchor" href="#01-basics-headingInstructor1"></a>
+</h3>
+<p>We can use the comments or live participation as ice-breaker.</p>
+<hr>
+<br><h3 id="01-basics-headingInstructor2">
+<a href="01-basics.html#headingInstructor2">The Long History of Version Control Systems</a><a class="anchor" aria-label="anchor" href="#01-basics-headingInstructor2"></a>
+</h3>
+<p>Automated version control systems are nothing new. Tools like <a href="https://en.wikipedia.org/wiki/Revision_Control_System" class="external-link">RCS</a>, <a href="https://en.wikipedia.org/wiki/Concurrent_Versions_System" class="external-link">CVS</a>,
+or <a href="https://en.wikipedia.org/wiki/Apache_Subversion" class="external-link">Subversion</a>
+have been around since the early 1980s and are used by many large
+companies. However, many of these are now considered legacy systems
+(i.e., outdated) due to various limitations in their capabilities. More
+modern systems, such as Git and <a href="https://swcarpentry.github.io/hg-novice/" class="external-link">Mercurial</a>, are
+<em>distributed</em>, meaning that they do not need a centralized server
+to host the repository. These modern systems also include powerful
+merging tools that make it possible for multiple authors to work on the
+same files concurrently.</p>
+<hr>
+<br><h3 id="01-basics-headingInstructor3">
+<a href="01-basics.html#headingInstructor3">Concept map</a><a class="anchor" aria-label="anchor" href="#01-basics-headingInstructor3"></a>
+</h3>
+<figure><img src="../fig/git-concept-03.drawio.png" alt="" class="figure mx-auto d-block"><figcaption>Concept map for automatic version control.</figcaption></figure><hr>
+<br><h3 id="01-basics-headingInstructor4">
+<a href="01-basics.html#headingInstructor4">Instructor Note</a><a class="anchor" aria-label="anchor" href="#01-basics-headingInstructor4"></a>
+</h3>
+<p>This exercise can be solved in the shared document of the
+training.</p>
+<hr>
+<br></section><section id="02-setup"><h2 class="section-heading"><a href="02-setup.html">Setting Up Git</a></h2>
+<hr class="half-width">
+<h3 id="02-setup-headingInstructor1">
+<a href="02-setup.html#headingInstructor1">Default Git branch naming</a><a class="anchor" aria-label="anchor" href="#02-setup-headingInstructor1"></a>
+</h3>
+<p>Source file changes are associated with a “branch.” For new learners
+in this lesson, it’s enough to know that branches exist, and this lesson
+uses one branch.<br>
+By default, Git will create a branch called <code>master</code> when you
+create a new repository with <code>git init</code> (as explained in the
+next Episode). This term evokes the racist practice of human slavery and
+the <a href="https://github.com/github/renaming" class="external-link">software development
+community</a> has moved to adopt more inclusive language.</p>
+<p>In 2020, most Git code hosting services transitioned to using
+<code>main</code> as the default branch. As an example, any new
+repository that is opened in GitHub and GitLab default to
+<code>main</code>. However, Git has not yet made the same change. As a
+result, local repositories must be manually configured have the same
+main branch name as most cloud services.</p>
+<p>For versions of Git prior to 2.28, the change can be made on an
+individual repository level. The command for this is in the next
+episode. Note that if this value is unset in your local Git
+configuration, the <code>init.defaultBranch</code> value defaults to
+<code>master</code>.</p>
+<hr>
+<br><h3 id="02-setup-headingInstructor2">
+<a href="02-setup.html#headingInstructor2">Instructor Note</a><a class="anchor" aria-label="anchor" href="#02-setup-headingInstructor2"></a>
+</h3>
+<p>When using <code>usethis::git_sitrep()</code>, check if there is no
+<code>✖ ...</code> line in the output with an error message.</p>
+<p>Some common errors are solved here:</p>
+<ul>
+<li><a href="https://happygitwithr.com/https-pat.html#pat-troubleshooting" class="external-link">Happy
+Git with R ebook</a></li>
+<li><a href="https://carpentries.github.io/sandpaper-docs/github-pat.html#common-token-errors" class="external-link">Workbench
+documentation</a></li>
+</ul>
+<hr>
+<br></section><section id="03-create"><h2 class="section-heading"><a href="03-create.html">Creating a Repository</a></h2>
 <hr class="half-width"></section><section id="04-changes"><h2 class="section-heading"><a href="04-changes.html">Tracking Changes</a></h2>
-<hr class="half-width"></section><section id="05-history"><h2 class="section-heading"><a href="05-history.html">Exploring History</a></h2>
+<hr class="half-width">
+<h3 id="04-changes-headingInstructor1">
+<a href="04-changes.html#headingInstructor1">Definition: Staging area</a><a class="anchor" aria-label="anchor" href="#04-changes-headingInstructor1"></a>
+</h3>
+<p>The staging area is the middle ground between what you have done to
+your files (also known as the working directory) and what you had last
+committed (the HEAD commit). As the name implies, the staging area gives
+you space to prepare (stage) the changes that will be reflected on the
+next commit. <a href="https://coderefinery.github.io/git-intro/staging-area/#staging-area-commands" class="external-link">(Coderefinery,
+2023)</a></p>
+<div class="section level3">
+<h3 id="what-is-the-use-of-the-staging-area">What is the use of the Staging area?<a class="anchor" aria-label="anchor" href="#what-is-the-use-of-the-staging-area"></a>
+</h3>
+<p><a href="https://stackoverflow.com/questions/49228209/whats-the-use-of-the-staging-area-in-git" class="external-link">Read
+a testimony from StackOver Flow</a>.</p>
+</div>
+<hr>
+<br></section><section id="05-history"><h2 class="section-heading"><a href="05-history.html">Exploring History</a></h2>
 <hr class="half-width"></section><section id="06-ignore"><h2 class="section-heading"><a href="06-ignore.html">Ignoring Things</a></h2>
 <hr class="half-width"></section><section id="07-github"><h2 class="section-heading"><a href="07-github.html">Remotes in GitHub</a></h2>
 <hr class="half-width"></section><section id="08-collab"><h2 class="section-heading"><a href="08-collab.html">Collaborating</a></h2>
 <hr class="half-width"></section><section id="09-conflict"><h2 class="section-heading"><a href="09-conflict.html">Conflicts</a></h2>
+<hr class="half-width"></section><section id="15-wrapup"><h2 class="section-heading"><a href="15-wrapup.html">Wrap-up</a></h2>
+<hr class="half-width"></section><section id="14-supplemental-rstudio"><h2 class="section-heading"><a href="14-supplemental-rstudio.html">Supplemental: Using RStudio for Git</a></h2>
 <hr class="half-width"></section><section id="10-open"><h2 class="section-heading"><a href="10-open.html">Open Science</a></h2>
 <hr class="half-width"></section><section id="11-licensing"><h2 class="section-heading"><a href="11-licensing.html">Licensing</a></h2>
 <hr class="half-width"></section><section id="12-citation"><h2 class="section-heading"><a href="12-citation.html">Citation</a></h2>
 <hr class="half-width"></section><section id="13-hosting"><h2 class="section-heading"><a href="13-hosting.html">Hosting</a></h2>
-<hr class="half-width"></section><section id="14-supplemental-rstudio"><h2 class="section-heading"><a href="14-supplemental-rstudio.html">Supplemental: Using Git from RStudio</a></h2>
 <hr class="half-width"></section></section>
 </div>
     </main>
@@ -786,12 +890,12 @@ web-hosted private repositories.</p>
 				<p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
         
-        <a href="https://github.com/swcarpentry/git-novice/edit/main/README.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/epiverse-trace/git-rstudio-basics/edit/main/README.md" class="external-link">Edit on GitHub</a>
         
 	
-        | <a href="https://github.com/swcarpentry/git-novice/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
-        | <a href="https://github.com/swcarpentry/git-novice/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/swcarpentry/git-novice/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+        | <a href="https://github.com/epiverse-trace/git-rstudio-basics/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
+        | <a href="https://github.com/epiverse-trace/git-rstudio-basics/" class="external-link">Source</a></p>
+				<p><a href="https://github.com/epiverse-trace/git-rstudio-basics/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:andree.valle-campos@lshtm.ac.uk">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
         
@@ -799,7 +903,7 @@ web-hosted private repositories.</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
         <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.14.1" class="external-link">sandpaper (0.14.1)</a>,
-        <a href="https://github.com/carpentries/pegboard/tree/0.7.2" class="external-link">pegboard (0.7.2)</a>,
+        <a href="https://github.com/carpentries/pegboard/tree/0.7.3" class="external-link">pegboard (0.7.3)</a>,
       and <a href="https://github.com/epiverse-trace/varnish/tree/epiversetheme" class="external-link">varnish (0.3.3.9000)</a>.</p>
 			</div>
 		</footer>
@@ -813,17 +917,17 @@ web-hosted private repositories.</p>
     {
   "@context": "https://schema.org",
   "@type": "TrainingMaterial",
-  "@id": "https://swcarpentry.github.io/git-novice/instructor/instructor-notes.html",
+  "@id": "https://epiverse-trace.github.io/git-rstudio-basics/instructor/instructor-notes.html",
   "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
   "keywords": "software, data, lesson, The Carpentries",
   "name": "Instructor Notes",
   "creativeWorkStatus": "active",
-  "url": "https://swcarpentry.github.io/git-novice/instructor/instructor-notes.html",
-  "identifier": "https://swcarpentry.github.io/git-novice/instructor/instructor-notes.html",
+  "url": "https://epiverse-trace.github.io/git-rstudio-basics/instructor/instructor-notes.html",
+  "identifier": "https://epiverse-trace.github.io/git-rstudio-basics/instructor/instructor-notes.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2023-11-21",
-  "datePublished": "2023-11-21"
+  "dateModified": "2023-11-27",
+  "datePublished": "2023-11-27"
 }
 
   </script><script>
