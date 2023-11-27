@@ -3,17 +3,34 @@ permalink: index.html
 site: sandpaper::sandpaper_site
 ---
 
-Wolfman and Dracula have been hired by Universal Missions (a space
-services spinoff from Euphoric State University) to investigate if it
-is possible to send their next planetary lander to Mars.  They want to
-be able to work on the plans at the same time, but they have run into
-problems doing this in the past.  If they take turns, each one will
-spend a lot of time waiting for the other to finish, but if they work
-on their own copies and email changes back and forth things will be
+> Do you want to participate in a live workshop? 
+> [Sign up in our announcement page!](https://epiverse-trace.github.io/learn/git-training-01/)
+
+## Motivation
+
+Reproducible science not only reduce errors, but speeds up the process of re-runing your analysis and auto-generate updated documents with the results. **Git is an essential part of this process!**
+
+!["A reproducible workflow". 1:44 minutes. Video by Ignasi Bartomeus (@ibartomeus) & Francisco Rodríguez-Sánchez (@frod_san).  CC-by, <https://youtu.be/s3JldKoA0zw?si=xRzgVJvOTX5LubxN>](episodes/fig/non-reproducible-workflow.png){alt='Video: A Non Reproducible Workflow'}
+
+## The scenario
+
+![Image by Bing, 2023, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), created with [Bing Image Creator powered by DALL·E 3](https://www.bing.com/create)](episodes/fig/wolfman_dracula-03.jpg){alt='wolfman and dracula using computers for data analysis'}
+
+Wolfman and Dracula have been hired as data analysts by Outbreak Missions (a Rapid Support Team for outbreak response services) to investigate a disease outbreak. 
+They want to be able to work on the development of a reproducible [Situation report](https://choleraoutbreak.org/book-page/appendix-7-outline-outbreak-situation-report) 
+at the same time, but they have run into
+problems doing this in the past.  
+
+- If they take turns, each one will
+spend a lot of time waiting for the other to finish, but 
+- if they work on their own copies and email changes back and forth things will be
 lost, overwritten, or duplicated.
 
 A colleague suggests using [version control](learners/reference.md#version-control) to
-manage their work. Version control is better than mailing files back and forth:
+manage their work! 
+
+<!--
+Version control is better than mailing files back and forth:
 
 - Nothing that is committed to version control is ever lost, unless
   you work really, really hard at it. Since all old versions of
@@ -43,13 +60,14 @@ project relies on it, and most programmers use it for their small jobs
 as well.  And it isn't just for software: books,
 papers, small data sets, and anything that changes over time or needs
 to be shared can and should be stored in a version control system.
+-->
 
 ::::::::::::::::::::::::::::::::::::::::::  prereq
 
 ## Prerequisites
 
-In this lesson we use Git from the Unix Shell.
-Some previous experience with the shell is expected,
+In this lesson we use Git from Rstudio.
+Some previous experience with R and Bash is expected,
 *but isn't mandatory*.
 
 

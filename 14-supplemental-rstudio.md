@@ -1,5 +1,5 @@
 ---
-title: 'Supplemental: Using Git from RStudio'
+title: 'Supplemental: Using RStudio for Git'
 teaching: 10
 exercises: 0
 ---
@@ -22,6 +22,14 @@ that reason, the popular development environment
 integration with Git. While some advanced Git features still require the
 command-line, RStudio has a nice interface for many common Git operations.
 
+::::::::::::::::: testimonial
+
+We also invite you to read this blog post about [10 Commands to Get Started with Git](https://rviews.rstudio.com/2020/04/23/10-commands-to-get-started-with-git/) with screenshots of the Rstudio web-based interface.
+
+:::::::::::::::::::::::::::::
+
+## Create project
+
 RStudio allows us to create a [project][rstudio-projects] associated with a
 given directory to keep track of various related files. To be able to track the
 development of the project over time, to be able to revert to previous
@@ -36,6 +44,14 @@ repository that we already made. Since that repository lives in a directory on
 our computer, we choose the option "Existing Directory":
 
 ![](fig/RStudio_screenshot_existingdirectory.png){alt='RStudio screenshot showing New Project dialog window with "Create project from existing directory" selected'}
+
+For a new directory, [follow the steps in this section about "Versioning new work"](https://nceas.github.io/oss-lessons/version-control/4-getting-started-with-git-in-RStudio.html#versioning_new_work).
+
+![](fig/git-rstudio-init-02.png)
+
+To clone a remote repository from Rstudio, follow these steps:
+
+![](fig/git-rstudio-init-03.png)
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -84,6 +100,8 @@ Next, RStudio will ask which existing directory we want to use. Click
 
 ![](fig/RStudio_screenshot_navigateexisting.png)
 
+<!--## git init-->
+
 Ta-da! We have created a new project in RStudio within the existing planets
 repository. Notice the vertical "Git" menu in the menu bar. RStudio has
 recognized that the current directory is a Git repository, and gives us a
@@ -97,10 +115,18 @@ about Pluto:
 
 ![](fig/RStudio_screenshot_editfiles.png)
 
+<!--## git commit-->
+
 Once we have saved our edited files, we can use RStudio to commit the changes
 by clicking on "Commit..." in the Git menu:
 
 ![](fig/RStudio_screenshot_commit.png){alt='RStudio screenshot showing the Git menu dropdown with "Commit..." selected'}
+
+You can also use the buttons from the Git tab, usually in the upper right pane:
+
+![](fig/git-rstudio-git-tab-01.png)
+
+<!--## git diff-->
 
 This will open a dialogue where we can select which files to commit (by
 checking the appropriate boxes in the "Staged" column), and enter a commit
@@ -110,6 +136,8 @@ changes in the lower panel (using output of `git diff`). Once everything is the
 way we want it, we click "Commit":
 
 ![](fig/RStudio_screenshot_review.png)
+
+<!--## git push-->
 
 The changes can be pushed by selecting "Push Branch" from the Git menu. There
 are also options to pull from the remote repository, and to view the commit
@@ -128,10 +156,14 @@ terminal to the repository and enter the command: `git push -u origin main`. The
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+<!--## git log-->
+
 If we click on "History", we can see a graphical version of what `git log`
 would tell us:
 
 ![](fig/RStudio_screenshot_viewhistory.png)
+
+<!--## .gitignore-->
 
 RStudio creates a number of files that it uses to keep track of a project. We
 often don't want to track these, in which case we add them to our `.gitignore`
@@ -150,12 +182,60 @@ files and directories.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+In the `Rstudio: Review changes` window, you can also open the `.gitignore` files from the `Ignore` button. You can use the `Revert` button to do a `git checkout HEAD`, i.e., to undo changes not yet on staging area by restoring the local repository (last commit).
+
+![](fig/git-rstudio-review-window.png)
+
+## Create a branch
+
+Sometimes you want to experiment with your project without affecting the main version. You can do this by using branches. A branch is a local copy of the main project (also called the `main` branch) where you can make changes and test new ideas. The `main` branch stays safe and unchanged while you work on your branch (a.k.a., `feature branch`). When you are satisfied with the changes, you can merge them into the main branch. This means that the separate lines of development in your branch are combined with the main branch.
+
+![One feature branch and one main branch in Git.](fig/one-branch.png)
+
+You can have more than one branch off of your main copy. If one of your branches ends up not working, you can either abandon it or delete it without impacting the main branch of your project.
+
+![Two feature branches and one main branch in Git.](fig/two-branches.png)
+
+In the Git tab, in the right hand side you will find the name of your current branch (e.g., `main`). Use the button in its left hand side to create a branch.
+
+![](fig/pane-git-02.png)
+
+You can call it `feature-branch`:
+
+![](fig/github-12.png)
+
+You are able to switch between different branches using the menu displayed when you click in the branch name:
+
+![](fig/github-13.png)
+
+Git is a Version control software optimized for plain-text files. This can register non-linear changes.
+
+::::::::::::::::: checklist
+
+### Checklist
+
+Key characteristics of Version control systems are:
+
+1. Keep the entire history of a file and inspect a file throughout its lifetime.
+
+2. Tag a particular version so you can return to them easily.
+
+3. Facilitates collaborations and makes contributions transparent.
+
+4. Experiment with code and feature without breaking the main project
+
+:::::::::::::::::::::::::::
+
+
+The best way to merge branches is on GitHub. We recommend you to read about how to [create a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request), and how to [merge a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request)
+
 :::::::::::::::::::::::::::::::::::::::  challenge
 
 ## Challenge
 
-1. Create a new directory within your project called `graphs`.
-2. Modify the `.gitignore` so that the `graphs` directory is not version controlled.
+1. Create a new directory within your project called `tests`.
+2. Modify the `.gitignore` so that the `tests` directory is not version controlled.
 
 :::::::::::::::  solution
 
@@ -164,11 +244,11 @@ files and directories.
 This can be done in Rstudio:
 
 ```r
-dir.create("./graphs")
+usethis::use_directory("tests")
 ```
 
 Then open up the `.gitignore` file from the right-hand panel of Rstudio and add
-`graphs/` to the list of files to ignore.
+`tests/` to the list of files to ignore.
 
 
 
@@ -182,10 +262,10 @@ enough to get you started!
 [rstudio]: https://www.rstudio.com/
 [rstudio-projects]: https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects
 
-
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - Using RStudio's Git integration allows you to version control a project over time.
+- Feature branches help you experiment with code without breaking the main project.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 

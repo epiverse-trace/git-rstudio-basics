@@ -18,6 +18,44 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+## Paper Writing
+
+From the [first episode](01-basics.md#paper-writing)!
+
+Imagine you have 3 co-authors. How would you manage the changes and comments they make to your paper?  
+
+If you use Google Docs, you can have access to the history of changes, and also identify how made those changes.
+
+![](fig/googledocs-collab.png)
+
+For __plain-text__ files, you can use GitHub to see the changes made per commit. In the left side or in color red are the deletions and in the right side or in color green the additions.
+
+![](fig/github-collab-10.png)
+
+Additionally, in GitHub you can use the option `Blame` to read the authors of changes per line. In this way, you can also read any related comment regarding why an specific line was edited.
+
+![](fig/github-collab-11.png)
+
+All of these is possible with a _collaboration workflow_ between contributors using Git and GitHub!
+
+::::::::::::::::: checklist
+
+### Checklist
+
+Key characteristics of Version control systems are:
+
+1. Keep the entire history of a file and inspect a file throughout its lifetime.
+
+2. Tag a particular version so you can return to them easily.
+
+<!--3. Experiment with code and feature without breaking the main project-->
+
+3. Facilitates collaborations and makes contributions transparent.
+
+:::::::::::::::::::::::::::
+
+## Get a copy of remote
+
 For the next step, get into pairs.  One person will be the "Owner" and the other
 will be the "Collaborator". The goal is that the Collaborator add changes into
 the Owner's repository. We will switch roles at the end, so both persons will
@@ -48,46 +86,77 @@ or check for email notification. Once there she can accept access to the Owner's
 Next, the Collaborator needs to download a copy of the Owner's repository to her
 machine. This is called "cloning a repo".
 
-The Collaborator doesn't want to overwrite her own version of `planets.git`, so
+The Collaborator doesn't want to overwrite her own version of `cases.git`, so
 needs to clone the Owner's repository to a different location than her own
 repository with the same name.
 
-To clone the Owner's repo into her `Desktop` folder, the Collaborator enters:
+::::::::::::::::: callout
+
+First, if you are in Rstudio, close your R Project from `File` > `Close Project`.
+
+:::::::::::::::::::::::::
+
+To clone the Owner's repo into Collaborator's folder, in the Console, the __Collaborator__ enters:
 
 ```bash
-$ git clone git@github.com:vlad/planets.git ~/Desktop/vlad-planets
+$ git clone https://github.com/vlad/cases.git vlad-cases
 ```
+
+<!--
+```bash
+$ git clone https://github.com/vlad/cases.git ~/Desktop/vlad-cases
+```
+-->
 
 Replace 'vlad' with the Owner's username.
 
+::::::::::::::::: callout
+
 If you choose to clone without the clone path
-(`~/Desktop/vlad-planets`) specified at the end,
-you will clone inside your own planets folder!
-Make sure to navigate to the `Desktop` folder first.
+(`vlad-cases`) specified at the end,
+you will clone inside your own cases folder!
+<!--Make sure to navigate to the `Desktop` folder first.-->
 
-![](fig/github-collaboration.svg){alt='After Creating Clone of Repository'}
+__ALSO:__ You only need to add the "clone path" when you have a local folder with the same name as the remote repository. This is not a common addition.
 
-The Collaborator can now make a change in her clone of the Owner's repository,
-exactly the same way as we've been doing before:
+:::::::::::::::::::::::::
 
+![In the Outbreak response scenario, now Wolfman has a local copy of the remote repository. They are already set up to collaborate for one project!](fig/github-collaboration.png){alt='After Creating Clone of Repository'}
+
+## Edit the clone
+
+
+The __Collaborator__ can now make a change in her clone of the Owner's repository,
+exactly the same way as we've been doing before.
+
+<!--
 ```bash
-$ cd ~/Desktop/vlad-planets
-$ nano pluto.txt
-$ cat pluto.txt
+$ cd ~/Desktop/vlad-cases
+$ nano dashboard.Rmd
+$ cat dashboard.Rmd
+```
+-->
+
+First, open the `vlad-cases` R project. If you are in Rstudio: `File` > `New Project...` and navigate to the directory location.
+
+Now, let's create a new file called `dashboard.Rmd` to complement our Situation report!
+
+```r
+usethis::edit_file("dashboard.Rmd")
 ```
 
 ```output
-It is so a planet!
+Let's create a dashboard!
 ```
 
 ```bash
-$ git add pluto.txt
-$ git commit -m "Add notes about Pluto"
+$ git add dashboard.Rmd
+$ git commit -m "Add notes about Dashboard"
 ```
 
 ```output
  1 file changed, 1 insertion(+)
- create mode 100644 pluto.txt
+ create mode 100644 dashboard.Rmd
 ```
 
 Then push the change to the *Owner's repository* on GitHub:
@@ -103,7 +172,7 @@ Delta compression using up to 4 threads.
 Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 306 bytes, done.
 Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/vlad/planets.git
+To https://github.com/vlad/cases.git
    9272da5..29aba7c  main -> main
 ```
 
@@ -151,7 +220,9 @@ associated with a repository. Here are some of the most useful ones:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-To download the Collaborator's changes from GitHub, the Owner now enters:
+## Download contributor edits
+
+To download the Collaborator's changes from GitHub, in the Console, the __Owner__ now enters:
 
 ```bash
 $ git pull origin main
@@ -163,17 +234,17 @@ remote: Counting objects: 100% (4/4), done.
 remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
-From https://github.com/vlad/planets
+From https://github.com/vlad/cases
  * branch            main     -> FETCH_HEAD
    9272da5..29aba7c  main     -> origin/main
 Updating 9272da5..29aba7c
 Fast-forward
- pluto.txt | 1 +
+ dashboard.Rmd | 1 +
  1 file changed, 1 insertion(+)
- create mode 100644 pluto.txt
+ create mode 100644 dashboard.Rmd
 ```
 
-Now the three repositories (Owner's local, Collaborator's local, and Owner's on
+Now the __three repositories__ (Owner's local, Collaborator's local, and Owner's on
 GitHub) are back in sync.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
@@ -225,7 +296,7 @@ will see the changes output in the terminal.
 On GitHub, the Collaborator can go to the repository and click on
 "commits" to view the most recent commits pushed to the repository.
 
-
+![Use `git fetch` to download the remote content but not update your local repo's working state, leaving your current work intact. Use `git pull` to download the remote content for the active local branch and immediately merge it. this can potentially cause conflicts.](fig/cut-git-verb_map-12.png)
 
 :::::::::::::::::::::::::
 
@@ -256,6 +327,38 @@ What are some of the benefits of using version control, Git and GitHub?
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::: challenge
+
+### Create your GitHub profile!
+
+Your profile page introduce you to other contributors on GitHub:
+
+![](fig/github-create-00.png)
+
+::::::::::::::::: solution
+
+To create this, go to the [GitHub Home page](https://github.com/), identify the section called __Introduce yourself with a profile README__. Click on `Create`:
+
+![](fig/github-create-01.png)
+
+Edit the lines in the template file. Then click on `Commit changes...`
+
+![](fig/github-create-02.png)
+
+To edit this in a local repository, clone it following the steps you learned!
+
+![](fig/github-create-03.png)
+
+::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::: checklist
+
+![Use `git clone` to obtain a development copy of a remote repository. Like `git init`, cloning is generally a one-time operation. Use `git pull` to update the local repository to match the content in the remote repository.](fig/cut-git-verb_map-10.png)
+
+:::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
