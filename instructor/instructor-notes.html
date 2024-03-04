@@ -237,7 +237,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="05-history.html">5. Exploring History</a>
+        <a href="06-ignore.html">5. Ignoring Things</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -249,7 +249,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="06-ignore.html">6. Ignoring Things</a>
+        <a href="07-github.html">6. Remotes in GitHub</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -261,7 +261,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="07-github.html">7. Remotes in GitHub</a>
+        <a href="08-collab.html">7. Collaborating</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -273,7 +273,7 @@
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="08-collab.html">8. Collaborating</a>
+        <a href="09-conflict.html">8. Conflicts</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -285,7 +285,7 @@
 <div class="accordion accordion-flush" id="accordionFlush10">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading10">
-        <a href="09-conflict.html">9. Conflicts</a>
+        <a href="15-wrapup.html">9. Wrap-up</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -297,7 +297,7 @@
 <div class="accordion accordion-flush" id="accordionFlush11">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading11">
-        <a href="15-wrapup.html">10. Wrap-up</a>
+        <a href="14-supplemental-rstudio.html">10. Supplemental: Using RStudio for Git</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -309,7 +309,7 @@
 <div class="accordion accordion-flush" id="accordionFlush12">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading12">
-        <a href="14-supplemental-rstudio.html">11. Supplemental: Using RStudio for Git</a>
+        <a href="05-history.html">11. Exploring History</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -589,8 +589,8 @@ there:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> mv .git temp_git</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> rm <span class="at">-rf</span>  temp_git</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span> mv .git temp_git</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="ex">$</span> rm <span class="at">-rf</span>  temp_git</span></code></pre>
 </div>
 <p>The challenge suggests that it is a bad idea to create a Git repo
 inside another repo. For more discussion on this topic, please see <a href="https://github.com/swcarpentry/git-novice/issues/272" class="external-link">this
@@ -684,7 +684,7 @@ one is your computer at work:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git clone https://github.com/vlad/planets.git planets-at-work</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">$</span> git clone https://github.com/vlad/planets.git planets-at-work</span></code></pre>
 </div>
 </li>
 <li>
@@ -709,7 +709,7 @@ argument:</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git clone https://github.com/vlad/planets.git vlad-planet</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">$</span> git clone https://github.com/vlad/planets.git vlad-planet</span></code></pre>
 </div>
 </li>
 <li><p>The most common mistake is that learners <code>push</code> before
@@ -814,7 +814,8 @@ same files concurrently.</p>
 <br><h3 id="01-basics-headingInstructor3">
 <a href="01-basics.html#headingInstructor3">Concept map</a><a class="anchor" aria-label="anchor" href="#01-basics-headingInstructor3"></a>
 </h3>
-<figure><img src="../fig/git-concept-03.drawio.png" alt="" class="figure mx-auto d-block"><figcaption>Concept map for automatic version control.</figcaption></figure><hr>
+<figure><img src="../fig/git-concept-03.drawio.png" alt="Concept map for automatic version control." class="figure mx-auto d-block"><div class="figcaption">Concept map for automatic version control.</div>
+</figure><hr>
 <br><h3 id="01-basics-headingInstructor4">
 <a href="01-basics.html#headingInstructor4">Instructor Note</a><a class="anchor" aria-label="anchor" href="#01-basics-headingInstructor4"></a>
 </h3>
@@ -878,13 +879,13 @@ next commit. <a href="https://coderefinery.github.io/git-intro/staging-area/#sta
 a testimony from StackOver Flow</a>.</p>
 </div>
 <hr>
-<br></section><section id="05-history"><h2 class="section-heading"><a href="05-history.html">Exploring History</a></h2>
-<hr class="half-width"></section><section id="06-ignore"><h2 class="section-heading"><a href="06-ignore.html">Ignoring Things</a></h2>
+<br></section><section id="06-ignore"><h2 class="section-heading"><a href="06-ignore.html">Ignoring Things</a></h2>
 <hr class="half-width"></section><section id="07-github"><h2 class="section-heading"><a href="07-github.html">Remotes in GitHub</a></h2>
 <hr class="half-width"></section><section id="08-collab"><h2 class="section-heading"><a href="08-collab.html">Collaborating</a></h2>
 <hr class="half-width"></section><section id="09-conflict"><h2 class="section-heading"><a href="09-conflict.html">Conflicts</a></h2>
 <hr class="half-width"></section><section id="15-wrapup"><h2 class="section-heading"><a href="15-wrapup.html">Wrap-up</a></h2>
 <hr class="half-width"></section><section id="14-supplemental-rstudio"><h2 class="section-heading"><a href="14-supplemental-rstudio.html">Supplemental: Using RStudio for Git</a></h2>
+<hr class="half-width"></section><section id="05-history"><h2 class="section-heading"><a href="05-history.html">Exploring History</a></h2>
 <hr class="half-width"></section><section id="10-open"><h2 class="section-heading"><a href="10-open.html">Open Science</a></h2>
 <hr class="half-width"></section><section id="11-licensing"><h2 class="section-heading"><a href="11-licensing.html">Licensing</a></h2>
 <hr class="half-width"></section><section id="12-citation"><h2 class="section-heading"><a href="12-citation.html">Citation</a></h2>
@@ -937,8 +938,8 @@ a testimony from StackOver Flow</a>.</p>
   "url": "https://epiverse-trace.github.io/git-rstudio-basics/instructor/instructor-notes.html",
   "identifier": "https://epiverse-trace.github.io/git-rstudio-basics/instructor/instructor-notes.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-04",
+  "datePublished": "2024-03-04"
 }
 
   </script><script>

@@ -203,7 +203,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="05-history.html">5. Exploring History</a>
+        <a href="06-ignore.html">5. Ignoring Things</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -212,7 +212,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="06-ignore.html">6. Ignoring Things</a>
+        <a href="07-github.html">6. Remotes in GitHub</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -221,7 +221,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="07-github.html">7. Remotes in GitHub</a>
+        <a href="08-collab.html">7. Collaborating</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -230,7 +230,7 @@
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="08-collab.html">8. Collaborating</a>
+        <a href="09-conflict.html">8. Conflicts</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -239,7 +239,7 @@
 <div class="accordion accordion-flush" id="accordionFlush10">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading10">
-        <a href="09-conflict.html">9. Conflicts</a>
+        <a href="15-wrapup.html">9. Wrap-up</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -248,7 +248,7 @@
 <div class="accordion accordion-flush" id="accordionFlush11">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading11">
-        <a href="15-wrapup.html">10. Wrap-up</a>
+        <a href="14-supplemental-rstudio.html">10. Supplemental: Using RStudio for Git</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -257,7 +257,7 @@
 <div class="accordion accordion-flush" id="accordionFlush12">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading12">
-        <a href="14-supplemental-rstudio.html">11. Supplemental: Using RStudio for Git</a>
+        <a href="05-history.html">11. Exploring History</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -357,7 +357,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Setting Up Git</h1>
-        <p>Last updated on 2023-11-27 |
+        <p>Last updated on 2024-03-04 |
         
         <a href="https://github.com/epiverse-trace/git-rstudio-basics/edit/main/episodes/02-setup.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -403,8 +403,10 @@ record of these changes is called a <a href="reference.html#commit">commit</a>. 
 about them. Instead of <em>saving copies</em> with different file names,
 we are <em>making commits</em> in the same file. Consecutive commits
 generate a linear history of changes.</p>
-<figure><img src="fig/git-commit.png" alt="Changes Are Saved Sequentially" class="figure mx-auto d-block"><figcaption>Each record of changes is called a
-<code>commit</code>. From: <a href="https://speakerdeck.com/alicebartlett/git-for-humans" class="external-link uri">https://speakerdeck.com/alicebartlett/git-for-humans</a></figcaption></figure><p>The complete history of commits for a particular project and their
+<figure><img src="fig/git-commit.png" alt="Changes Are Saved Sequentially" class="figure mx-auto d-block"><div class="figcaption">Each record of changes is called a
+<code>commit</code>. From: <a href="https://speakerdeck.com/alicebartlett/git-for-humans" class="external-link uri">https://speakerdeck.com/alicebartlett/git-for-humans</a>
+</div>
+</figure><p>The complete history of commits for a particular project and their
 metadata make up a <a href="reference.html#repository">repository</a>.
 Repositories can be kept in sync across different computers,
 facilitating collaboration among different people.</p>
@@ -424,7 +426,8 @@ called a `commit`.](fig/play-changes.svg){alt='Changes Are Saved Sequentially'}
 <div class="callout-content">
 <p>In this episode, we are going to use the <a href="https://docs.posit.co/ide/user/ide/guide/code/console.html" class="external-link">Rstudio
 Console</a>.</p>
-<figure><img src="fig/rstudio-tab-console.png" alt="" class="figure mx-auto d-block"><figcaption>Visual appearance of the Console.</figcaption></figure></div>
+<figure><img src="fig/rstudio-tab-console.png" alt="Visual appearance of the Console." class="figure mx-auto d-block"><div class="figcaption">Visual appearance of the Console.</div>
+</figure></div>
 </div>
 </div>
 </section><section id="set-up-git"><h2 class="section-heading">Set up <code>Git</code><a class="anchor" aria-label="anchor" href="#set-up-git"></a>
@@ -476,13 +479,12 @@ this lesson will include this information.</p>
 should be the same as the one used when setting up your GitHub account.
 If you are concerned about privacy, please review <a href="https://help.github.com/articles/keeping-your-email-address-private/" class="external-link">GitHub’s
 instructions for keeping your email address private</a>.</p>
-<div id="keeping-your-email-private" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="keeping-your-email-private" class="callout-inner">
-<h3 class="callout-title">Keeping your email private<a class="anchor" aria-label="anchor" href="#keeping-your-email-private"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="keeping-your-email-private">Keeping your email private<a class="anchor" aria-label="anchor" href="#keeping-your-email-private"></a></h3>
 <div class="callout-content">
 <p>If you elect to use a private email address with GitHub, then use
 that same email address for the <code>user.email</code> value,
@@ -583,16 +585,16 @@ check all the options in the figure below.</p>
 <code>usethis::create_github_token()</code> will pre-select all the
 recommended scopes for you!</p>
 <p>Click “Generate token”.</p>
-<figure><img src="fig/git-token.png" alt="" class="figure mx-auto d-block"><figcaption>Visual display with the recommended scopes selected.
-Optional scopes are “gist” and “delete_repo” to create a <a href="https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists" class="external-link">gist</a>
-and delete repositories.</figcaption></figure><p>Copy your token. Save it for the next step.</p>
-<div id="callout2" class="callout callout">
+<figure><img src="fig/git-token.png" alt="Visual display with the recommended scopes selected. Optional scopes are “gist” and “delete_repo” to create a gist and delete repositories." class="figure mx-auto d-block"><div class="figcaption">Visual display with the recommended scopes
+selected. Optional scopes are “gist” and “delete_repo” to create a <a href="https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists" class="external-link">gist</a>
+and delete repositories.</div>
+</figure><p>Copy your token. Save it for the next step.</p>
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout2"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>Briefly:</p>
 <ul><li>
@@ -688,7 +690,8 @@ episode!)</p>
 is a snapshot of a version of a repository. In that sense, a repository
 can have more than one branch. WHAT?!! How is that possible? We are
 going to see that in coming episodes!</p>
-<figure><img src="fig/main-branch.png" alt="" class="figure mx-auto d-block"><figcaption>Version history within a single branch.</figcaption></figure><p>Git (2.28+) allows configuration of the name of the branch created
+<figure><img src="fig/main-branch.png" alt="Version history within a single branch." class="figure mx-auto d-block"><div class="figcaption">Version history within a single branch.</div>
+</figure><p>Git (2.28+) allows configuration of the name of the branch created
 when you initialize any new repository. Dracula decides to use that
 feature to set it to <code>main</code> so it matches the cloud service
 he will eventually use.</p>
@@ -819,13 +822,12 @@ $ git help
 
 -->
 
-<div id="callout3" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout3"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>When using the <a href="https://glosario.carpentries.org/en/#console" class="external-link">Terminal</a>, this
 step is known as <code>git config</code> with the <code>--global</code>
@@ -849,8 +851,6 @@ If you are interested on this, [take a look to this chapter of the happygitwithr
 email address, and other preferences once per machine.</li>
 <li>Use <code>usethis::use_git_config()</code> to configure Git in
 Rstudio.</li>
-<li>Use <code>usethis::git_default_branch_configure()</code> to define
-the default branch name.</li>
 <li>Use <code>usethis::git_sitrep()</code> to verify your
 configuration.</li>
 </ul></div>
@@ -914,8 +914,8 @@ configuration.</li>
   "url": "https://epiverse-trace.github.io/git-rstudio-basics/02-setup.html",
   "identifier": "https://epiverse-trace.github.io/git-rstudio-basics/02-setup.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2023-11-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-04",
+  "datePublished": "2024-03-04"
 }
 
   </script><script>

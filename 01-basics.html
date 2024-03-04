@@ -202,7 +202,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="05-history.html">5. Exploring History</a>
+        <a href="06-ignore.html">5. Ignoring Things</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -211,7 +211,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="06-ignore.html">6. Ignoring Things</a>
+        <a href="07-github.html">6. Remotes in GitHub</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -220,7 +220,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="07-github.html">7. Remotes in GitHub</a>
+        <a href="08-collab.html">7. Collaborating</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -229,7 +229,7 @@
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="08-collab.html">8. Collaborating</a>
+        <a href="09-conflict.html">8. Conflicts</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -238,7 +238,7 @@
 <div class="accordion accordion-flush" id="accordionFlush10">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading10">
-        <a href="09-conflict.html">9. Conflicts</a>
+        <a href="15-wrapup.html">9. Wrap-up</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -247,7 +247,7 @@
 <div class="accordion accordion-flush" id="accordionFlush11">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading11">
-        <a href="15-wrapup.html">10. Wrap-up</a>
+        <a href="14-supplemental-rstudio.html">10. Supplemental: Using RStudio for Git</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -256,7 +256,7 @@
 <div class="accordion accordion-flush" id="accordionFlush12">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading12">
-        <a href="14-supplemental-rstudio.html">11. Supplemental: Using RStudio for Git</a>
+        <a href="05-history.html">11. Exploring History</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -356,7 +356,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Automated Version Control</h1>
-        <p>Last updated on 2023-11-27 |
+        <p>Last updated on 2024-03-04 |
         
         <a href="https://github.com/epiverse-trace/git-rstudio-basics/edit/main/episodes/01-basics.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -397,13 +397,14 @@ work.</li>
 control to keep track of what one person did and when. Even if you
 aren’t collaborating with other people, version control may have look
 like this situation:</p>
-<figure><img src="fig/git-manual-version-system.png" alt="One same files called manuscript with modification dates as prefix and what a person did as sufix." class="figure mx-auto d-block"><figcaption>Tracking changes for the <code>manuscript.docx</code>
-file.</figcaption></figure><p>We all started by replicating the Version control system of our
-initial community. We all need to differentiate files from previous
-versions or different colleagues (supervisors or reviewers). For those
-reasons, we tag each version to track what one person did (e.g., with a
-suffix) or when (e.g., with a prefix).</p>
-<p>Does it seem unnecessary to you to have multiple nearly identical
+<figure><img src="fig/git-never-use-the-word-final.png" alt="One same files called Press release.doc with modifications in different files using the words FINAL, VERSION, REVISED, APPROVED. Source: Proper Discord." class="figure mx-auto d-block"><div class="figcaption">Tracking changes for the
+<code>Press release.doc</code> file. <a href="https://properdiscord.com/2012/09/13/never-use-the-word-final-in-a-filename/" class="external-link">Never
+use the word “final” in a filename</a>.</div>
+</figure><!--
+![Tracking changes for the `manuscript.docx` file.](fig/git-manual-version-system.png){alt='One same files called manuscript with modification dates as prefix and what a person did as sufix.'}
+
+We all started by replicating the Version control system of our initial community. We all need to differentiate files from previous versions or different colleagues (supervisors or reviewers). For those reasons, we tag each version to track what one person did (e.g., with a suffix) or when (e.g., with a prefix).
+--><p>Does it seem unnecessary to you to have multiple nearly identical
 versions of the same document? Possibly yes. But this Version control
 system opens the possibility of returning to a specific version in case
 you erased something that you think now is essential.</p>
@@ -429,19 +430,23 @@ Microsoft Word’s <a href="https://support.office.com/en-us/article/Track-chang
 Changes</a>, Google Docs’ <a href="https://support.google.com/docs/answer/190843?hl=en" class="external-link">version
 history</a>, or LibreOffice’s <a href="https://help.libreoffice.org/Common/Recording_and_Displaying_Changes" class="external-link">Recording
 and Displaying Changes</a>. Let’s illustrate how Google Docs works.</p>
-<figure><img src="fig/gdocs-01.png" alt="" class="figure mx-auto d-block"><figcaption>Tracking changes for the <code>git-test</code>
-file.</figcaption></figure><p>To use Google Docs version history click <code>File</code> &gt;
+<figure><img src="fig/gdocs-01.png" alt="Tracking changes for the git-test file." class="figure mx-auto d-block"><div class="figcaption">Tracking changes for the <code>git-test</code>
+file.</div>
+</figure><p>To use Google Docs version history click <code>File</code> &gt;
 <code>Version history</code> &gt; <code>See version history</code>. This
 highlights the new content added to the file in that version only.</p>
-<figure><img src="fig/gdocs-03.png" alt="" class="figure mx-auto d-block"><figcaption>The most recent version of the <code>git-test</code>
-file is called “third version”.</figcaption></figure><p>We can move to any previous version tagged with two metadata values:
+<figure><img src="fig/gdocs-03.png" alt="The most recent version of the git-test file is called “third version”." class="figure mx-auto d-block"><div class="figcaption">The most recent version of the
+<code>git-test</code> file is called “third version”.</div>
+</figure><p>We can move to any previous version tagged with two metadata values:
 the modification date and the name of the author.</p>
-<figure><img src="fig/gdocs-04.png" alt="" class="figure mx-auto d-block"><figcaption>We can view the “first version” of the file
+<figure><img src="fig/gdocs-04.png" alt="We can view the “first version” of the file git-test. We can also restore it with the Restore this version button." class="figure mx-auto d-block"><div class="figcaption">We can view the “first version” of the file
 <code>git-test</code>. We can also restore it with the
-<code>Restore this version</code> button.</figcaption></figure><p>Google Docs’ version history tool is an automatic Version control
+<code>Restore this version</code> button.</div>
+</figure><p>Google Docs’ version history tool is an automatic Version control
 system for single Word/Doc files that works online.</p>
-<figure><img src="fig/ProjectHistory.jpg" alt="" class="figure mx-auto d-block"><figcaption>The Turing Way project illustration by Scriberia.
-Used under a CC-BY 4.0 licence. DOI: <a href="https://zenodo.org/doi/10.5281/zenodo.3332807" class="external-link uri">https://zenodo.org/doi/10.5281/zenodo.3332807</a>.</figcaption></figure></section><section id="version-control-systems"><h2 class="section-heading">Version control systems<a class="anchor" aria-label="anchor" href="#version-control-systems"></a>
+<figure><img src="fig/ProjectHistory.jpg" alt="The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: https://zenodo.org/doi/10.5281/zenodo.3332807." class="figure mx-auto d-block"><div class="figcaption">The Turing Way project illustration by
+Scriberia. Used under a CC-BY 4.0 licence. DOI: <a href="https://zenodo.org/doi/10.5281/zenodo.3332807" class="external-link uri">https://zenodo.org/doi/10.5281/zenodo.3332807</a>.</div>
+</figure></section><section id="version-control-systems"><h2 class="section-heading">Version control systems<a class="anchor" aria-label="anchor" href="#version-control-systems"></a>
 </h2>
 <hr class="half-width"><p>Version control systems start with a base version of the document and
 then record changes you make each step of the way. You can think of it
@@ -540,13 +545,14 @@ Wilson et al. 2017</a>)</p></li>
 </ul><p>Plain text files can be text, code, and data. Example for each of
 these are Markdown files (<code>.md</code>), R files (<code>.R</code>),
 and <code>.csv</code> or <code>.tsv</code> files, respectively.</p>
-<figure><img src="fig/plain-text-files.png" alt="" class="figure mx-auto d-block"><figcaption>Examples of non-plain and plain text files.</figcaption></figure><div id="callout1" class="callout callout">
+<figure><img src="fig/plain-text-files.png" alt="Examples of non-plain and plain text files." class="figure mx-auto d-block"><div class="figcaption">Examples of non-plain and plain text
+files.</div>
+</figure><div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>We can use <code>Git</code> to track changes of these plain text
 files. However, for <a href="https://www.r4epi.com/importing-plain-text-files.html" class="external-link">plain text
@@ -560,10 +566,12 @@ different version control systems.</p>
 to generate manuscripts, websites, and R packages. These three products
 are outputs of <strong>Open Science</strong> projects, that leads to
 <em>Reproducible research</em> and <em>Sustainable software</em>.</p>
-<figure><img src="fig/gradient-reproducibility.png" alt="" class="figure mx-auto d-block"><figcaption>We can increase the reproducibility of our Open
+<figure><img src="fig/gradient-reproducibility.png" alt="We can increase the reproducibility of our Open science projects with version control sytems like Git. Text and final results can be connected and executable by Data and code. From: “Ciencia reproducible: qué, por qué, cómo” https://www.revistaecosistemas.net/index.php/ecosistemas/article/view/1178" class="figure mx-auto d-block"><div class="figcaption">We can increase the reproducibility of our Open
 science projects with version control sytems like <code>Git</code>. Text
 and final results can be connected and executable by Data and code.
-From: “Ciencia reproducible: qué, por qué, cómo” <a href="https://www.revistaecosistemas.net/index.php/ecosistemas/article/view/1178" class="external-link uri">https://www.revistaecosistemas.net/index.php/ecosistemas/article/view/1178</a></figcaption></figure><div id="exercise" class="callout discussion">
+From: “Ciencia reproducible: qué, por qué, cómo” <a href="https://www.revistaecosistemas.net/index.php/ecosistemas/article/view/1178" class="external-link uri">https://www.revistaecosistemas.net/index.php/ecosistemas/article/view/1178</a>
+</div>
+</figure><div id="exercise" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
@@ -659,8 +667,8 @@ text files, like <code>.R</code> and <code>.Rmd</code> files.</li>
   "url": "https://epiverse-trace.github.io/git-rstudio-basics/01-basics.html",
   "identifier": "https://epiverse-trace.github.io/git-rstudio-basics/01-basics.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2023-11-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-04",
+  "datePublished": "2024-03-04"
 }
 
   </script><script>

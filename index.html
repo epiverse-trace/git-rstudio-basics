@@ -154,9 +154,11 @@
         
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#install-r-and-rstudio">Install R and Rstudio</a></li>
-<li><a href="#installing-git">Installing Git</a></li>
-<li><a href="#creating-a-github-account">Creating a GitHub Account</a></li>
+        <ul><li><a href="#motivation">Motivation</a></li>
+<li><a href="#the-scenario">The scenario</a></li>
+<li><a href="#software-setup">Software Setup</a></li>
+<li><a href="#preparing-your-working-directory">5. Preparing Your Working Directory</a></li>
+<li><a href="#your-questions">Your Questions</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
         
@@ -202,7 +204,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="05-history.html">5. Exploring History</a>
+        <a href="06-ignore.html">5. Ignoring Things</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -211,7 +213,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="06-ignore.html">6. Ignoring Things</a>
+        <a href="07-github.html">6. Remotes in GitHub</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -220,7 +222,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="07-github.html">7. Remotes in GitHub</a>
+        <a href="08-collab.html">7. Collaborating</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -229,7 +231,7 @@
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="08-collab.html">8. Collaborating</a>
+        <a href="09-conflict.html">8. Conflicts</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -238,7 +240,7 @@
 <div class="accordion accordion-flush" id="accordionFlush10">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading10">
-        <a href="09-conflict.html">9. Conflicts</a>
+        <a href="15-wrapup.html">9. Wrap-up</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -247,7 +249,7 @@
 <div class="accordion accordion-flush" id="accordionFlush11">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading11">
-        <a href="15-wrapup.html">10. Wrap-up</a>
+        <a href="14-supplemental-rstudio.html">10. Supplemental: Using RStudio for Git</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -256,7 +258,7 @@
 <div class="accordion accordion-flush" id="accordionFlush12">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading12">
-        <a href="14-supplemental-rstudio.html">11. Supplemental: Using RStudio for Git</a>
+        <a href="05-history.html">11. Exploring History</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -348,25 +350,28 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><h1 class="schedule-heading">Summary and Setup</h1>
       
+<p>This is an <a href="https://epiverse-trace.github.io/" class="external-link">Epiverse-TRACE</a> tutorial
+built with <a href="https://carpentries.github.io/workbench/" class="external-link">The
+Carpentries Workbench</a>.</p>
 
-<blockquote>
-<p>Do you want to participate in a live workshop? <a href="https://epiverse-trace.github.io/learn/git-training-01/" class="external-link">Sign up
-in our announcement page!</a></p>
-</blockquote>
-<section id="motivation"><h2 class="section-heading">Motivation<a class="anchor" aria-label="anchor" href="#motivation"></a>
+      <section id="setup"><section id="motivation"><h2 class="section-heading">Motivation<a class="anchor" aria-label="anchor" href="#motivation"></a>
 </h2>
 <hr class="half-width"><p>Reproducible science not only reduce errors, but speeds up the
 process of re-runing your analysis and auto-generate updated documents
 with the results. <strong>Git is an essential part of this
 process!</strong></p>
-<figure><img src="fig/non-reproducible-workflow.png" alt="Video: A Non Reproducible Workflow" class="figure mx-auto d-block"><figcaption>“A reproducible workflow”. 1:44 minutes. Video by
-Ignasi Bartomeus (<span class="citation">@ibartomeus</span>) &amp;
+<figure><img src="fig/non-reproducible-workflow.png" alt="Video: A Non Reproducible Workflow" class="figure mx-auto d-block"><div class="figcaption">“A reproducible workflow”. 1:44 minutes. Video
+by Ignasi Bartomeus (<span class="citation">@ibartomeus</span>) &amp;
 Francisco Rodríguez-Sánchez (<span class="citation">@frod_san</span>).
-CC-by, <a href="https://youtu.be/s3JldKoA0zw?si=xRzgVJvOTX5LubxN" class="external-link uri">https://youtu.be/s3JldKoA0zw?si=xRzgVJvOTX5LubxN</a></figcaption></figure></section><section id="the-scenario"><h2 class="section-heading">The scenario<a class="anchor" aria-label="anchor" href="#the-scenario"></a>
+CC-by, <a href="https://youtu.be/s3JldKoA0zw?si=xRzgVJvOTX5LubxN" class="external-link uri">https://youtu.be/s3JldKoA0zw?si=xRzgVJvOTX5LubxN</a>
+</div>
+</figure></section><section id="the-scenario"><h2 class="section-heading">The scenario<a class="anchor" aria-label="anchor" href="#the-scenario"></a>
 </h2>
-<hr class="half-width"><figure><img src="fig/wolfman_dracula-03.jpg" alt="wolfman and dracula using computers for data analysis" class="figure mx-auto d-block"><figcaption>Image by Bing, 2023, <a href="https://creativecommons.org/licenses/by/4.0/" class="external-link">CC BY 4.0</a>,
+<hr class="half-width"><figure><img src="fig/wolfman_dracula-03.jpg" alt="wolfman and dracula using computers for data analysis" class="figure mx-auto d-block"><div class="figcaption">Image by Bing, 2023, <a href="https://creativecommons.org/licenses/by/4.0/" class="external-link">CC BY 4.0</a>,
 created with <a href="https://www.bing.com/create" class="external-link">Bing Image Creator
-powered by DALL·E 3</a></figcaption></figure><p>Wolfman and Dracula have been hired as data analysts by Outbreak
+powered by DALL·E 3</a>
+</div>
+</figure><p>Wolfman and Dracula have been hired as data analysts by Outbreak
 Missions (a Rapid Support Team for outbreak response services) to
 investigate a disease outbreak. They want to be able to work on the
 development of a reproducible <a href="https://choleraoutbreak.org/book-page/appendix-7-outline-outbreak-situation-report" class="external-link">Situation
@@ -378,38 +383,36 @@ the other to finish, but</li>
 things will be lost, overwritten, or duplicated.</li>
 </ul><p>A colleague suggests using <a href="reference.html#version-control">version control</a> to manage
 their work!</p>
-<!--
-Version control is better than mailing files back and forth:
-
-- Nothing that is committed to version control is ever lost, unless
-  you work really, really hard at it. Since all old versions of
-  files are saved, it's always possible to go back in time to see
-  exactly who wrote what on a particular day, or what version of a
-  program was used to generate a particular set of results.
-
+<p><strong>Version control is better than mailing files back and
+forth:</strong></p>
+<ul><li><p>Nothing that is saved to version control is ever lost, unless you
+work really, really hard at it.</p></li>
+<li><p>Since all old versions of files are saved, it’s always possible
+to go back in time to see exactly <em>who wrote what</em> on a
+particular day, or <em>what version of a program was used</em> to
+generate a particular set of results.</p></li>
+</ul><!--
 - As we have this record of who made what changes when, we know who to ask
   if we have questions later on, and, if needed, revert to a previous
   version, much like the "undo" feature in an editor.
-
-- When several people collaborate in the same project, it's possible to
-  accidentally overlook or overwrite someone's changes. The version control
-  system automatically notifies users whenever there's a conflict between one
-  person's work and another's.
-
+--><ul><li>When several people collaborate in the same project, it’s possible
+to accidentally overlook or overwrite someone’s changes. The version
+control system <em>automatically notifies users whenever there’s a
+conflict</em> between one person’s work and another’s.</li>
+</ul><!--
 Teams are not the only ones to benefit from version control: lone
 researchers can benefit immensely.  Keeping a record of what was
 changed, when, and why is extremely useful for all researchers if they
 ever need to come back to the project later on (e.g., a year later,
 when memory has faded).
-
-Version control is the lab notebook of the digital world: it's what
-professionals use to keep track of what they've done and to
-collaborate with other people.  Every large software development
-project relies on it, and most programmers use it for their small jobs
-as well.  And it isn't just for software: books,
-papers, small data sets, and anything that changes over time or needs
-to be shared can and should be stored in a version control system.
--->
+--><p><strong>Version control is the lab notebook of the digital
+world:</strong> it’s what professionals use to keep track of what
+they’ve done and to collaborate with other people. Every large software
+development project relies on it, and most programmers use it for their
+small jobs as well. And <strong>it isn’t just for software</strong>:
+books, papers, small data sets, and <em>anything that changes over time
+or needs to be shared</em> can and should be stored in a version control
+system.</p>
 <div id="prerequisites" class="callout prereq">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check"></i>
@@ -418,20 +421,57 @@ to be shared can and should be stored in a version control system.
 <h3 class="callout-title">Prerequisites<a class="anchor" aria-label="anchor" href="#prerequisites"></a>
 </h3>
 <div class="callout-content">
-<p>In this lesson we use Git from Rstudio. Some previous experience with
-R and Bash is expected, <em>but isn’t mandatory</em>.</p>
+<p>In this tutorial we use Git from within RStudio. Some previous
+experience with R and Bash is expected, <em>but isn’t
+mandatory</em>.</p>
 </div>
 </div>
 </div>
-</section><section id="setup"><section id="install-r-and-rstudio"><h2 class="section-heading">Install R and Rstudio<a class="anchor" aria-label="anchor" href="#install-r-and-rstudio"></a>
+</section><section id="software-setup"><h2 class="section-heading">Software Setup<a class="anchor" aria-label="anchor" href="#software-setup"></a>
 </h2>
-<hr class="half-width"><p>Follow these instructions <a href="https://posit.co/download/rstudio-desktop/" class="external-link uri">https://posit.co/download/rstudio-desktop/</a></p>
+<hr class="half-width"><p>Follow these five steps:</p>
 <div class="section level3">
-<h3 id="install-r-packages">Install R packages<a class="anchor" aria-label="anchor" href="#install-r-packages"></a></h3>
-<p>These installation steps could ask you
-<code>? Do you want to continue (Y/n)</code> write <code>y</code> and
-press ENTER.</p>
-<p>Install all these packages:</p>
+<h3 id="install-or-upgrade-r-and-rstudio">1. Install or upgrade R and RStudio<a class="anchor" aria-label="anchor" href="#install-or-upgrade-r-and-rstudio"></a></h3>
+<p>To install R and RStudio, follow these instructions <a href="https://posit.co/download/rstudio-desktop/" class="external-link uri">https://posit.co/download/rstudio-desktop/</a>.</p>
+<p>Already installed? <strong>Hold on: This is a great time to make sure
+your R installation is current.</strong></p>
+<p>This tutorial requires R version 4.0.0 or later.</p>
+<p>To check if your R version is up to date:</p>
+<ul><li><p>In RStudio your R version will be printed in <a href="https://docs.posit.co/ide/user/ide/guide/code/console.html" class="external-link">the
+console window</a>. Or run <code>sessionInfo()</code> there.</p></li>
+<li>
+<p><strong>To update R</strong>, download and install the latest
+version from the <a href="https://cran.rstudio.com/" class="external-link">R project
+website</a> for your operating system.</p>
+<ul><li>After installing a new version, you will have to reinstall all your
+packages with the new version.</li>
+<li>For Windows, the <a href="https://talgalili.github.io/installr/" class="external-link">installr</a> package can upgrade your R
+version and migrate your package library.</li>
+</ul></li>
+<li><p><strong>To update RStudio</strong>, open RStudio and click on
+<code>Help &gt; Check for Updates</code>. If a new version is available
+follow the instructions on the screen.</p></li>
+</ul><div id="callout1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
+<div class="callout-content">
+<p>While this may sound scary, it is <strong>far more common</strong> to
+run into issues due to using out-of-date versions of R or R packages.
+Keeping up with the latest versions of R, RStudio, and any packages you
+regularly use is a good practice.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="install-r-packages">2. Install R packages<a class="anchor" aria-label="anchor" href="#install-r-packages"></a></h3>
+<p>Open RStudio and <strong>copy and paste</strong> the following code
+chunk into the <a href="https://docs.posit.co/ide/user/ide/guide/code/console.html" class="external-link">console
+window</a>, then press the <kbd>Enter</kbd> (Windows and Linux) or
+<kbd>Return</kbd> (MacOS) to execute the command:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -439,37 +479,60 @@ press ENTER.</p>
 <code class="sourceCode R"><span><span class="kw">if</span><span class="op">(</span><span class="op">!</span><span class="kw">require</span><span class="op">(</span><span class="st">"pak"</span><span class="op">)</span><span class="op">)</span> <span class="fu">install.packages</span><span class="op">(</span><span class="st">"pak"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">new</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">"gh"</span>,</span>
-<span>         <span class="st">"usethis"</span>,</span>
-<span>         <span class="st">"tidyverse"</span>,</span>
-<span>         <span class="st">"here"</span><span class="op">)</span></span>
+<span>         <span class="st">"usethis"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu">pak</span><span class="fu">::</span><span class="fu">pak</span><span class="op">(</span><span class="va">new</span><span class="op">)</span></span></code></pre>
 </div>
+<p>These installation steps could ask you
+<code>? Do you want to continue (Y/n)</code> write <code>Y</code> and
+press <kbd>Enter</kbd>.</p>
+<p>You should update <strong>all of the packages</strong> required for
+the tutorial, even if you installed them relatively recently. New
+versions bring improvements and important bug fixes.</p>
+<p>When the installation has finished, you can try to load the packages
+by pasting the following code into the console:</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw">library</span><span class="op">(</span><span class="va">gh</span><span class="op">)</span></span>
+<span><span class="kw">library</span><span class="op">(</span><span class="va">usethis</span><span class="op">)</span></span></code></pre>
 </div>
-</section><section id="installing-git"><h2 class="section-heading">Installing Git<a class="anchor" aria-label="anchor" href="#installing-git"></a>
-</h2>
-<hr class="half-width"><p>Follow this instructions on installing Git for various operating
-systems.</p>
-<ul><li><a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">Git
-installation on Windows</a></li>
-<li><a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">Git
-installation on MacOS</a></li>
-<li><a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">Git
-installation on Linux</a></li>
-</ul><p>You can also follow <a href="https://happygitwithr.com/install-git.html" class="external-link">happygitwithr
-recommendations</a> for each Operating system.</p>
-</section><section id="creating-a-github-account"><h2 class="section-heading">Creating a GitHub Account<a class="anchor" aria-label="anchor" href="#creating-a-github-account"></a>
-</h2>
-<hr class="half-width"><p>You will need an account for <a href="https://github.com" class="external-link">GitHub</a>
-to follow episodes 7 &amp; 8 in this lesson.</p>
+<p>If you do NOT see an Error like
+<code>there is no package called ‘...’</code> you are good to go! If you
+do, <a href="#your-questions">contact us</a>!</p>
+</div>
+<div class="section level3">
+<h3 id="installing-git">3. Installing Git<a class="anchor" aria-label="anchor" href="#installing-git"></a></h3>
+<p>Follow the <a href="https://happygitwithr.com/install-git.html" class="external-link">“Happy Git with R”
+instructions</a> on installing Git for each Operating system:</p>
+<ul><li><a href="https://gitforwindows.org/" class="external-link">Git for Windows</a></li>
+<li><a href="https://happygitwithr.com/install-git.html#macos" class="external-link">MacOS</a></li>
+<li><a href="https://happygitwithr.com/install-git.html#linux" class="external-link">Linux</a></li>
+</ul></div>
+<div class="section level3">
+<h3 id="creating-a-github-account">4. Creating a GitHub Account<a class="anchor" aria-label="anchor" href="#creating-a-github-account"></a></h3>
+<p>You will need an account for <a href="https://github.com" class="external-link">GitHub</a>
+to follow the last episodes in this tutorial.</p>
+<div id="follow-all-these-steps" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="follow-all-these-steps" class="callout-inner">
+<h3 class="callout-title">Follow all these steps<a class="anchor" aria-label="anchor" href="#follow-all-these-steps"></a>
+</h3>
+<div class="callout-content">
 <ol style="list-style-type: decimal"><li>Go to <a href="https://github.com" class="external-link uri">https://github.com</a> and follow the “Sign up” link at the
 top-right of the window.</li>
 <li>Follow the instructions to create an account.</li>
 <li>Verify your email address with GitHub.</li>
-<li>Configure multifactor authentication (see below).</li>
-</ol><div class="section level3">
-<h3 id="multi-factor-authentication">Multi-factor Authentication<a class="anchor" aria-label="anchor" href="#multi-factor-authentication"></a></h3>
-<p>In 2023, GitHub introduced a requirement for all accounts to have <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication" class="external-link">multi-factor
+<li>Configure the Multi-factor Authentication (see below).</li>
+</ol></div>
+</div>
+</div>
+<div class="section level4">
+<h4 id="multi-factor-authentication">Multi-factor Authentication<a class="anchor" aria-label="anchor" href="#multi-factor-authentication"></a></h4>
+<p>GitHub requires all accounts to have <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication" class="external-link">multi-factor
 authentication (2FA)</a> configured for extra security. Several options
 exist for setting up 2FA, which are summarised here:</p>
 <ol style="list-style-type: decimal"><li>If you already use an authenticator app, like <a href="https://support.google.com/accounts/answer/1066447?hl=en&amp;co=GENIE.Platform%3DiOS&amp;oco=0" class="external-link">Google
@@ -493,19 +556,38 @@ Titan key</a>.</li>
 </ol></li>
 </ol><p>The GitHub documentation provides <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication" class="external-link">more
 details about configuring 2FA</a>.</p>
+</div>
+</div>
+</section><section id="preparing-your-working-directory"><h2 class="section-heading">5. Preparing Your Working Directory<a class="anchor" aria-label="anchor" href="#preparing-your-working-directory"></a>
+</h2>
+<hr class="half-width"><p>We need to be out of any R project. In Rstudio, close your Project
+from <code>File</code> &gt; <code>Close Project</code>. You can confirm
+this in the upper right corner, displaying
+<code>Project: (None)</code>.</p>
+<p>Make sure NOT to work in a folder sync-up with any <em>file hosting
+services</em> like OneDrive or Dropbox.</p>
+<p>If you have any of these services on your computer, go to the <a href="https://docs.posit.co/ide/user/ide/guide/code/console.html" class="external-link">console
+window</a> and run:</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">getwd</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+</div>
+<p>Verify your current working directory is out of any sync folder.</p>
 <!--
-----------------
-
-## Preparing Your Working Directory
-
-We'll do our work in the `Desktop` folder so make sure you change your working directory to it with:
+We'll do our work in the `Desktop` folder. 
+Change your working directory to it with:
 
 ```bash
 $ cd
 $ cd Desktop
 ```
 -->
-</div>
+</section><section id="your-questions"><h2 class="section-heading">Your Questions<a class="anchor" aria-label="anchor" href="#your-questions"></a>
+</h2>
+<hr class="half-width"><p>If you need any assistance installing the software or have any other
+questions about this tutorial, please send an email to <a href="mailto:andree.valle-campos@lshtm.ac.uk" class="email">andree.valle-campos@lshtm.ac.uk</a></p>
 </section></section></main><nav class="bottom-pagination mx-md-4" aria-label="Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link float-end" href="01-basics.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
@@ -555,8 +637,8 @@ $ cd Desktop
   "url": "https://epiverse-trace.github.io/git-rstudio-basics/index.html",
   "identifier": "https://epiverse-trace.github.io/git-rstudio-basics/index.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-04",
+  "datePublished": "2024-03-04"
 }
 
   </script><script>

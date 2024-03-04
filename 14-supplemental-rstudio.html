@@ -92,11 +92,11 @@
   Version Control with Git in Rstudio
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 86%" class="percentage">
-    86%
+<aside class="col-md-12 lesson-progress"><div style="width: 76%" class="percentage">
+    76%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 86%" aria-valuenow="86" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 76%" aria-valuenow="76" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -189,7 +189,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="05-history.html">5. Exploring History</a>
+        <a href="06-ignore.html">5. Ignoring Things</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -198,7 +198,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="06-ignore.html">6. Ignoring Things</a>
+        <a href="07-github.html">6. Remotes in GitHub</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -207,7 +207,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="07-github.html">7. Remotes in GitHub</a>
+        <a href="08-collab.html">7. Collaborating</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -216,7 +216,7 @@
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="08-collab.html">8. Collaborating</a>
+        <a href="09-conflict.html">8. Conflicts</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -225,16 +225,7 @@
 <div class="accordion accordion-flush" id="accordionFlush10">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading10">
-        <a href="09-conflict.html">9. Conflicts</a>
-    </div><!--/div.accordion-header-->
-        
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush11">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading11">
-        <a href="15-wrapup.html">10. Wrap-up</a>
+        <a href="15-wrapup.html">9. Wrap-up</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -246,7 +237,7 @@
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
-        11. Supplemental: Using RStudio for Git
+        10. Supplemental: Using RStudio for Git
         </span>
       </button>
     </div><!--/div.accordion-header-->
@@ -257,6 +248,15 @@
 <li><a href="#create-a-branch">Create a branch</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
+        
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush12">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading12">
+        <a href="05-history.html">11. Exploring History</a>
+    </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -340,7 +340,7 @@
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="15-wrapup.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="10-open.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="05-history.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
@@ -348,8 +348,8 @@
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
           Previous: Wrap-up
         </a>
-        <a class="chapter-link float-end" href="10-open.html" rel="next">
-          Next: Open Science... 
+        <a class="chapter-link float-end" href="05-history.html" rel="next">
+          Next: Exploring History... 
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
@@ -423,13 +423,12 @@ Directory”:</p>
 <figure><img src="fig/RStudio_screenshot_existingdirectory.png" alt='RStudio screenshot showing New Project dialog window with "Create project from existing directory" selected' class="figure mx-auto d-block"></figure><p>For a new directory, <a href="https://nceas.github.io/oss-lessons/version-control/4-getting-started-with-git-in-RStudio.html#versioning_new_work" class="external-link">follow
 the steps in this section about “Versioning new work”</a>.</p>
 <figure><img src="fig/git-rstudio-init-02.png" class="figure mx-auto d-block"></figure><p>To clone a remote repository from Rstudio, follow these steps:</p>
-<figure><img src="fig/git-rstudio-init-03.png" class="figure mx-auto d-block"></figure><div id="do-you-see-a-version-control-option" class="callout callout">
+<figure><img src="fig/git-rstudio-init-03.png" class="figure mx-auto d-block"></figure><div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="do-you-see-a-version-control-option" class="callout-inner">
-<h3 class="callout-title">Do You See a “Version Control” Option?<a class="anchor" aria-label="anchor" href="#do-you-see-a-version-control-option"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="do-you-see-a-version-control-option">Do You See a “Version Control” Option?<a class="anchor" aria-label="anchor" href="#do-you-see-a-version-control-option"></a></h3>
 <div class="callout-content">
 <p>Although we’re not going to use it here, there should be a “version
 control” option on this menu. That is what you would click on if you
@@ -491,13 +490,12 @@ shows information about changes in the lower panel (using output of
 <figure><img src="fig/RStudio_screenshot_review.png" class="figure mx-auto d-block"></figure><!--## git push--><p>The changes can be pushed by selecting “Push Branch” from the Git
 menu. There are also options to pull from the remote repository, and to
 view the commit history:</p>
-<figure><img src="fig/RStudio_screenshot_history.png" alt='RStudio screenshot showing the git menu dropdown with "History" selected' class="figure mx-auto d-block"></figure><div id="are-the-pushpull-commands-grayed-out" class="callout callout">
+<figure><img src="fig/RStudio_screenshot_history.png" alt='RStudio screenshot showing the git menu dropdown with "History" selected' class="figure mx-auto d-block"></figure><div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="are-the-pushpull-commands-grayed-out" class="callout-inner">
-<h3 class="callout-title">Are the Push/Pull Commands Grayed Out?<a class="anchor" aria-label="anchor" href="#are-the-pushpull-commands-grayed-out"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="are-the-pushpull-commands-grayed-out">Are the Push/Pull Commands Grayed Out?<a class="anchor" aria-label="anchor" href="#are-the-pushpull-commands-grayed-out"></a></h3>
 <div class="callout-content">
 <p>Grayed out Push/Pull commands generally mean that RStudio doesn’t
 know the location of your remote repository (e.g. on GitHub). To fix
@@ -512,13 +510,12 @@ this, open a terminal to the repository and enter the command:
 <figure><img src="fig/RStudio_screenshot_viewhistory.png" class="figure mx-auto d-block"></figure><!--## .gitignore--><p>RStudio creates a number of files that it uses to keep track of a
 project. We often don’t want to track these, in which case we add them
 to our <code>.gitignore</code> file:</p>
-<figure><img src="fig/RStudio_screenshot_gitignore.png" alt="RStudio screenshot showing .gitignore open in the editor pane with the files .Rproj.user, .Rhistory, .RData, and *.Rproj added to the end" class="figure mx-auto d-block"></figure><div id="tip-versioning-disposable-output" class="callout callout">
+<figure><img src="fig/RStudio_screenshot_gitignore.png" alt="RStudio screenshot showing .gitignore open in the editor pane with the files .Rproj.user, .Rhistory, .RData, and *.Rproj added to the end" class="figure mx-auto d-block"></figure><div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="tip-versioning-disposable-output" class="callout-inner">
-<h3 class="callout-title">Tip: versioning disposable output<a class="anchor" aria-label="anchor" href="#tip-versioning-disposable-output"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="tip-versioning-disposable-output">Tip: versioning disposable output<a class="anchor" aria-label="anchor" href="#tip-versioning-disposable-output"></a></h3>
 <div class="callout-content">
 <p>Generally you do not want to version control disposable output (or
 read-only data). You should modify the <code>.gitignore</code> file to
@@ -542,10 +539,14 @@ branch stays safe and unchanged while you work on your branch (a.k.a.,
 you can merge them into the main branch. This means that the separate
 lines of development in your branch are combined with the main
 branch.</p>
-<figure><img src="fig/one-branch.png" alt="" class="figure mx-auto d-block"><figcaption>One feature branch and one main branch in Git.</figcaption></figure><p>You can have more than one branch off of your main copy. If one of
+<figure><img src="fig/one-branch.png" alt="One feature branch and one main branch in Git." class="figure mx-auto d-block"><div class="figcaption">One feature branch and one main branch in
+Git.</div>
+</figure><p>You can have more than one branch off of your main copy. If one of
 your branches ends up not working, you can either abandon it or delete
 it without impacting the main branch of your project.</p>
-<figure><img src="fig/two-branches.png" alt="" class="figure mx-auto d-block"><figcaption>Two feature branches and one main branch in Git.</figcaption></figure><p>In the Git tab, in the right hand side you will find the name of your
+<figure><img src="fig/two-branches.png" alt="Two feature branches and one main branch in Git." class="figure mx-auto d-block"><div class="figcaption">Two feature branches and one main branch in
+Git.</div>
+</figure><p>In the Git tab, in the right hand side you will find the name of your
 current branch (e.g., <code>main</code>). Use the button in its left
 hand side to create a branch.</p>
 <figure><img src="fig/pane-git-02.png" class="figure mx-auto d-block"></figure><p>You can call it <code>feature-branch</code>:</p>
@@ -597,7 +598,7 @@ directory is not version controlled.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Solution to Challenge</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>This can be done in Rstudio:</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -633,7 +634,7 @@ main project.</li>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="15-wrapup.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="10-open.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="05-history.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
@@ -641,8 +642,8 @@ main project.</li>
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
           Previous: Wrap-up
         </a>
-        <a class="chapter-link float-end" href="10-open.html" rel="next">
-          Next: Open Science... 
+        <a class="chapter-link float-end" href="05-history.html" rel="next">
+          Next: Exploring History... 
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
@@ -689,7 +690,7 @@ main project.</li>
   "identifier": "https://epiverse-trace.github.io/git-rstudio-basics/14-supplemental-rstudio.html",
   "dateCreated": "2014-12-04",
   "dateModified": "2023-11-27",
-  "datePublished": "2024-02-27"
+  "datePublished": "2024-03-04"
 }
 
   </script><script>

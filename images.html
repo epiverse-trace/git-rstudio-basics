@@ -236,7 +236,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="05-history.html">5. Exploring History</a>
+        <a href="06-ignore.html">5. Ignoring Things</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -248,7 +248,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="06-ignore.html">6. Ignoring Things</a>
+        <a href="07-github.html">6. Remotes in GitHub</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -260,7 +260,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="07-github.html">7. Remotes in GitHub</a>
+        <a href="08-collab.html">7. Collaborating</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -272,7 +272,7 @@
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="08-collab.html">8. Collaborating</a>
+        <a href="09-conflict.html">8. Conflicts</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -284,7 +284,7 @@
 <div class="accordion accordion-flush" id="accordionFlush10">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading10">
-        <a href="09-conflict.html">9. Conflicts</a>
+        <a href="15-wrapup.html">9. Wrap-up</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -296,7 +296,7 @@
 <div class="accordion accordion-flush" id="accordionFlush11">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading11">
-        <a href="15-wrapup.html">10. Wrap-up</a>
+        <a href="14-supplemental-rstudio.html">10. Supplemental: Using RStudio for Git</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -308,7 +308,7 @@
 <div class="accordion accordion-flush" id="accordionFlush12">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading12">
-        <a href="14-supplemental-rstudio.html">11. Supplemental: Using RStudio for Git</a>
+        <a href="05-history.html">11. Exploring History</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -423,125 +423,141 @@
 <section id="01-basics"><h2 class="section-heading"><a href="01-basics.html">Automated Version Control</a></h2>
 <hr class="half-width">
 <h3 id="01-basics-figure-1">Figure 1</h3>
-<p aria-hidden="true">Image 1 of 1: ‘One same files called manuscript with modification dates as prefix and what a person did as sufix.’</p>
-<figure><img src="fig/git-manual-version-system.png" alt="One same files called manuscript with modification dates as prefix and what a person did as sufix." class="figure mx-auto d-block"><figcaption>Tracking changes for the <code>manuscript.docx</code>
-file.</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘One same files called Press release.doc with modifications in different files using the words FINAL, VERSION, REVISED, APPROVED. Source: Proper Discord.’</p>
+<figure><img src="fig/git-never-use-the-word-final.png" alt="One same files called Press release.doc with modifications in different files using the words FINAL, VERSION, REVISED, APPROVED. Source: Proper Discord." class="figure mx-auto d-block"><div class="figcaption">Tracking changes for the
+<code>Press release.doc</code> file. <a href="https://properdiscord.com/2012/09/13/never-use-the-word-final-in-a-filename/" class="external-link">Never
+use the word “final” in a filename</a>.</div>
+</figure><hr>
 <h3 id="01-basics-figure-2">Figure 2</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/gdocs-01.png" alt="" class="figure mx-auto d-block"><figcaption>Tracking changes for the <code>git-test</code>
-file.</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘Tracking changes for the git-test file.’</p>
+<figure><img src="fig/gdocs-01.png" alt="Tracking changes for the git-test file." class="figure mx-auto d-block"><div class="figcaption">Tracking changes for the <code>git-test</code>
+file.</div>
+</figure><hr>
 <h3 id="01-basics-figure-3">Figure 3</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/gdocs-03.png" alt="" class="figure mx-auto d-block"><figcaption>The most recent version of the <code>git-test</code>
-file is called “third version”.</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘The most recent version of the git-test file is called “third version”.’</p>
+<figure><img src="fig/gdocs-03.png" alt="The most recent version of the git-test file is called “third version”." class="figure mx-auto d-block"><div class="figcaption">The most recent version of the
+<code>git-test</code> file is called “third version”.</div>
+</figure><hr>
 <h3 id="01-basics-figure-4">Figure 4</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/gdocs-04.png" alt="" class="figure mx-auto d-block"><figcaption>We can view the “first version” of the file
+<p aria-hidden="true">Image 1 of 1: ‘We can view the “first version” of the file git-test. We can also restore it with the Restore this version button.’</p>
+<figure><img src="fig/gdocs-04.png" alt="We can view the “first version” of the file git-test. We can also restore it with the Restore this version button." class="figure mx-auto d-block"><div class="figcaption">We can view the “first version” of the file
 <code>git-test</code>. We can also restore it with the
-<code>Restore this version</code> button.</figcaption></figure><hr>
+<code>Restore this version</code> button.</div>
+</figure><hr>
 <h3 id="01-basics-figure-5">Figure 5</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/ProjectHistory.jpg" alt="" class="figure mx-auto d-block"><figcaption>The Turing Way project illustration by Scriberia.
-Used under a CC-BY 4.0 licence. DOI: <a href="https://zenodo.org/doi/10.5281/zenodo.3332807" class="external-link uri">https://zenodo.org/doi/10.5281/zenodo.3332807</a>.</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: https://zenodo.org/doi/10.5281/zenodo.3332807.’</p>
+<figure><img src="fig/ProjectHistory.jpg" alt="The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: https://zenodo.org/doi/10.5281/zenodo.3332807." class="figure mx-auto d-block"><div class="figcaption">The Turing Way project illustration by
+Scriberia. Used under a CC-BY 4.0 licence. DOI: <a href="https://zenodo.org/doi/10.5281/zenodo.3332807" class="external-link uri">https://zenodo.org/doi/10.5281/zenodo.3332807</a>.</div>
+</figure><hr>
 <h3 id="01-basics-figure-6">Figure 6</h3>
 <p aria-hidden="true">Image 1 of 1: ‘Changes Are Saved Sequentially’</p>
 <figure><img src="fig/play-changes.svg" alt="Changes Are Saved Sequentially" class="figure mx-auto d-block"></figure><hr>
 <h3 id="01-basics-figure-7">Figure 7</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/plain-text-files.png" alt="" class="figure mx-auto d-block"><figcaption>Examples of non-plain and plain text files.</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘Examples of non-plain and plain text files.’</p>
+<figure><img src="fig/plain-text-files.png" alt="Examples of non-plain and plain text files." class="figure mx-auto d-block"><div class="figcaption">Examples of non-plain and plain text
+files.</div>
+</figure><hr>
 <h3 id="01-basics-figure-8">Figure 8</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/gradient-reproducibility.png" alt="" class="figure mx-auto d-block"><figcaption>We can increase the reproducibility of our Open
+<p aria-hidden="true">Image 1 of 1: ‘We can increase the reproducibility of our Open science projects with version control sytems like Git. Text and final results can be connected and executable by Data and code. From: “Ciencia reproducible: qué, por qué, cómo” https://www.revistaecosistemas.net/index.php/ecosistemas/article/view/1178’</p>
+<figure><img src="fig/gradient-reproducibility.png" alt="We can increase the reproducibility of our Open science projects with version control sytems like Git. Text and final results can be connected and executable by Data and code. From: “Ciencia reproducible: qué, por qué, cómo” https://www.revistaecosistemas.net/index.php/ecosistemas/article/view/1178" class="figure mx-auto d-block"><div class="figcaption">We can increase the reproducibility of our Open
 science projects with version control sytems like <code>Git</code>. Text
 and final results can be connected and executable by Data and code.
-From: “Ciencia reproducible: qué, por qué, cómo” <a href="https://www.revistaecosistemas.net/index.php/ecosistemas/article/view/1178" class="external-link uri">https://www.revistaecosistemas.net/index.php/ecosistemas/article/view/1178</a></figcaption></figure><hr></section><section id="02-setup"><h2 class="section-heading"><a href="02-setup.html">Setting Up Git</a></h2>
+From: “Ciencia reproducible: qué, por qué, cómo” <a href="https://www.revistaecosistemas.net/index.php/ecosistemas/article/view/1178" class="external-link uri">https://www.revistaecosistemas.net/index.php/ecosistemas/article/view/1178</a>
+</div>
+</figure><hr></section><section id="02-setup"><h2 class="section-heading"><a href="02-setup.html">Setting Up Git</a></h2>
 <hr class="half-width">
 <h3 id="02-setup-figure-1">Figure 1</h3>
 <p aria-hidden="true">Image 1 of 1: ‘Changes Are Saved Sequentially’</p>
-<figure><img src="fig/git-commit.png" alt="Changes Are Saved Sequentially" class="figure mx-auto d-block"><figcaption>Each record of changes is called a
-<code>commit</code>. From: <a href="https://speakerdeck.com/alicebartlett/git-for-humans" class="external-link uri">https://speakerdeck.com/alicebartlett/git-for-humans</a></figcaption></figure><hr>
+<figure><img src="fig/git-commit.png" alt="Changes Are Saved Sequentially" class="figure mx-auto d-block"><div class="figcaption">Each record of changes is called a
+<code>commit</code>. From: <a href="https://speakerdeck.com/alicebartlett/git-for-humans" class="external-link uri">https://speakerdeck.com/alicebartlett/git-for-humans</a>
+</div>
+</figure><hr>
 <h3 id="02-setup-figure-2">Figure 2</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/rstudio-tab-console.png" alt="" class="figure mx-auto d-block"><figcaption>Visual appearance of the Console.</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘Visual appearance of the Console.’</p>
+<figure><img src="fig/rstudio-tab-console.png" alt="Visual appearance of the Console." class="figure mx-auto d-block"><div class="figcaption">Visual appearance of the Console.</div>
+</figure><hr>
 <h3 id="02-setup-figure-3">Figure 3</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/git-token.png" alt="" class="figure mx-auto d-block"><figcaption>Visual display with the recommended scopes selected.
-Optional scopes are “gist” and “delete_repo” to create a <a href="https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists" class="external-link">gist</a>
-and delete repositories.</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘Visual display with the recommended scopes selected. Optional scopes are “gist” and “delete_repo” to create a gist and delete repositories.’</p>
+<figure><img src="fig/git-token.png" alt="Visual display with the recommended scopes selected. Optional scopes are “gist” and “delete_repo” to create a gist and delete repositories." class="figure mx-auto d-block"><div class="figcaption">Visual display with the recommended scopes
+selected. Optional scopes are “gist” and “delete_repo” to create a <a href="https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists" class="external-link">gist</a>
+and delete repositories.</div>
+</figure><hr>
 <h3 id="02-setup-figure-4">Figure 4</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/main-branch.png" alt="" class="figure mx-auto d-block"><figcaption>Version history within a single branch.</figcaption></figure><hr></section><section id="03-create"><h2 class="section-heading"><a href="03-create.html">Creating a Repository</a></h2>
+<p aria-hidden="true">Image 1 of 1: ‘Version history within a single branch.’</p>
+<figure><img src="fig/main-branch.png" alt="Version history within a single branch." class="figure mx-auto d-block"><div class="figcaption">Version history within a single branch.</div>
+</figure><hr></section><section id="03-create"><h2 class="section-heading"><a href="03-create.html">Creating a Repository</a></h2>
 <hr class="half-width">
 <h3 id="03-create-figure-1">Figure 1</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/topic-git.png" alt="" class="figure mx-auto d-block"><figcaption>Word cloud for Git from <a href="https://thoughtbot.com/blog/recommending-blog-posts" class="external-link uri">https://thoughtbot.com/blog/recommending-blog-posts</a></figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘Word cloud for Git from https://thoughtbot.com/blog/recommending-blog-posts’</p>
+<figure><img src="fig/topic-git.png" alt="Word cloud for Git from https://thoughtbot.com/blog/recommending-blog-posts" class="figure mx-auto d-block"><div class="figcaption">Word cloud for Git from <a href="https://thoughtbot.com/blog/recommending-blog-posts" class="external-link uri">https://thoughtbot.com/blog/recommending-blog-posts</a>
+</div>
+</figure><hr>
 <h3 id="03-create-figure-2">Figure 2</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/cut-git-verb_map-00.png" alt="" class="figure mx-auto d-block"><figcaption>Workflow will show actions, <code>git verb</code>
-commands, and spaces.</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘Workflow will show actions, git verb commands, and spaces.’</p>
+<figure><img src="fig/cut-git-verb_map-00.png" alt="Workflow will show actions, git verb commands, and spaces." class="figure mx-auto d-block"><div class="figcaption">Workflow will show actions,
+<code>git verb</code> commands, and spaces.</div>
+</figure><hr>
 <h3 id="03-create-figure-3">Figure 3</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/cut-git-verb_map-01.png" alt="" class="figure mx-auto d-block"><figcaption>Initialize a Local Repository in your Workspace with
-the <code>git init</code> command verb</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘Initialize a Local Repository in your Workspace with the git init command verb’</p>
+<figure><img src="fig/cut-git-verb_map-01.png" alt="Initialize a Local Repository in your Workspace with the git init command verb" class="figure mx-auto d-block"><div class="figcaption">Initialize a Local Repository in your Workspace
+with the <code>git init</code> command verb</div>
+</figure><hr>
 <h3 id="03-create-figure-4">Figure 4</h3>
 <p aria-hidden="true">Image 1 of 1: ‘wolfman and dracula using computers for data analysis’</p>
-<figure><img src="fig/wolfman_dracula-02.jpg" alt="wolfman and dracula using computers for data analysis" class="figure mx-auto d-block"><figcaption>Image by Bing, 2023, <a href="https://creativecommons.org/licenses/by/4.0/" class="external-link">CC BY 4.0</a>,
+<figure><img src="fig/wolfman_dracula-02.jpg" alt="wolfman and dracula using computers for data analysis" class="figure mx-auto d-block"><div class="figcaption">Image by Bing, 2023, <a href="https://creativecommons.org/licenses/by/4.0/" class="external-link">CC BY 4.0</a>,
 created with <a href="https://www.bing.com/create" class="external-link">Bing Image Creator
-powered by DALL·E 3</a></figcaption></figure><hr>
+powered by DALL·E 3</a>
+</div>
+</figure><hr>
 <h3 id="03-create-figure-5">Figure 5</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/pane-git-01.png" alt="" class="figure mx-auto d-block"><figcaption>The Git tab in the Environments pane shows the
-<code>status</code> of your repository.</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘The Git tab in the Environments pane shows the status of your repository.’</p>
+<figure><img src="fig/pane-git-01.png" alt="The Git tab in the Environments pane shows the status of your repository." class="figure mx-auto d-block"><div class="figcaption">The Git tab in the Environments pane shows the
+<code>status</code> of your repository.</div>
+</figure><hr>
 <h3 id="03-create-figure-6">Figure 6</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/git-rstudio-06.png" alt="" class="figure mx-auto d-block"><figcaption>Set up <code>Git</code> once per computer. Initialize
-<code>Git</code> once per project.</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘Set up Git once per computer. Initialize Git once per project.’</p>
+<figure><img src="fig/git-rstudio-06.png" alt="Set up Git once per computer. Initialize Git once per project." class="figure mx-auto d-block"><div class="figcaption">Set up <code>Git</code> once per computer.
+Initialize <code>Git</code> once per project.</div>
+</figure><hr>
 <h3 id="03-create-figure-7">Figure 7</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/git-rstudio-07.png" alt="" class="figure mx-auto d-block"><figcaption>Show hidden files in an Local repository.</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘Show hidden files in an Local repository.’</p>
+<figure><img src="fig/git-rstudio-07.png" alt="Show hidden files in an Local repository." class="figure mx-auto d-block"><div class="figcaption">Show hidden files in an Local repository.</div>
+</figure><hr>
 <h3 id="03-create-figure-8">Figure 8</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/git-rstudio-08.png" alt="" class="figure mx-auto d-block"><figcaption>The <code>.git</code> folder is a hidden folder in a
-Local repository.</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘The .git folder is a hidden folder in a Local repository.’</p>
+<figure><img src="fig/git-rstudio-08.png" alt="The .git folder is a hidden folder in a Local repository." class="figure mx-auto d-block"><div class="figcaption">The <code>.git</code> folder is a hidden folder
+in a Local repository.</div>
+</figure><hr>
 <h3 id="03-create-figure-9">Figure 9</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/rstudio-tab-terminal.png" alt="" class="figure mx-auto d-block"><figcaption>Visual appearance of the Terminal.</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘Visual appearance of the Terminal.’</p>
+<figure><img src="fig/rstudio-tab-terminal.png" alt="Visual appearance of the Terminal." class="figure mx-auto d-block"><div class="figcaption">Visual appearance of the Terminal.</div>
+</figure><hr>
 <h3 id="03-create-figure-10">Figure 10</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/cut-git-verb_map-01.png" alt="" class="figure mx-auto d-block"><figcaption>Initialize a Local Repository in your Workspace with
-the <code>git init</code> command verb</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘Initialize a Local Repository in your Workspace with the git init command verb’</p>
+<figure><img src="fig/cut-git-verb_map-01.png" alt="Initialize a Local Repository in your Workspace with the git init command verb" class="figure mx-auto d-block"><div class="figcaption">Initialize a Local Repository in your Workspace
+with the <code>git init</code> command verb</div>
+</figure><hr>
 <h3 id="03-create-figure-11">Figure 11</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/cut-git-verb_map-02.png" alt="" class="figure mx-auto d-block"><figcaption>Use the <code>git init</code> command to initialize a
-Local Repository in your Workspace. Use <code>git status</code> to check
-the status of the repository.</figcaption></figure><hr></section><section id="04-changes"><h2 class="section-heading"><a href="04-changes.html">Tracking Changes</a></h2>
+<p aria-hidden="true">Image 1 of 1: ‘Use the git init command to initialize a Local Repository in your Workspace. Use git status to check the status of the repository.’</p>
+<figure><img src="fig/cut-git-verb_map-02.png" alt="Use the git init command to initialize a Local Repository in your Workspace. Use git status to check the status of the repository." class="figure mx-auto d-block"><div class="figcaption">Use the <code>git init</code> command to
+initialize a Local Repository in your Workspace. Use
+<code>git status</code> to check the status of the repository.</div>
+</figure><hr></section><section id="04-changes"><h2 class="section-heading"><a href="04-changes.html">Tracking Changes</a></h2>
 <hr class="half-width">
 <h3 id="04-changes-figure-1">Figure 1</h3>
 <p aria-hidden="true">Image 1 of 1: ‘The Git Staging Area’</p>
 <figure><img src="fig/git-staging-area.svg" alt="The Git Staging Area" class="figure mx-auto d-block"></figure><hr>
 <h3 id="04-changes-figure-2">Figure 2</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/cut-git-verb_map-07.png" alt="" class="figure mx-auto d-block"><figcaption>Use <code>git status</code> to display the state of
-the working directory and the staging area. <code>git add</code> your
+<p aria-hidden="true">Image 1 of 1: ‘Use git status to display the state of the working directory and the staging area. git add your changes before you git commit them to the Local repository. Use the git log to get the history of changes in it. Use git diff to compare these changes.’</p>
+<figure><img src="fig/cut-git-verb_map-07.png" alt="Use git status to display the state of the working directory and the staging area. git add your changes before you git commit them to the Local repository. Use the git log to get the history of changes in it. Use git diff to compare these changes." class="figure mx-auto d-block"><div class="figcaption">Use <code>git status</code> to display the state
+of the working directory and the staging area. <code>git add</code> your
 changes before you <code>git commit</code> them to the Local repository.
 Use the <code>git log</code> to get the history of changes in it. Use
-<code>git diff</code> to compare these changes.</figcaption></figure><hr>
+<code>git diff</code> to compare these changes.</div>
+</figure><hr>
 <h3 id="04-changes-figure-3">Figure 3</h3>
 <p aria-hidden="true">Image 1 of 1: ‘The Git Commit Workflow’</p>
-<figure><img src="fig/git-committing.svg" alt="The Git Commit Workflow" class="figure mx-auto d-block"></figure><hr></section><section id="05-history"><h2 class="section-heading"><a href="05-history.html">Exploring History</a></h2>
-<hr class="half-width">
-<h3 id="05-history-figure-1">Figure 1</h3>
-<p aria-hidden="true">Image 1 of 1: ‘Git Checkout’</p>
-<figure><img src="fig/git-checkout.svg" alt="Git Checkout" class="figure mx-auto d-block"></figure><hr>
-<h3 id="05-history-figure-2">Figure 2</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/git_staging.svg" alt="" class="figure mx-auto d-block"><figcaption><a href="https://figshare.com/articles/How_Git_works_a_cartoon/1328266" class="external-link uri">https://figshare.com/articles/How_Git_works_a_cartoon/1328266</a></figcaption></figure><hr>
-<h3 id="05-history-figure-3">Figure 3</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/cut-git-verb_map-08.png" alt="" class="figure mx-auto d-block"><figcaption>Use <code>git diff</code> to compare changes since
-last commit or between commits. Use <code>git checkout</code> to undo
-changes by restoring the staging area (committed changes) or the local
-repository (last commit)</figcaption></figure><hr></section><section id="06-ignore"><h2 class="section-heading"><a href="06-ignore.html">Ignoring Things</a></h2>
+<figure><img src="fig/git-committing.svg" alt="The Git Commit Workflow" class="figure mx-auto d-block"></figure><hr></section><section id="06-ignore"><h2 class="section-heading"><a href="06-ignore.html">Ignoring Things</a></h2>
 <hr class="half-width"></section><section id="07-github"><h2 class="section-heading"><a href="07-github.html">Remotes in GitHub</a></h2>
 <hr class="half-width">
 <h3 id="07-github-figure-1">Figure 1</h3>
@@ -566,11 +582,12 @@ repository (last commit)</figcaption></figure><hr></section><section id="06-igno
 <p aria-hidden="true">Image 1 of 1: ‘GitHub Repository After First Push’</p>
 <figure><img src="fig/github-repo-after-first-push.png" alt="GitHub Repository After First Push" class="figure mx-auto d-block"></figure><hr>
 <h3 id="07-github-figure-8">Figure 8</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/cut-git-verb_map-09.png" alt="" class="figure mx-auto d-block"><figcaption>Use <code>git pull</code> to download content from a
-remote repository to the workspace and update the local repository to
-match that content. Use <code>git push</code> to upload local repository
-content to a remote repository.</figcaption></figure><hr></section><section id="08-collab"><h2 class="section-heading"><a href="08-collab.html">Collaborating</a></h2>
+<p aria-hidden="true">Image 1 of 1: ‘Use git pull to download content from a remote repository to the workspace and update the local repository to match that content. Use git push to upload local repository content to a remote repository.’</p>
+<figure><img src="fig/cut-git-verb_map-09.png" alt="Use git pull to download content from a remote repository to the workspace and update the local repository to match that content. Use git push to upload local repository content to a remote repository." class="figure mx-auto d-block"><div class="figcaption">Use <code>git pull</code> to download content
+from a remote repository to the workspace and update the local
+repository to match that content. Use <code>git push</code> to upload
+local repository content to a remote repository.</div>
+</figure><hr></section><section id="08-collab"><h2 class="section-heading"><a href="08-collab.html">Collaborating</a></h2>
 <hr class="half-width">
 <h3 id="08-collab-figure-1">Figure 1</h3>
 <figure><img src="fig/googledocs-collab.png" class="figure mx-auto d-block"></figure><hr>
@@ -583,16 +600,18 @@ content to a remote repository.</figcaption></figure><hr></section><section id="
 <figure><img src="fig/github-add-collaborators.png" alt="screenshot of repository page with Settings then Collaborators selected, showing how to add Collaborators in a GitHub repository" class="figure mx-auto d-block"></figure><hr>
 <h3 id="08-collab-figure-5">Figure 5</h3>
 <p aria-hidden="true">Image 1 of 1: ‘After Creating Clone of Repository’</p>
-<figure><img src="fig/github-collaboration.png" alt="After Creating Clone of Repository" class="figure mx-auto d-block"><figcaption>In the Outbreak response scenario, now Wolfman has a
-local copy of the remote repository. They are already set up to
-collaborate for one project!</figcaption></figure><hr>
+<figure><img src="fig/github-collaboration.png" alt="After Creating Clone of Repository" class="figure mx-auto d-block"><div class="figcaption">In the Outbreak response scenario, now Wolfman
+has a local copy of the remote repository. They are already set up to
+collaborate for one project!</div>
+</figure><hr>
 <h3 id="08-collab-figure-6">Figure 6</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/cut-git-verb_map-12.png" alt="" class="figure mx-auto d-block"><figcaption>Use <code>git fetch</code> to download the remote
-content but not update your local repo’s working state, leaving your
-current work intact. Use <code>git pull</code> to download the remote
-content for the active local branch and immediately merge it. this can
-potentially cause conflicts.</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘Use git fetch to download the remote content but not update your local repo’s working state, leaving your current work intact. Use git pull to download the remote content for the active local branch and immediately merge it. this can potentially cause conflicts.’</p>
+<figure><img src="fig/cut-git-verb_map-12.png" alt="Use git fetch to download the remote content but not update your local repo’s working state, leaving your current work intact. Use git pull to download the remote content for the active local branch and immediately merge it. this can potentially cause conflicts." class="figure mx-auto d-block"><div class="figcaption">Use <code>git fetch</code> to download the
+remote content but not update your local repo’s working state, leaving
+your current work intact. Use <code>git pull</code> to download the
+remote content for the active local branch and immediately merge it.
+this can potentially cause conflicts.</div>
+</figure><hr>
 <h3 id="08-collab-figure-7">Figure 7</h3>
 <figure><img src="fig/github-create-00.png" class="figure mx-auto d-block"></figure><hr>
 <h3 id="08-collab-figure-8">Figure 8</h3>
@@ -602,11 +621,13 @@ potentially cause conflicts.</figcaption></figure><hr>
 <h3 id="08-collab-figure-10">Figure 10</h3>
 <figure><img src="fig/github-create-03.png" class="figure mx-auto d-block"></figure><hr>
 <h3 id="08-collab-figure-11">Figure 11</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/cut-git-verb_map-10.png" alt="" class="figure mx-auto d-block"><figcaption>Use <code>git clone</code> to obtain a development
-copy of a remote repository. Like <code>git init</code>, cloning is
-generally a one-time operation. Use <code>git pull</code> to update the
-local repository to match the content in the remote repository.</figcaption></figure><hr></section><section id="09-conflict"><h2 class="section-heading"><a href="09-conflict.html">Conflicts</a></h2>
+<p aria-hidden="true">Image 1 of 1: ‘Use git clone to obtain a development copy of a remote repository. Like git init, cloning is generally a one-time operation. Use git pull to update the local repository to match the content in the remote repository.’</p>
+<figure><img src="fig/cut-git-verb_map-10.png" alt="Use git clone to obtain a development copy of a remote repository. Like git init, cloning is generally a one-time operation. Use git pull to update the local repository to match the content in the remote repository." class="figure mx-auto d-block"><div class="figcaption">Use <code>git clone</code> to obtain a
+development copy of a remote repository. Like <code>git init</code>,
+cloning is generally a one-time operation. Use <code>git pull</code> to
+update the local repository to match the content in the remote
+repository.</div>
+</figure><hr></section><section id="09-conflict"><h2 class="section-heading"><a href="09-conflict.html">Conflicts</a></h2>
 <hr class="half-width">
 <h3 id="09-conflict-figure-1">Figure 1</h3>
 <p aria-hidden="true">Image 1 of 1: ‘Different Versions Can be Saved’</p>
@@ -621,18 +642,21 @@ local repository to match the content in the remote repository.</figcaption></fi
 <p aria-hidden="true">Image 1 of 1: ‘The Conflicting Changes’</p>
 <figure><img src="fig/conflict.svg" alt="The Conflicting Changes" class="figure mx-auto d-block"></figure><hr>
 <h3 id="09-conflict-figure-5">Figure 5</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/git-rstudio-27.png" alt="" class="figure mx-auto d-block"><figcaption>Two related modified lines must be part of the same
-commit.</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘Two related modified lines must be part of the same commit.’</p>
+<figure><img src="fig/git-rstudio-27.png" alt="Two related modified lines must be part of the same commit." class="figure mx-auto d-block"><div class="figcaption">Two related modified lines must be part of the
+same commit.</div>
+</figure><hr>
 <h3 id="09-conflict-figure-6">Figure 6</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/git-rstudio-35.png" alt="" class="figure mx-auto d-block"><figcaption>Two unrelated edits must be part of two isolated
-commits.</figcaption></figure><hr></section><section id="15-wrapup"><h2 class="section-heading"><a href="15-wrapup.html">Wrap-up</a></h2>
+<p aria-hidden="true">Image 1 of 1: ‘Two unrelated edits must be part of two isolated commits.’</p>
+<figure><img src="fig/git-rstudio-35.png" alt="Two unrelated edits must be part of two isolated commits." class="figure mx-auto d-block"><div class="figcaption">Two unrelated edits must be part of two isolated
+commits.</div>
+</figure><hr></section><section id="15-wrapup"><h2 class="section-heading"><a href="15-wrapup.html">Wrap-up</a></h2>
 <hr class="half-width">
 <h3 id="15-wrapup-figure-1">Figure 1</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/cut-git-verb_map-11.png" alt="" class="figure mx-auto d-block"><figcaption>Complete workflow with actions, <code>git verb</code>
-commands, and spaces.</figcaption></figure><hr></section><section id="14-supplemental-rstudio"><h2 class="section-heading"><a href="14-supplemental-rstudio.html">Supplemental: Using RStudio for Git</a></h2>
+<p aria-hidden="true">Image 1 of 1: ‘Complete workflow with actions, git verb commands, and spaces.’</p>
+<figure><img src="fig/cut-git-verb_map-11.png" alt="Complete workflow with actions, git verb commands, and spaces." class="figure mx-auto d-block"><div class="figcaption">Complete workflow with actions,
+<code>git verb</code> commands, and spaces.</div>
+</figure><hr></section><section id="14-supplemental-rstudio"><h2 class="section-heading"><a href="14-supplemental-rstudio.html">Supplemental: Using RStudio for Git</a></h2>
 <hr class="half-width">
 <h3 id="14-supplemental-rstudio-figure-1">Figure 1</h3>
 <p aria-hidden="true">Image 1 of 1: ‘RStudio screenshot showing the file menu dropdown with "New Project..." selected’</p>
@@ -669,17 +693,36 @@ commands, and spaces.</figcaption></figure><hr></section><section id="14-supplem
 <h3 id="14-supplemental-rstudio-figure-14">Figure 14</h3>
 <figure><img src="fig/git-rstudio-review-window.png" class="figure mx-auto d-block"></figure><hr>
 <h3 id="14-supplemental-rstudio-figure-15">Figure 15</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/one-branch.png" alt="" class="figure mx-auto d-block"><figcaption>One feature branch and one main branch in Git.</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘One feature branch and one main branch in Git.’</p>
+<figure><img src="fig/one-branch.png" alt="One feature branch and one main branch in Git." class="figure mx-auto d-block"><div class="figcaption">One feature branch and one main branch in
+Git.</div>
+</figure><hr>
 <h3 id="14-supplemental-rstudio-figure-16">Figure 16</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="fig/two-branches.png" alt="" class="figure mx-auto d-block"><figcaption>Two feature branches and one main branch in Git.</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘Two feature branches and one main branch in Git.’</p>
+<figure><img src="fig/two-branches.png" alt="Two feature branches and one main branch in Git." class="figure mx-auto d-block"><div class="figcaption">Two feature branches and one main branch in
+Git.</div>
+</figure><hr>
 <h3 id="14-supplemental-rstudio-figure-17">Figure 17</h3>
 <figure><img src="fig/pane-git-02.png" class="figure mx-auto d-block"></figure><hr>
 <h3 id="14-supplemental-rstudio-figure-18">Figure 18</h3>
 <figure><img src="fig/github-12.png" class="figure mx-auto d-block"></figure><hr>
 <h3 id="14-supplemental-rstudio-figure-19">Figure 19</h3>
-<figure><img src="fig/github-13.png" class="figure mx-auto d-block"></figure><hr></section><section id="10-open"><h2 class="section-heading"><a href="10-open.html">Open Science</a></h2>
+<figure><img src="fig/github-13.png" class="figure mx-auto d-block"></figure><hr></section><section id="05-history"><h2 class="section-heading"><a href="05-history.html">Exploring History</a></h2>
+<hr class="half-width">
+<h3 id="05-history-figure-1">Figure 1</h3>
+<p aria-hidden="true">Image 1 of 1: ‘Git Checkout’</p>
+<figure><img src="fig/git-checkout.svg" alt="Git Checkout" class="figure mx-auto d-block"></figure><hr>
+<h3 id="05-history-figure-2">Figure 2</h3>
+<p aria-hidden="true">Image 1 of 1: ‘https://figshare.com/articles/How_Git_works_a_cartoon/1328266’</p>
+<figure><img src="fig/git_staging.svg" alt="https://figshare.com/articles/How_Git_works_a_cartoon/1328266" class="figure mx-auto d-block"><div class="figcaption"><a href="https://figshare.com/articles/How_Git_works_a_cartoon/1328266" class="external-link uri">https://figshare.com/articles/How_Git_works_a_cartoon/1328266</a></div>
+</figure><hr>
+<h3 id="05-history-figure-3">Figure 3</h3>
+<p aria-hidden="true">Image 1 of 1: ‘Use git diff to compare changes since last commit or between commits. Use git checkout to undo changes by restoring the staging area (committed changes) or the local repository (last commit)’</p>
+<figure><img src="fig/cut-git-verb_map-08.png" alt="Use git diff to compare changes since last commit or between commits. Use git checkout to undo changes by restoring the staging area (committed changes) or the local repository (last commit)" class="figure mx-auto d-block"><div class="figcaption">Use <code>git diff</code> to compare changes
+since last commit or between commits. Use <code>git checkout</code> to
+undo changes by restoring the staging area (committed changes) or the
+local repository (last commit)</div>
+</figure><hr></section><section id="10-open"><h2 class="section-heading"><a href="10-open.html">Open Science</a></h2>
 <hr class="half-width"></section><section id="11-licensing"><h2 class="section-heading"><a href="11-licensing.html">Licensing</a></h2>
 <hr class="half-width"></section><section id="12-citation"><h2 class="section-heading"><a href="12-citation.html">Citation</a></h2>
 <hr class="half-width"></section><section id="13-hosting"><h2 class="section-heading"><a href="13-hosting.html">Hosting</a></h2>
@@ -731,8 +774,8 @@ commands, and spaces.</figcaption></figure><hr></section><section id="14-supplem
   "url": "https://epiverse-trace.github.io/git-rstudio-basics/images.html",
   "identifier": "https://epiverse-trace.github.io/git-rstudio-basics/images.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-04",
+  "datePublished": "2024-03-04"
 }
 
   </script><script>

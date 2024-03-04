@@ -92,11 +92,11 @@
   Version Control with Git in Rstudio
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 69%" class="percentage">
-    69%
+<aside class="col-md-12 lesson-progress"><div style="width: 59%" class="percentage">
+    59%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 69%" aria-valuenow="69" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 59%" aria-valuenow="59" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -189,7 +189,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="05-history.html">5. Exploring History</a>
+        <a href="06-ignore.html">5. Ignoring Things</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -198,16 +198,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="06-ignore.html">6. Ignoring Things</a>
-    </div><!--/div.accordion-header-->
-        
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush8">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading8">
-        <a href="07-github.html">7. Remotes in GitHub</a>
+        <a href="07-github.html">6. Remotes in GitHub</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -219,7 +210,7 @@
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
-        8. Collaborating
+        7. Collaborating
         </span>
       </button>
     </div><!--/div.accordion-header-->
@@ -236,10 +227,19 @@
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush9">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading9">
+        <a href="09-conflict.html">8. Conflicts</a>
+    </div><!--/div.accordion-header-->
+        
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
 <div class="accordion accordion-flush" id="accordionFlush10">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading10">
-        <a href="09-conflict.html">9. Conflicts</a>
+        <a href="15-wrapup.html">9. Wrap-up</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -248,7 +248,7 @@
 <div class="accordion accordion-flush" id="accordionFlush11">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading11">
-        <a href="15-wrapup.html">10. Wrap-up</a>
+        <a href="14-supplemental-rstudio.html">10. Supplemental: Using RStudio for Git</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -257,7 +257,7 @@
 <div class="accordion accordion-flush" id="accordionFlush12">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading12">
-        <a href="14-supplemental-rstudio.html">11. Supplemental: Using RStudio for Git</a>
+        <a href="05-history.html">11. Exploring History</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -433,13 +433,12 @@ easily.</p></li>
 the other will be the “Collaborator”. The goal is that the Collaborator
 add changes into the Owner’s repository. We will switch roles at the
 end, so both persons will play Owner and Collaborator.</p>
-<div id="practicing-by-yourself" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="practicing-by-yourself" class="callout-inner">
-<h3 class="callout-title">Practicing By Yourself<a class="anchor" aria-label="anchor" href="#practicing-by-yourself"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="practicing-by-yourself">Practicing By Yourself<a class="anchor" aria-label="anchor" href="#practicing-by-yourself"></a></h3>
 <div class="callout-content">
 <p>If you’re working through this lesson on your own, you can carry on
 by opening a second terminal window. This window will represent your
@@ -461,13 +460,12 @@ repository to her machine. This is called “cloning a repo”.</p>
 <p>The Collaborator doesn’t want to overwrite her own version of
 <code>cases.git</code>, so needs to clone the Owner’s repository to a
 different location than her own repository with the same name.</p>
-<div id="callout2" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout2"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>First, if you are in Rstudio, close your R Project from
 <code>File</code> &gt; <code>Close Project</code>.</p>
@@ -479,7 +477,7 @@ the <strong>Collaborator</strong> enters:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git clone https://github.com/vlad/cases.git vlad-cases</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span> git clone https://github.com/vlad/cases.git vlad-cases</span></code></pre>
 </div>
 <!--
 ```bash
@@ -487,13 +485,12 @@ $ git clone https://github.com/vlad/cases.git ~/Desktop/vlad-cases
 ```
 -->
 <p>Replace ‘vlad’ with the Owner’s username.</p>
-<div id="callout3" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout3"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>If you choose to clone without the clone path
 (<code>vlad-cases</code>) specified at the end, you will clone inside
@@ -505,9 +502,10 @@ not a common addition.</p>
 </div>
 </div>
 </div>
-<figure><img src="../fig/github-collaboration.png" alt="After Creating Clone of Repository" class="figure mx-auto d-block"><figcaption>In the Outbreak response scenario, now Wolfman has a
-local copy of the remote repository. They are already set up to
-collaborate for one project!</figcaption></figure></section><section id="edit-the-clone"><h2 class="section-heading">Edit the clone<a class="anchor" aria-label="anchor" href="#edit-the-clone"></a>
+<figure><img src="../fig/github-collaboration.png" alt="After Creating Clone of Repository" class="figure mx-auto d-block"><div class="figcaption">In the Outbreak response scenario, now Wolfman
+has a local copy of the remote repository. They are already set up to
+collaborate for one project!</div>
+</figure></section><section id="edit-the-clone"><h2 class="section-heading">Edit the clone<a class="anchor" aria-label="anchor" href="#edit-the-clone"></a>
 </h2>
 <hr class="half-width"><p>The <strong>Collaborator</strong> can now make a change in her clone
 of the Owner’s repository, exactly the same way as we’ve been doing
@@ -538,8 +536,8 @@ complement our Situation report!</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git add dashboard.Rmd</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add notes about Dashboard"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="ex">$</span> git add dashboard.Rmd</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add notes about Dashboard"</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -552,7 +550,7 @@ GitHub:</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git push origin main</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="ex">$</span> git push origin main</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -573,13 +571,12 @@ earlier when we were setting up remotes by hand.)</p>
 <p>Take a look at the Owner’s repository on GitHub again, and you should
 be able to see the new commit made by the Collaborator. You may need to
 refresh your browser to see the new commit.</p>
-<div id="some-more-about-remotes" class="callout callout">
+<div id="callout4" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="some-more-about-remotes" class="callout-inner">
-<h3 class="callout-title">Some more about remotes<a class="anchor" aria-label="anchor" href="#some-more-about-remotes"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="some-more-about-remotes">Some more about remotes<a class="anchor" aria-label="anchor" href="#some-more-about-remotes"></a></h3>
 <div class="callout-content">
 <p>In this episode and the previous one, our local repository has had a
 single “remote”, called <code>origin</code>. A remote is a copy of the
@@ -627,7 +624,7 @@ the <strong>Owner</strong> now enters:</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git pull origin main</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="ex">$</span> git pull origin main</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -648,13 +645,12 @@ Fast-forward
 </div>
 <p>Now the <strong>three repositories</strong> (Owner’s local,
 Collaborator’s local, and Owner’s on GitHub) are back in sync.</p>
-<div id="a-basic-collaborative-workflow" class="callout callout">
+<div id="callout5" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="a-basic-collaborative-workflow" class="callout-inner">
-<h3 class="callout-title">A Basic Collaborative Workflow<a class="anchor" aria-label="anchor" href="#a-basic-collaborative-workflow"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="a-basic-collaborative-workflow">A Basic Collaborative Workflow<a class="anchor" aria-label="anchor" href="#a-basic-collaborative-workflow"></a></h3>
 <div class="callout-content">
 <p>In practice, it is good to be sure that you have an updated version
 of the repository you are collaborating on, so you should
@@ -712,11 +708,12 @@ local repository, but without merging them. Then by running
 changes output in the terminal.</p>
 <p>On GitHub, the Collaborator can go to the repository and click on
 “commits” to view the most recent commits pushed to the repository.</p>
-<figure><img src="../fig/cut-git-verb_map-12.png" alt="" class="figure mx-auto d-block"><figcaption>Use <code>git fetch</code> to download the remote
-content but not update your local repo’s working state, leaving your
-current work intact. Use <code>git pull</code> to download the remote
-content for the active local branch and immediately merge it. this can
-potentially cause conflicts.</figcaption></figure></div>
+<figure><img src="../fig/cut-git-verb_map-12.png" alt="Use git fetch to download the remote content but not update your local repo’s working state, leaving your current work intact. Use git pull to download the remote content for the active local branch and immediately merge it. this can potentially cause conflicts." class="figure mx-auto d-block"><div class="figcaption">Use <code>git fetch</code> to download the
+remote content but not update your local repo’s working state, leaving
+your current work intact. Use <code>git pull</code> to download the
+remote content for the active local branch and immediately merge it.
+this can potentially cause conflicts.</div>
+</figure></div>
 </div>
 </div>
 </div>
@@ -792,10 +789,12 @@ learned!</p>
 <h3 class="callout-title">Checklist<a class="anchor" aria-label="anchor" href="#checklist2"></a>
 </h3>
 <div class="callout-content">
-<figure><img src="../fig/cut-git-verb_map-10.png" alt="" class="figure mx-auto d-block"><figcaption>Use <code>git clone</code> to obtain a development
-copy of a remote repository. Like <code>git init</code>, cloning is
-generally a one-time operation. Use <code>git pull</code> to update the
-local repository to match the content in the remote repository.</figcaption></figure></div>
+<figure><img src="../fig/cut-git-verb_map-10.png" alt="Use git clone to obtain a development copy of a remote repository. Like git init, cloning is generally a one-time operation. Use git pull to update the local repository to match the content in the remote repository." class="figure mx-auto d-block"><div class="figcaption">Use <code>git clone</code> to obtain a
+development copy of a remote repository. Like <code>git init</code>,
+cloning is generally a one-time operation. Use <code>git pull</code> to
+update the local repository to match the content in the remote
+repository.</div>
+</figure></div>
 </div>
 </div>
 <div id="keypoints1" class="callout keypoints">
@@ -872,7 +871,7 @@ up.</li>
   "identifier": "https://epiverse-trace.github.io/git-rstudio-basics/instructor/08-collab.html",
   "dateCreated": "2014-12-04",
   "dateModified": "2023-11-27",
-  "datePublished": "2024-02-27"
+  "datePublished": "2024-03-04"
 }
 
   </script><script>
