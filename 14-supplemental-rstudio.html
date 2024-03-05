@@ -423,12 +423,13 @@ Directory”:</p>
 <figure><img src="fig/RStudio_screenshot_existingdirectory.png" alt='RStudio screenshot showing New Project dialog window with "Create project from existing directory" selected' class="figure mx-auto d-block"></figure><p>For a new directory, <a href="https://nceas.github.io/oss-lessons/version-control/4-getting-started-with-git-in-RStudio.html#versioning_new_work" class="external-link">follow
 the steps in this section about “Versioning new work”</a>.</p>
 <figure><img src="fig/git-rstudio-init-02.png" class="figure mx-auto d-block"></figure><p>To clone a remote repository from Rstudio, follow these steps:</p>
-<figure><img src="fig/git-rstudio-init-03.png" class="figure mx-auto d-block"></figure><div id="callout1" class="callout">
+<figure><img src="fig/git-rstudio-init-03.png" class="figure mx-auto d-block"></figure><div id="do-you-see-a-version-control-option" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="do-you-see-a-version-control-option">Do You See a “Version Control” Option?<a class="anchor" aria-label="anchor" href="#do-you-see-a-version-control-option"></a></h3>
+<div id="do-you-see-a-version-control-option" class="callout-inner">
+<h3 class="callout-title">Do You See a “Version Control” Option?<a class="anchor" aria-label="anchor" href="#do-you-see-a-version-control-option"></a>
+</h3>
 <div class="callout-content">
 <p>Although we’re not going to use it here, there should be a “version
 control” option on this menu. That is what you would click on if you
@@ -490,12 +491,13 @@ shows information about changes in the lower panel (using output of
 <figure><img src="fig/RStudio_screenshot_review.png" class="figure mx-auto d-block"></figure><!--## git push--><p>The changes can be pushed by selecting “Push Branch” from the Git
 menu. There are also options to pull from the remote repository, and to
 view the commit history:</p>
-<figure><img src="fig/RStudio_screenshot_history.png" alt='RStudio screenshot showing the git menu dropdown with "History" selected' class="figure mx-auto d-block"></figure><div id="callout2" class="callout">
+<figure><img src="fig/RStudio_screenshot_history.png" alt='RStudio screenshot showing the git menu dropdown with "History" selected' class="figure mx-auto d-block"></figure><div id="are-the-pushpull-commands-grayed-out" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="are-the-pushpull-commands-grayed-out">Are the Push/Pull Commands Grayed Out?<a class="anchor" aria-label="anchor" href="#are-the-pushpull-commands-grayed-out"></a></h3>
+<div id="are-the-pushpull-commands-grayed-out" class="callout-inner">
+<h3 class="callout-title">Are the Push/Pull Commands Grayed Out?<a class="anchor" aria-label="anchor" href="#are-the-pushpull-commands-grayed-out"></a>
+</h3>
 <div class="callout-content">
 <p>Grayed out Push/Pull commands generally mean that RStudio doesn’t
 know the location of your remote repository (e.g. on GitHub). To fix
@@ -510,12 +512,13 @@ this, open a terminal to the repository and enter the command:
 <figure><img src="fig/RStudio_screenshot_viewhistory.png" class="figure mx-auto d-block"></figure><!--## .gitignore--><p>RStudio creates a number of files that it uses to keep track of a
 project. We often don’t want to track these, in which case we add them
 to our <code>.gitignore</code> file:</p>
-<figure><img src="fig/RStudio_screenshot_gitignore.png" alt="RStudio screenshot showing .gitignore open in the editor pane with the files .Rproj.user, .Rhistory, .RData, and *.Rproj added to the end" class="figure mx-auto d-block"></figure><div id="callout3" class="callout">
+<figure><img src="fig/RStudio_screenshot_gitignore.png" alt="RStudio screenshot showing .gitignore open in the editor pane with the files .Rproj.user, .Rhistory, .RData, and *.Rproj added to the end" class="figure mx-auto d-block"></figure><div id="tip-versioning-disposable-output" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="tip-versioning-disposable-output">Tip: versioning disposable output<a class="anchor" aria-label="anchor" href="#tip-versioning-disposable-output"></a></h3>
+<div id="tip-versioning-disposable-output" class="callout-inner">
+<h3 class="callout-title">Tip: versioning disposable output<a class="anchor" aria-label="anchor" href="#tip-versioning-disposable-output"></a>
+</h3>
 <div class="callout-content">
 <p>Generally you do not want to version control disposable output (or
 read-only data). You should modify the <code>.gitignore</code> file to
@@ -598,7 +601,7 @@ directory is not version controlled.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Solution to Challenge</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>This can be done in Rstudio:</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -667,7 +670,7 @@ main project.</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.2" class="external-link">sandpaper (0.16.2)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.3" class="external-link">pegboard (0.7.3)</a>, and <a href="https://github.com/epiverse-trace/varnish/tree/epiversetheme" class="external-link">varnish (1.0.1.9000)</a></p>
+        <p>Built with <a href="https://github.com/epiverse-trace/sandpaper/tree/patch-renv-github-bug" class="external-link">sandpaper (0.16.2)</a>, <a href="https://github.com/carpentries/pegboard/tree/1bc5753e917d515c3d888ce6cc013c0a680eacfc" class="external-link">pegboard (0.7.3)</a>, and <a href="https://github.com/epiverse-trace/varnish/tree/epiversetheme" class="external-link">varnish (1.0.1.9000)</a></p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
