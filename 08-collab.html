@@ -221,6 +221,8 @@
 <li><a href="#get-a-copy-of-remote">Get a copy of remote</a></li>
 <li><a href="#edit-the-clone">Edit the clone</a></li>
 <li><a href="#download-contributor-edits">Download contributor edits</a></li>
+<li><a href="#group-challenge">Group challenge</a></li>
+<li><a href="#individual-challenges">Individual challenges</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
         
@@ -357,7 +359,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Collaborating</h1>
-        <p>Last updated on 2023-11-27 |
+        <p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/epiverse-trace/git-rstudio-basics/edit/main/episodes/08-collab.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -572,14 +574,14 @@ earlier when we were setting up remotes by hand.)</p>
 <p>Take a look at the Owner’s repository on GitHub again, and you should
 be able to see the new commit made by the Collaborator. You may need to
 refresh your browser to see the new commit.</p>
-<div id="some-more-about-remotes" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="some-more-about-remotes" class="callout-inner">
-<h3 class="callout-title">Some more about remotes<a class="anchor" aria-label="anchor" href="#some-more-about-remotes"></a>
-</h3>
-<div class="callout-content">
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">
+<div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Some more about remotes</h3>
+</button>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div class="accordion-body">
 <p>In this episode and the previous one, our local repository has had a
 single “remote”, called <code>origin</code>. A remote is a copy of the
 repository that is hosted somewhere else, that we can push to and pull
@@ -617,6 +619,7 @@ Or, if we made a typo when adding it!</li>
 alias by which a remote is known - its name. For example, one could use
 this to change <code>upstream</code> to <code>fred</code>.</li>
 </ul></div>
+</div>
 </div>
 </div>
 </section><section id="download-contributor-edits"><h2 class="section-heading">Download contributor edits<a class="anchor" aria-label="anchor" href="#download-contributor-edits"></a>
@@ -671,18 +674,6 @@ review.</p>
 </div>
 </div>
 </div>
-<div id="switch-roles-and-repeat" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<div id="switch-roles-and-repeat" class="callout-inner">
-<h3 class="callout-title">Switch Roles and Repeat<a class="anchor" aria-label="anchor" href="#switch-roles-and-repeat"></a>
-</h3>
-<div class="callout-content">
-<p>Switch roles and repeat the whole process.</p>
-</div>
-</div>
-</div>
 <div id="review-changes" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -702,15 +693,20 @@ has changed with command line? And on GitHub?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<p>On the command line, the Collaborator can use
+<p><strong>On GitHub</strong>, the Collaborator can go to the repository
+and click on “commits” to view the most recent commits pushed to the
+repository.</p>
+<figure><img src="fig/github-commits-button.png" alt="Click on “commit”. Select one commit." class="figure mx-auto d-block"><div class="figcaption">Click on “commit”. Select one commit.</div>
+</figure><figure><img src="fig/github-commit-diff.png" alt="Replace age with sex commit. The removed content within lines is in red. The added content within lines is in green." class="figure mx-auto d-block"><div class="figcaption">Replace age with sex commit. The removed content
+within lines is in red. The added content within lines is in
+green.</div>
+</figure><p>On the <strong>command line</strong>, the Collaborator can use
 <code>git fetch origin main</code> to get the remote changes into the
 local repository, but without merging them. Then by running
 <code>git diff main origin/main</code> the Collaborator will see the
 changes output in the terminal.</p>
-<p>On GitHub, the Collaborator can go to the repository and click on
-“commits” to view the most recent commits pushed to the repository.</p>
 <figure><img src="fig/cut-git-verb_map-12.png" alt="Use git fetch to download the remote content but not update your local repo’s working state, leaving your current work intact. Use git pull to download the remote content for the active local branch and immediately merge it. this can potentially cause conflicts." class="figure mx-auto d-block"><div class="figcaption">Use <code>git fetch</code> to download the
 remote content but not update your local repo’s working state, leaving
 your current work intact. Use <code>git pull</code> to download the
@@ -720,7 +716,23 @@ this can potentially cause conflicts.</div>
 </div>
 </div>
 </div>
-<div id="comment-changes-in-github" class="callout discussion">
+</section><section id="group-challenge"><h2 class="section-heading">Group challenge<a class="anchor" aria-label="anchor" href="#group-challenge"></a>
+</h2>
+<hr class="half-width"><div id="switch-roles-and-repeat" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="switch-roles-and-repeat" class="callout-inner">
+<h3 class="callout-title">Switch Roles and Repeat<a class="anchor" aria-label="anchor" href="#switch-roles-and-repeat"></a>
+</h3>
+<div class="callout-content">
+<p>Switch roles and repeat the whole process.</p>
+</div>
+</div>
+</div>
+</section><section id="individual-challenges"><h2 class="section-heading">Individual challenges<a class="anchor" aria-label="anchor" href="#individual-challenges"></a>
+</h2>
+<hr class="half-width"><div id="comment-changes-in-github" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
@@ -762,7 +774,8 @@ benefits of using version control, Git and GitHub?</p>
 <h3 class="callout-title">Create your GitHub profile!<a class="anchor" aria-label="anchor" href="#create-your-github-profile"></a>
 </h3>
 <div class="callout-content">
-<p>Your profile page introduce you to other contributors on GitHub:</p>
+<p>Now your work will be visible online on GitHub. Your profile page
+introduce you to other contributors on GitHub:</p>
 <figure><img src="fig/github-create-00.png" class="figure mx-auto d-block"></figure></div>
 </div>
 </div>
@@ -771,7 +784,7 @@ benefits of using version control, Git and GitHub?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>To create this, go to the <a href="https://github.com/" class="external-link">GitHub Home
 page</a>, identify the section called <strong>Introduce yourself with a
@@ -851,7 +864,7 @@ up.</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/epiverse-trace/sandpaper/tree/patch-renv-github-bug" class="external-link">sandpaper (0.16.2)</a>, <a href="https://github.com/carpentries/pegboard/tree/1bc5753e917d515c3d888ce6cc013c0a680eacfc" class="external-link">pegboard (0.7.3)</a>, and <a href="https://github.com/epiverse-trace/varnish/tree/epiversetheme" class="external-link">varnish (1.0.1.9000)</a></p>
+        <p>Built with <a href="https://github.com/epiverse-trace/sandpaper/tree/patch-renv-github-bug" class="external-link">sandpaper (0.16.2)</a>, <a href="https://github.com/carpentries/pegboard/tree/6a0023c1dbaf9f6936e161364a80c6971777ee46" class="external-link">pegboard (0.7.4.9000)</a>, and <a href="https://github.com/epiverse-trace/varnish/tree/epiversetheme" class="external-link">varnish (1.0.1.9000)</a></p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -873,7 +886,7 @@ up.</li>
   "url": "https://epiverse-trace.github.io/git-rstudio-basics/08-collab.html",
   "identifier": "https://epiverse-trace.github.io/git-rstudio-basics/08-collab.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2023-11-27",
+  "dateModified": "2024-03-05",
   "datePublished": "2024-03-05"
 }
 

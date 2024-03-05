@@ -3203,7 +3203,7 @@ Use -f if you really want to add them.</code></pre>
   <h3 class="accordion-header" id="headingSpoiler1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>How to override our ignore settings?</h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>If we really want to override our ignore settings, we can use
 <code>git add -f</code> to force Git to add something. For example,
@@ -3303,7 +3303,7 @@ results/plots
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>If you only want to ignore the contents of
 <code>outputs/templates</code>, you can change your
@@ -3344,7 +3344,7 @@ directory except for <code>final.csv</code>?</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1">Give me a hint</h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <p>Find out what <code>!</code> (the exclamation point operator) does
 for <code>gitignore</code> in the <a href="reference.html">Git Reference
@@ -3358,7 +3358,7 @@ documentation</a>.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>You would add the following two lines to your .gitignore:</p>
 <div class="codewrapper">
@@ -3418,7 +3418,7 @@ not <code>outputs/paper</code>?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>If you want to ignore the contents of <code>outputs/</code> but not
 those of <code>outputs/paper/</code>, you can change your
@@ -3466,7 +3466,7 @@ ignore all <code>.csv</code> files in
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4">Show me the solution</h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>Appending <code>data/household/position/gps/*.csv</code> will match
 every file in <code>data/household/position/gps</code> that ends with
@@ -3514,7 +3514,7 @@ listing the names of the corresponding folders?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5">Show me the solution</h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>In the <code>.gitignore</code> file, write:</p>
 <div class="codewrapper">
@@ -3553,7 +3553,7 @@ exception with the exclamation point operator.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
   <h4 class="accordion-header" id="headingSolution6">Show me the solution</h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <p>The <code>!</code> modifier will negate an entry from a previously
 defined ignore pattern. Because the <code>!*.csv</code> entry negates
@@ -3597,7 +3597,7 @@ via <code>.gitignore</code>.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
   <h4 class="accordion-header" id="headingSolution7">Show me the solution</h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>append either <code>log_*</code> or <code>log*</code> as a new entry
@@ -3937,7 +3937,7 @@ repository on GitHub:</p>
 <div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="ex">$</span> git push</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="ex">$</span> git push origin main</span></code></pre>
 </div>
 <p>Since Dracula set up a passphrase, it will prompt him for it. If you
 completed advanced settings for your authentication, it will not prompt
@@ -4069,7 +4069,7 @@ well:</p>
 <div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" tabindex="-1"></a><span class="ex">$</span> git pull</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" tabindex="-1"></a><span class="ex">$</span> git pull origin main</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -4144,7 +4144,30 @@ This is a report for a disease outbreak investigation by Outbreak Missions.
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a><span class="ex">$</span> git pull</span></code></pre>
 </div>
+<p>If you are interested on how to write good READMEs, we invite you to
+review a dedicated episode in the <a href="https://epiverse-trace.github.io/research-compendium/" class="external-link">Improve
+your code for Epidemic Analysis with R</a> tutorial website!</p>
 </div>
+</div>
+</div>
+</div>
+<div id="share-your-online-repository" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<div id="share-your-online-repository" class="callout-inner">
+<h3 class="callout-title">Share your online repository!<a class="anchor" aria-label="anchor" href="#share-your-online-repository"></a>
+</h3>
+<div class="callout-content">
+<p>This tutorial have a <strong>Discussions</strong> board also hosted
+in GitHub.</p>
+<ol style="list-style-type: decimal">
+<li><p>Access to this <a href="https://github.com/epiverse-trace/git-rstudio-basics/discussions/10" class="external-link">Welcome
+entry</a></p></li>
+<li><p>Share with us a link to the <code>case</code> repository you just
+uploaded! (For example, this is the link to the repository of one of our
+participants <a href="https://github.com/avallecam/cases" class="external-link uri">https://github.com/avallecam/cases</a>)</p></li>
+</ol>
 </div>
 </div>
 </div>
@@ -4315,7 +4338,7 @@ local repository.</li>
 </div>
 </section></section><section id="aio-08-collab"><p>Content from <a href="08-collab.html">Collaborating</a></p>
 <hr>
-<p>Last updated on 2023-11-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/epiverse-trace/git-rstudio-basics/edit/main/episodes/08-collab.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -4535,14 +4558,14 @@ earlier when we were setting up remotes by hand.)</p>
 <p>Take a look at the Owner’s repository on GitHub again, and you should
 be able to see the new commit made by the Collaborator. You may need to
 refresh your browser to see the new commit.</p>
-<div id="some-more-about-remotes" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="some-more-about-remotes" class="callout-inner">
-<h3 class="callout-title">Some more about remotes<a class="anchor" aria-label="anchor" href="#some-more-about-remotes"></a>
-</h3>
-<div class="callout-content">
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">
+<div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Some more about remotes</h3>
+</button>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div class="accordion-body">
 <p>In this episode and the previous one, our local repository has had a
 single “remote”, called <code>origin</code>. A remote is a copy of the
 repository that is hosted somewhere else, that we can push to and pull
@@ -4581,6 +4604,7 @@ Or, if we made a typo when adding it!</li>
 alias by which a remote is known - its name. For example, one could use
 this to change <code>upstream</code> to <code>fred</code>.</li>
 </ul>
+</div>
 </div>
 </div>
 </div>
@@ -4639,18 +4663,6 @@ review.</p>
 </div>
 </div>
 </div>
-<div id="switch-roles-and-repeat" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<div id="switch-roles-and-repeat" class="callout-inner">
-<h3 class="callout-title">Switch Roles and Repeat<a class="anchor" aria-label="anchor" href="#switch-roles-and-repeat"></a>
-</h3>
-<div class="callout-content">
-<p>Switch roles and repeat the whole process.</p>
-</div>
-</div>
-</div>
 <div id="review-changes" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -4670,15 +4682,20 @@ has changed with command line? And on GitHub?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<p>On the command line, the Collaborator can use
+<p><strong>On GitHub</strong>, the Collaborator can go to the repository
+and click on “commits” to view the most recent commits pushed to the
+repository.</p>
+<figure><img src="fig/github-commits-button.png" alt="Click on “commit”. Select one commit." class="figure mx-auto d-block"><div class="figcaption">Click on “commit”. Select one commit.</div>
+</figure><figure><img src="fig/github-commit-diff.png" alt="Replace age with sex commit. The removed content within lines is in red. The added content within lines is in green." class="figure mx-auto d-block"><div class="figcaption">Replace age with sex commit. The removed content
+within lines is in red. The added content within lines is in
+green.</div>
+</figure><p>On the <strong>command line</strong>, the Collaborator can use
 <code>git fetch origin main</code> to get the remote changes into the
 local repository, but without merging them. Then by running
 <code>git diff main origin/main</code> the Collaborator will see the
 changes output in the terminal.</p>
-<p>On GitHub, the Collaborator can go to the repository and click on
-“commits” to view the most recent commits pushed to the repository.</p>
 <figure><img src="fig/cut-git-verb_map-12.png" alt="Use git fetch to download the remote content but not update your local repo’s working state, leaving your current work intact. Use git pull to download the remote content for the active local branch and immediately merge it. this can potentially cause conflicts." class="figure mx-auto d-block"><div class="figcaption">Use <code>git fetch</code> to download the
 remote content but not update your local repo’s working state, leaving
 your current work intact. Use <code>git pull</code> to download the
@@ -4689,6 +4706,24 @@ this can potentially cause conflicts.</div>
 </div>
 </div>
 </div>
+</section><section id="group-challenge"><h2 class="section-heading">Group challenge<a class="anchor" aria-label="anchor" href="#group-challenge"></a>
+</h2>
+<hr class="half-width">
+<div id="switch-roles-and-repeat" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="switch-roles-and-repeat" class="callout-inner">
+<h3 class="callout-title">Switch Roles and Repeat<a class="anchor" aria-label="anchor" href="#switch-roles-and-repeat"></a>
+</h3>
+<div class="callout-content">
+<p>Switch roles and repeat the whole process.</p>
+</div>
+</div>
+</div>
+</section><section id="individual-challenges"><h2 class="section-heading">Individual challenges<a class="anchor" aria-label="anchor" href="#individual-challenges"></a>
+</h2>
+<hr class="half-width">
 <div id="comment-changes-in-github" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -4731,7 +4766,8 @@ benefits of using version control, Git and GitHub?</p>
 <h3 class="callout-title">Create your GitHub profile!<a class="anchor" aria-label="anchor" href="#create-your-github-profile"></a>
 </h3>
 <div class="callout-content">
-<p>Your profile page introduce you to other contributors on GitHub:</p>
+<p>Now your work will be visible online on GitHub. Your profile page
+introduce you to other contributors on GitHub:</p>
 <figure><img src="fig/github-create-00.png" class="figure mx-auto d-block"></figure>
 </div>
 </div>
@@ -4741,7 +4777,7 @@ benefits of using version control, Git and GitHub?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>To create this, go to the <a href="https://github.com/" class="external-link">GitHub Home
 page</a>, identify the section called <strong>Introduce yourself with a
@@ -4791,7 +4827,7 @@ up.</li>
 </div>
 </section></section><section id="aio-09-conflict"><p>Content from <a href="09-conflict.html">Conflicts</a></p>
 <hr>
-<p>Last updated on 2023-11-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/epiverse-trace/git-rstudio-basics/edit/main/episodes/09-conflict.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -4839,13 +4875,331 @@ lab, we could make different changes to each copy. Version control helps
 us manage these <a href="reference.html#conflict">conflicts</a> by
 giving us tools to <a href="reference.html#resolve">resolve</a>
 overlapping changes.</p>
+<p>Before resolving conflicts, we’ll review two features that a
+<strong>good collaborator</strong> puts in practice: Create branches and
+Atomic commits.</p>
+</section><section id="create-branches"><h2 class="section-heading">Create branches<a class="anchor" aria-label="anchor" href="#create-branches"></a>
+</h2>
+<hr class="half-width">
+<p>Sometimes you want to experiment with your project without affecting
+the main version. You can do this by using branches. A branch is a local
+copy of the main project (also called the <code>main</code> branch)
+where you can make changes and test new ideas. The <code>main</code>
+branch stays safe and unchanged while you work on your branch (a.k.a.,
+<code>feature branch</code>). When you are satisfied with the changes,
+you can merge them into the main branch. This means that the separate
+lines of development in your branch are combined with the main
+branch.</p>
+<figure><img src="fig/one-branch.png" alt="One feature branch and one main branch in Git." class="figure mx-auto d-block"><div class="figcaption">One feature branch and one main branch in
+Git.</div>
+</figure><p>You can have more than one branch off of your main copy. If one of
+your branches ends up not working, you can either abandon it or delete
+it without impacting the main branch of your project.</p>
+<figure><img src="fig/two-branches.png" alt="Two feature branches and one main branch in Git." class="figure mx-auto d-block"><div class="figcaption">Two feature branches and one main branch in
+Git.</div>
+</figure><p>To create a branch, first, verify that you are working on the main
+branch:</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span> git status</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>On branch main</code></pre>
+</div>
+<p>The <code>git branch</code> command <strong>creates</strong> a branch
+of the name <code>newbranch</code>:</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">$</span> git branch newbranch</span></code></pre>
+</div>
+<p>The <code>git checkout</code> command <strong>switch</strong> from
+the current branch (in this case, <code>main</code>) to the
+<code>newbranch</code>:</p>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="ex">$</span> git checkout newbranch</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>Switched to branch 'newbranch'</code></pre>
+</div>
+<p>Now, you can confirm that we are in <code>newbranch</code> using
+<code>git status</code>:</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="ex">$</span> git status</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>On branch newbranch
+nothing to commit, working tree clean</code></pre>
+</div>
+<p>Now, let’s make an edit to the <code>sitrep.Rmd</code> file:</p>
+<div class="codewrapper sourceCode" id="cb8">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu">edit_file</span><span class="op">(</span><span class="st">"sitrep.Rmd"</span><span class="op">)</span></span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>Comparison of attack rates in different age groups
+This can identify priority groups for interventions
+Maps illustrate the spread and impact of outbreak
+Use packages listed in the CRAN Task View: Epidemiology</code></pre>
+</div>
+<p>Add and commit this change to the local repository:</p>
+<div class="codewrapper sourceCode" id="cb10">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="ex">$</span> git add sitrep.Rmd</span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add edit in new branch"</span></span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>[newbranch 60d5ff9] Add edit in new branch
+ 1 file changed, 1 insertion(+)</code></pre>
+</div>
+<p>Push commit to the remote repository. NOTE: instead of
+<code>git push origin main</code>, we replace <code>main</code> with the
+name of the new branch:</p>
+<div class="codewrapper sourceCode" id="cb12">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="ex">$</span> git push origin newbranch</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 339 bytes | 169.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'newbranch' on GitHub by visiting:
+remote:      https://github.com/vlad/cases/pull/new/newbranch
+remote:
+To https://github.com/vlad/cases.git
+ * [new branch]      newbranch -&gt; newbranch</code></pre>
+</div>
+<p>On GitHub, we get a notification to Create a <strong>Pull
+Request</strong>:</p>
+<figure><img src="fig/github-branch-pullrequest.png" class="figure mx-auto d-block"></figure><p>In your local repository, you can leave your work parked for a while
+on that branch. To return to <code>main</code> (or to any other branch),
+you can use the same command to <strong>switch</strong> between
+branches:</p>
+<div class="codewrapper sourceCode" id="cb14">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="ex">$</span> git checkout main</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>Switched to branch 'main'
+Your branch is up to date with 'origin/main'.</code></pre>
+</div>
+</section><section id="atomic-commits"><h2 class="section-heading">Atomic commits<a class="anchor" aria-label="anchor" href="#atomic-commits"></a>
+</h2>
+<hr class="half-width">
+<p>A good commit is also an <strong>atomic commit</strong>, like in the
+commit of the last challenge:</p>
+<div class="codewrapper sourceCode" id="cb16">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="ex">$</span> git add lab-test.jpg</span>
+<span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a><span class="ex">$</span> git add lab-site.jpg</span>
+<span id="cb16-3"><a href="#cb16-3" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Use two images: test and site"</span></span></code></pre>
+</div>
+<p>Commits should be ‘atomic’, meaning that they should do one simple
+thing and they should do it completely. (<a href="https://the-turing-way.netlify.app/reproducible-research/vcs/vcs-git-compare#good-practice" class="external-link">The
+Turing Way Community</a>). Atomic commits prioritize one unit of change
+instead of the quantity of changes.</p>
+<figure><img src="fig/git-rstudio-27.png" alt="Two related modified lines must be part of the same commit." class="figure mx-auto d-block"><div class="figcaption">Two related modified lines must be part of the
+same commit.</div>
+</figure><p>In Rstudio, the Review changes window has a button called “Stage
+chunk”. This helps to make atomic commits, even if you change a lot of
+lines in a single edit. You can either select them to make isolated
+commits or to unite them to be part of the same commit.</p>
+<figure><img src="fig/git-rstudio-35.png" alt="Two unrelated edits must be part of two isolated commits." class="figure mx-auto d-block"><div class="figcaption">Two unrelated edits must be part of two isolated
+commits.</div>
+</figure><div id="good-practice" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="good-practice" class="callout-inner">
+<h3 class="callout-title">Good practice<a class="anchor" aria-label="anchor" href="#good-practice"></a>
+</h3>
+<div class="callout-content">
+<p>A good atomic commit:</p>
+<ul>
+<li><p>Includes more than one file that involves one unit of
+change.</p></li>
+<li><p>Isolate or includes multiple edited lines using the “Stage chunk”
+button in Rstudio.</p></li>
+<li><p>Does not include all the files in one commit.</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section id="group-challenge"><h2 class="section-heading">Group Challenge<a class="anchor" aria-label="anchor" href="#group-challenge"></a>
+</h2>
+<hr class="half-width">
+<div id="a-typical-work-session" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="a-typical-work-session" class="callout-inner">
+<h3 class="callout-title">A Typical Work Session<a class="anchor" aria-label="anchor" href="#a-typical-work-session"></a>
+</h3>
+<div class="callout-content">
+<p>You sit down at your computer to work on a shared project that is
+tracked in a remote Git repository. During your work session, you take
+the following actions, but not in this order:</p>
+<ul>
+<li>
+<em>Make changes</em> by appending the number <code>100</code> to a
+text file <code>numbers.md</code>
+</li>
+<li>
+<em>Update remote</em> repository to match the local repository</li>
+<li>
+<em>Celebrate</em> your success with some fancy beverage(s)</li>
+<li>
+<em>Update local</em> repository to match the remote repository</li>
+<li>
+<em>Stage changes</em> to be committed</li>
+<li>
+<em>Commit changes</em> to the local repository</li>
+</ul>
+<p>In what order should you perform these actions to minimize the
+chances of conflicts? Put the commands above in order in the
+<em>action</em> column of the table below. When you have the order
+right, see if you can write the corresponding commands in the
+<em>command</em> column. A few steps are populated to get you
+started.</p>
+<table class="table">
+<colgroup>
+<col width="6%">
+<col width="34%">
+<col width="59%">
+</colgroup>
+<thead><tr class="header">
+<th>order</th>
+<th>action . . . . . .</th>
+<th>command . . . . . . . . . .</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td></td>
+<td><code>echo 100 &gt;&gt; numbers.md</code></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Celebrate!</td>
+<td><code>AFK</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<table class="table">
+<colgroup>
+<col width="6%">
+<col width="34%">
+<col width="59%">
+</colgroup>
+<thead><tr class="header">
+<th>order</th>
+<th>action . . . . . .</th>
+<th>command . . . . . . . . . . . . . . . . . . .</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Update local</td>
+<td><code>git pull origin main</code></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Make changes</td>
+<td><code>echo 100 &gt;&gt; numbers.md</code></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Stage changes</td>
+<td><code>git add numbers.md</code></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Commit changes</td>
+<td><code>git commit -m "Add 100 to numbers.md"</code></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Update remote</td>
+<td><code>git push origin main</code></td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Celebrate!</td>
+<td><code>AFK</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
 </section><section id="create-a-conflict"><h2 class="section-heading">Create a conflict<a class="anchor" aria-label="anchor" href="#create-a-conflict"></a>
 </h2>
 <hr class="half-width">
 <p>To see how we can resolve conflicts, we must first create one. The
 file <code>sitrep.Rmd</code> currently looks like this in both partners’
 copies of our <code>cases</code> repository:</p>
-<div class="codewrapper sourceCode" id="cb1">
+<div class="codewrapper sourceCode" id="cb17">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -4865,7 +5219,7 @@ Maps illustrate the spread and impact of outbreak</code></pre>
 </div>
 <p>Let’s add a line to the <strong>collaborator’s</strong> copy
 only:</p>
-<div class="codewrapper sourceCode" id="cb3">
+<div class="codewrapper sourceCode" id="cb19">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -4886,11 +5240,11 @@ Maps illustrate the spread and impact of outbreak
 This line added to Wolfman's copy</code></pre>
 </div>
 <p>and then push the change to GitHub:</p>
-<div class="codewrapper sourceCode" id="cb5">
+<div class="codewrapper sourceCode" id="cb21">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="ex">$</span> git add sitrep.Rmd</span>
-<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add a line in our home copy"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="ex">$</span> git add sitrep.Rmd</span>
+<span id="cb21-2"><a href="#cb21-2" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add a line in our home copy"</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -4898,10 +5252,10 @@ This line added to Wolfman's copy</code></pre>
 <pre class="output" tabindex="0"><code>[main 5ae9631] Add a line in our home copy
  1 file changed, 1 insertion(+)</code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb7">
+<div class="codewrapper sourceCode" id="cb23">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="ex">$</span> git push origin main</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a><span class="ex">$</span> git push origin main</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -4918,7 +5272,7 @@ To https://github.com/vlad/cases.git
 </div>
 <p>Now let’s have the <strong>owner</strong> make a different change to
 their copy <em>without</em> updating from GitHub:</p>
-<div class="codewrapper sourceCode" id="cb9">
+<div class="codewrapper sourceCode" id="cb25">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -4939,11 +5293,11 @@ Maps illustrate the spread and impact of outbreak
 We added a different line in the other copy</code></pre>
 </div>
 <p>We can commit the change locally:</p>
-<div class="codewrapper sourceCode" id="cb11">
+<div class="codewrapper sourceCode" id="cb27">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="ex">$</span> git add sitrep.Rmd</span>
-<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add a line in my copy"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" tabindex="-1"></a><span class="ex">$</span> git add sitrep.Rmd</span>
+<span id="cb27-2"><a href="#cb27-2" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add a line in my copy"</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -4952,10 +5306,10 @@ We added a different line in the other copy</code></pre>
  1 file changed, 1 insertion(+)</code></pre>
 </div>
 <p>but Git won’t let us push it to GitHub:</p>
-<div class="codewrapper sourceCode" id="cb13">
+<div class="codewrapper sourceCode" id="cb29">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="ex">$</span> git push origin main</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" tabindex="-1"></a><span class="ex">$</span> git push origin main</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -4979,10 +5333,10 @@ we’re currently working in, and then push that.</p>
 <p>The <strong>owner</strong> need to solve this conflict to be able to
 push to the remote repository.</p>
 <p>Let’s start by pulling:</p>
-<div class="codewrapper sourceCode" id="cb15">
+<div class="codewrapper sourceCode" id="cb31">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="ex">$</span> git pull origin main</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" tabindex="-1"></a><span class="ex">$</span> git pull origin main</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -5006,7 +5360,7 @@ changes made to the local copy overlap with those made to the remote
 repository, and therefore refuses to merge the two versions to stop us
 from trampling on our previous work. The conflict is marked in in the
 affected file:</p>
-<div class="codewrapper sourceCode" id="cb17">
+<div class="codewrapper sourceCode" id="cb33">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -5041,7 +5395,7 @@ reconcile the changes. We can do anything we want: keep the change made
 in the local repository, keep the change made in the remote repository,
 write something new to replace both, or get rid of the change entirely.
 Let’s replace both so that the file looks like this:</p>
-<div class="codewrapper sourceCode" id="cb19">
+<div class="codewrapper sourceCode" id="cb35">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -5062,11 +5416,11 @@ We removed the conflict on this line</code></pre>
 </div>
 <p>To finish merging, we add <code>sitrep.Rmd</code> to the changes
 being made by the merge and then commit:</p>
-<div class="codewrapper sourceCode" id="cb21">
+<div class="codewrapper sourceCode" id="cb37">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="ex">$</span> git add sitrep.Rmd</span>
-<span id="cb21-2"><a href="#cb21-2" tabindex="-1"></a><span class="ex">$</span> git status</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb37-1"><a href="#cb37-1" tabindex="-1"></a><span class="ex">$</span> git add sitrep.Rmd</span>
+<span id="cb37-2"><a href="#cb37-2" tabindex="-1"></a><span class="ex">$</span> git status</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -5080,10 +5434,10 @@ Changes to be committed:
 	modified:   sitrep.Rmd
 </code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb23">
+<div class="codewrapper sourceCode" id="cb39">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Merge changes from GitHub"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb39-1"><a href="#cb39-1" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Merge changes from GitHub"</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -5091,10 +5445,10 @@ Changes to be committed:
 <pre class="output" tabindex="0"><code>[main 2abf2b1] Merge changes from GitHub</code></pre>
 </div>
 <p>Now we can push our changes to GitHub:</p>
-<div class="codewrapper sourceCode" id="cb25">
+<div class="codewrapper sourceCode" id="cb41">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" tabindex="-1"></a><span class="ex">$</span> git push origin main</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb41-1"><a href="#cb41-1" tabindex="-1"></a><span class="ex">$</span> git push origin main</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -5115,10 +5469,10 @@ To https://github.com/vlad/cases.git
 <p>Git keeps track of what we’ve merged with what, so we don’t have to
 fix things by hand again when the <strong>collaborator</strong> who made
 the first change pulls again:</p>
-<div class="codewrapper sourceCode" id="cb27">
+<div class="codewrapper sourceCode" id="cb43">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" tabindex="-1"></a><span class="ex">$</span> git pull origin main</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb43-1"><a href="#cb43-1" tabindex="-1"></a><span class="ex">$</span> git pull origin main</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -5137,7 +5491,7 @@ Fast-forward
  1 file changed, 1 insertion(+), 1 deletion(-)</code></pre>
 </div>
 <p>We get the merged file:</p>
-<div class="codewrapper sourceCode" id="cb29">
+<div class="codewrapper sourceCode" id="cb45">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -5189,26 +5543,6 @@ establish a project convention that is governing and use code style
 tools (e.g. <code>htmltidy</code>, <code>perltidy</code>,
 <code>rubocop</code>, etc.) to enforce, if necessary</li>
 </ul>
-<div id="good-practices" class="callout checklist">
-<div class="callout-square">
-<i class="callout-icon" data-feather="check-square"></i>
-</div>
-<div id="good-practices" class="callout-inner">
-<h3 class="callout-title">Good practices<a class="anchor" aria-label="anchor" href="#good-practices"></a>
-</h3>
-<div class="callout-content">
-<p>A good collaborator:</p>
-<ul>
-<li>Pull from upstream frequently before new edits.</li>
-<li>Use topic or feature branches to segregate work.</li>
-<li>Make atomic commits.</li>
-<li>Push your work when it is done to reduce work in progress.</li>
-<li>Break large files when appropriate.</li>
-<li>Read contributing guidelines from the project owner.</li>
-</ul>
-</div>
-</div>
-</div>
 <div id="solving-conflicts-that-you-create" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -5237,22 +5571,22 @@ non-textual file that is stored in version control?</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Let’s try it. Suppose Dracula takes a picture of the laboratory test
 and calls it <code>lab.jpg</code>.</p>
 <p>If you do not have an image file of the lab available, you can create
 a dummy binary file like this:</p>
-<div class="codewrapper sourceCode" id="cb31">
+<div class="codewrapper sourceCode" id="cb47">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" tabindex="-1"></a><span class="ex">$</span> head <span class="at">-c</span> 1024 /dev/urandom <span class="op">&gt;</span> lab.jpg</span>
-<span id="cb31-2"><a href="#cb31-2" tabindex="-1"></a><span class="ex">$</span> ls <span class="at">-lh</span> lab.jpg</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb47-1"><a href="#cb47-1" tabindex="-1"></a><span class="ex">$</span> head <span class="at">-c</span> 1024 /dev/urandom <span class="op">&gt;</span> lab.jpg</span>
+<span id="cb47-2"><a href="#cb47-2" tabindex="-1"></a><span class="ex">$</span> ls <span class="at">-lh</span> lab.jpg</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -5263,11 +5597,11 @@ a dummy binary file like this:</p>
 full of random bytes read from the special file,
 <code>/dev/urandom</code>.</p>
 <p>Now, suppose Dracula adds <code>lab.jpg</code> to his repository:</p>
-<div class="codewrapper sourceCode" id="cb33">
+<div class="codewrapper sourceCode" id="cb49">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb33-1"><a href="#cb33-1" tabindex="-1"></a><span class="ex">$</span> git add lab.jpg</span>
-<span id="cb33-2"><a href="#cb33-2" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add picture of laboratory test"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb49-1"><a href="#cb49-1" tabindex="-1"></a><span class="ex">$</span> git add lab.jpg</span>
+<span id="cb49-2"><a href="#cb49-2" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add picture of laboratory test"</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -5280,10 +5614,10 @@ full of random bytes read from the special file,
 is a picture of the laboratory site, but it is <em>also</em> called
 <code>lab.jpg</code>. When Dracula tries to push, he gets a familiar
 message:</p>
-<div class="codewrapper sourceCode" id="cb35">
+<div class="codewrapper sourceCode" id="cb51">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb35-1"><a href="#cb35-1" tabindex="-1"></a><span class="ex">$</span> git push origin main</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb51-1"><a href="#cb51-1" tabindex="-1"></a><span class="ex">$</span> git push origin main</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -5298,10 +5632,10 @@ hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.</code></pre>
 </div>
 <p>We’ve learned that we must pull first and resolve any conflicts:</p>
-<div class="codewrapper sourceCode" id="cb37">
+<div class="codewrapper sourceCode" id="cb53">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb37-1"><a href="#cb37-1" tabindex="-1"></a><span class="ex">$</span> git pull origin main</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb53-1"><a href="#cb53-1" tabindex="-1"></a><span class="ex">$</span> git pull origin main</span></code></pre>
 </div>
 <p>When there is a conflict on an image or other binary file, git prints
 a message like this:</p>
@@ -5336,12 +5670,12 @@ version.</p>
 identifiers for the two versions of <code>lab.jpg</code>. Our version is
 <code>HEAD</code>, and Wolfman’s version is <code>439dc8c0...</code>. If
 we want to use our version, we can use <code>git checkout</code>:</p>
-<div class="codewrapper sourceCode" id="cb40">
+<div class="codewrapper sourceCode" id="cb56">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb40-1"><a href="#cb40-1" tabindex="-1"></a><span class="ex">$</span> git checkout HEAD lab.jpg</span>
-<span id="cb40-2"><a href="#cb40-2" tabindex="-1"></a><span class="ex">$</span> git add lab.jpg</span>
-<span id="cb40-3"><a href="#cb40-3" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Use image of test instead of site"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb56-1"><a href="#cb56-1" tabindex="-1"></a><span class="ex">$</span> git checkout HEAD lab.jpg</span>
+<span id="cb56-2"><a href="#cb56-2" tabindex="-1"></a><span class="ex">$</span> git add lab.jpg</span>
+<span id="cb56-3"><a href="#cb56-3" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Use image of test instead of site"</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -5351,12 +5685,12 @@ we want to use our version, we can use <code>git checkout</code>:</p>
 <p>If instead we want to use Wolfman’s version, we can use
 <code>git checkout</code> with Wolfman’s commit identifier,
 <code>439dc8c0</code>:</p>
-<div class="codewrapper sourceCode" id="cb42">
+<div class="codewrapper sourceCode" id="cb58">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb42-1"><a href="#cb42-1" tabindex="-1"></a><span class="ex">$</span> git checkout 439dc8c0 lab.jpg</span>
-<span id="cb42-2"><a href="#cb42-2" tabindex="-1"></a><span class="ex">$</span> git add lab.jpg</span>
-<span id="cb42-3"><a href="#cb42-3" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Use image of site instead of test"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb58-1"><a href="#cb58-1" tabindex="-1"></a><span class="ex">$</span> git checkout 439dc8c0 lab.jpg</span>
+<span id="cb58-2"><a href="#cb58-2" tabindex="-1"></a><span class="ex">$</span> git add lab.jpg</span>
+<span id="cb58-3"><a href="#cb58-3" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Use image of site instead of test"</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -5367,23 +5701,23 @@ we want to use our version, we can use <code>git checkout</code>:</p>
 keep them under the same name. But, we can check out each version in
 succession and <em>rename</em> it, then add the renamed versions. First,
 check out each image and rename it:</p>
-<div class="codewrapper sourceCode" id="cb44">
+<div class="codewrapper sourceCode" id="cb60">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb44-1"><a href="#cb44-1" tabindex="-1"></a><span class="ex">$</span> git checkout HEAD lab.jpg</span>
-<span id="cb44-2"><a href="#cb44-2" tabindex="-1"></a><span class="ex">$</span> git mv lab.jpg lab-test.jpg</span>
-<span id="cb44-3"><a href="#cb44-3" tabindex="-1"></a><span class="ex">$</span> git checkout 439dc8c0 lab.jpg</span>
-<span id="cb44-4"><a href="#cb44-4" tabindex="-1"></a><span class="ex">$</span> mv lab.jpg lab-site.jpg</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb60-1"><a href="#cb60-1" tabindex="-1"></a><span class="ex">$</span> git checkout HEAD lab.jpg</span>
+<span id="cb60-2"><a href="#cb60-2" tabindex="-1"></a><span class="ex">$</span> git mv lab.jpg lab-test.jpg</span>
+<span id="cb60-3"><a href="#cb60-3" tabindex="-1"></a><span class="ex">$</span> git checkout 439dc8c0 lab.jpg</span>
+<span id="cb60-4"><a href="#cb60-4" tabindex="-1"></a><span class="ex">$</span> mv lab.jpg lab-site.jpg</span></code></pre>
 </div>
 <p>Then, remove the old <code>lab.jpg</code> and add the two new
 files:</p>
-<div class="codewrapper sourceCode" id="cb45">
+<div class="codewrapper sourceCode" id="cb61">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb45-1"><a href="#cb45-1" tabindex="-1"></a><span class="ex">$</span> git rm lab.jpg</span>
-<span id="cb45-2"><a href="#cb45-2" tabindex="-1"></a><span class="ex">$</span> git add lab-test.jpg</span>
-<span id="cb45-3"><a href="#cb45-3" tabindex="-1"></a><span class="ex">$</span> git add lab-site.jpg</span>
-<span id="cb45-4"><a href="#cb45-4" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Use two images: test and site"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb61-1"><a href="#cb61-1" tabindex="-1"></a><span class="ex">$</span> git rm lab.jpg</span>
+<span id="cb61-2"><a href="#cb61-2" tabindex="-1"></a><span class="ex">$</span> git add lab-test.jpg</span>
+<span id="cb61-3"><a href="#cb61-3" tabindex="-1"></a><span class="ex">$</span> git add lab-site.jpg</span>
+<span id="cb61-4"><a href="#cb61-4" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Use two images: test and site"</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -5399,184 +5733,23 @@ files:</p>
 </div>
 </div>
 </div>
-</section><section id="atomic-commits"><h2 class="section-heading">Atomic commits<a class="anchor" aria-label="anchor" href="#atomic-commits"></a>
-</h2>
-<hr class="half-width">
-<p>A good commit is also an <strong>atomic commit</strong>, like in the
-commit of the last challenge:</p>
-<div class="codewrapper sourceCode" id="cb47">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb47-1"><a href="#cb47-1" tabindex="-1"></a><span class="ex">$</span> git add lab-test.jpg</span>
-<span id="cb47-2"><a href="#cb47-2" tabindex="-1"></a><span class="ex">$</span> git add lab-site.jpg</span>
-<span id="cb47-3"><a href="#cb47-3" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Use two images: test and site"</span></span></code></pre>
-</div>
-<p>Commits should be ‘atomic’, meaning that they should do one simple
-thing and they should do it completely. (<a href="https://the-turing-way.netlify.app/reproducible-research/vcs/vcs-git-compare#good-practice" class="external-link">The
-Turing Way Community</a>). Atomic commits prioritize one unit of change
-instead of the quantity of changes.</p>
-<figure><img src="fig/git-rstudio-27.png" alt="Two related modified lines must be part of the same commit." class="figure mx-auto d-block"><div class="figcaption">Two related modified lines must be part of the
-same commit.</div>
-</figure><p>In Rstudio, the Review changes window has a button called “Stage
-chunk”. This helps to make atomic commits, even if you change a lot of
-lines in a single edit. You can either select them to make isolated
-commits or to unite them to be part of the same commit.</p>
-<figure><img src="fig/git-rstudio-35.png" alt="Two unrelated edits must be part of two isolated commits." class="figure mx-auto d-block"><div class="figcaption">Two unrelated edits must be part of two isolated
-commits.</div>
-</figure><div id="good-practice" class="callout checklist">
+<div id="good-practices" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
 </div>
-<div id="good-practice" class="callout-inner">
-<h3 class="callout-title">Good practice<a class="anchor" aria-label="anchor" href="#good-practice"></a>
+<div id="good-practices" class="callout-inner">
+<h3 class="callout-title">Good practices<a class="anchor" aria-label="anchor" href="#good-practices"></a>
 </h3>
 <div class="callout-content">
-<p>A good atomic commit:</p>
+<p>A good collaborator:</p>
 <ul>
-<li><p>Includes more than one file that involves one unit of
-change.</p></li>
-<li><p>Isolate or includes multiple edited lines using the “Stage chunk”
-button in Rstudio.</p></li>
-<li><p>Does not include all the files in one commit.</p></li>
+<li>Pull from upstream frequently before new edits.</li>
+<li>Use topic or feature branches to segregate work.</li>
+<li>Make atomic commits.</li>
+<li>Push your work when it is done to reduce work in progress.</li>
+<li>Break large files when appropriate.</li>
+<li>Read contributing guidelines from the project owner.</li>
 </ul>
-</div>
-</div>
-</div>
-</section><section id="challenge"><h2 class="section-heading">Challenge<a class="anchor" aria-label="anchor" href="#challenge"></a>
-</h2>
-<hr class="half-width">
-<div id="a-typical-work-session" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="a-typical-work-session" class="callout-inner">
-<h3 class="callout-title">A Typical Work Session<a class="anchor" aria-label="anchor" href="#a-typical-work-session"></a>
-</h3>
-<div class="callout-content">
-<p>You sit down at your computer to work on a shared project that is
-tracked in a remote Git repository. During your work session, you take
-the following actions, but not in this order:</p>
-<ul>
-<li>
-<em>Make changes</em> by appending the number <code>100</code> to a
-text file <code>numbers.md</code>
-</li>
-<li>
-<em>Update remote</em> repository to match the local repository</li>
-<li>
-<em>Celebrate</em> your success with some fancy beverage(s)</li>
-<li>
-<em>Update local</em> repository to match the remote repository</li>
-<li>
-<em>Stage changes</em> to be committed</li>
-<li>
-<em>Commit changes</em> to the local repository</li>
-</ul>
-<p>In what order should you perform these actions to minimize the
-chances of conflicts? Put the commands above in order in the
-<em>action</em> column of the table below. When you have the order
-right, see if you can write the corresponding commands in the
-<em>command</em> column. A few steps are populated to get you
-started.</p>
-<table class="table">
-<colgroup>
-<col width="6%">
-<col width="34%">
-<col width="59%">
-</colgroup>
-<thead><tr class="header">
-<th>order</th>
-<th>action . . . . . . . . . .</th>
-<th>command . . . . . . . . . .</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td></td>
-<td><code>echo 100 &gt;&gt; numbers.md</code></td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>Celebrate!</td>
-<td><code>AFK</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
-<div class="accordion-body">
-<table class="table">
-<colgroup>
-<col width="6%">
-<col width="34%">
-<col width="59%">
-</colgroup>
-<thead><tr class="header">
-<th>order</th>
-<th>action . . . . . .</th>
-<th>command . . . . . . . . . . . . . . . . . . .</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>Update local</td>
-<td><code>git pull origin main</code></td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>Make changes</td>
-<td><code>echo 100 &gt;&gt; numbers.md</code></td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>Stage changes</td>
-<td><code>git add numbers.md</code></td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>Commit changes</td>
-<td><code>git commit -m "Add 100 to numbers.md"</code></td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>Update remote</td>
-<td><code>git push origin main</code></td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>Celebrate!</td>
-<td><code>AFK</code></td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 </div>
 </div>
@@ -5776,7 +5949,7 @@ after the workshop.</li>
 </div>
 </section></section><section id="aio-14-supplemental-rstudio"><p>Content from <a href="14-supplemental-rstudio.html">Supplemental: Using RStudio for Git</a></p>
 <hr>
-<p>Last updated on 2023-11-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/epiverse-trace/git-rstudio-basics/edit/main/episodes/14-supplemental-rstudio.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -5958,23 +6131,7 @@ area by restoring the local repository (last commit).</p>
 <figure><img src="fig/git-rstudio-review-window.png" class="figure mx-auto d-block"></figure></section><section id="create-a-branch"><h2 class="section-heading">Create a branch<a class="anchor" aria-label="anchor" href="#create-a-branch"></a>
 </h2>
 <hr class="half-width">
-<p>Sometimes you want to experiment with your project without affecting
-the main version. You can do this by using branches. A branch is a local
-copy of the main project (also called the <code>main</code> branch)
-where you can make changes and test new ideas. The <code>main</code>
-branch stays safe and unchanged while you work on your branch (a.k.a.,
-<code>feature branch</code>). When you are satisfied with the changes,
-you can merge them into the main branch. This means that the separate
-lines of development in your branch are combined with the main
-branch.</p>
-<figure><img src="fig/one-branch.png" alt="One feature branch and one main branch in Git." class="figure mx-auto d-block"><div class="figcaption">One feature branch and one main branch in
-Git.</div>
-</figure><p>You can have more than one branch off of your main copy. If one of
-your branches ends up not working, you can either abandon it or delete
-it without impacting the main branch of your project.</p>
-<figure><img src="fig/two-branches.png" alt="Two feature branches and one main branch in Git." class="figure mx-auto d-block"><div class="figcaption">Two feature branches and one main branch in
-Git.</div>
-</figure><p>In the Git tab, in the right hand side you will find the name of your
+<p>In the Git tab, in the right hand side you will find the name of your
 current branch (e.g., <code>main</code>). Use the button in its left
 hand side to create a branch.</p>
 <figure><img src="fig/pane-git-02.png" class="figure mx-auto d-block"></figure><p>You can call it <code>feature-branch</code>:</p>
@@ -6030,7 +6187,7 @@ directory is not version controlled.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Solution to Challenge</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>This can be done in Rstudio:</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -6477,7 +6634,7 @@ version of her Python script called <code>data_cruncher.py</code>?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The answer is (5)-Both 2 and 4.</p>
 <p>The <code>checkout</code> command restores files from the repository,
@@ -6539,7 +6696,7 @@ e.g. 0b1d055).</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>The command <code>git log</code> lists project history with commit
 IDs.</p>
@@ -6618,7 +6775,7 @@ commits and changes</a>.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>The answer is 2.</p>
 <p>The command <code>git add clean.Rmd</code> places the current version
@@ -6682,7 +6839,7 @@ change.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4">Show me the solution</h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>After adding a change, <code>git checkout</code> can not be used
 directly. Let’s look at the output of <code>git status</code>:</p>
@@ -7403,7 +7560,7 @@ information apply no matter where code and data are hosted.</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/epiverse-trace/sandpaper/tree/patch-renv-github-bug" class="external-link">sandpaper (0.16.2)</a>, <a href="https://github.com/carpentries/pegboard/tree/1bc5753e917d515c3d888ce6cc013c0a680eacfc" class="external-link">pegboard (0.7.3)</a>, and <a href="https://github.com/epiverse-trace/varnish/tree/epiversetheme" class="external-link">varnish (1.0.1.9000)</a></p>
+        <p>Built with <a href="https://github.com/epiverse-trace/sandpaper/tree/patch-renv-github-bug" class="external-link">sandpaper (0.16.2)</a>, <a href="https://github.com/carpentries/pegboard/tree/6a0023c1dbaf9f6936e161364a80c6971777ee46" class="external-link">pegboard (0.7.4.9000)</a>, and <a href="https://github.com/epiverse-trace/varnish/tree/epiversetheme" class="external-link">varnish (1.0.1.9000)</a></p>
 			</div>
 		</footer>
 </div> <!-- / div.container -->
