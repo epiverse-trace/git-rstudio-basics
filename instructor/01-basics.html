@@ -356,7 +356,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Automated Version Control</h1>
-        <p>Last updated on 2024-03-04 |
+        <p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/epiverse-trace/git-rstudio-basics/edit/main/episodes/01-basics.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -432,7 +432,7 @@ you?</p></li>
   <h3 class="accordion-header" id="headingInstructor1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Instructor Note</h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>We can use the comments or live participation as ice-breaker.</p>
 </div>
@@ -504,7 +504,7 @@ easily.</p></li>
   <h3 class="accordion-header" id="headingInstructor2">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>The Long History of Version Control Systems</h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
 <div class="accordion-body">
 <p>Automated version control systems are nothing new. Tools like <a href="https://en.wikipedia.org/wiki/Revision_Control_System" class="external-link">RCS</a>, <a href="https://en.wikipedia.org/wiki/Concurrent_Versions_System" class="external-link">CVS</a>,
 or <a href="https://en.wikipedia.org/wiki/Apache_Subversion" class="external-link">Subversion</a>
@@ -545,7 +545,7 @@ changes?</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul><li><p>Recovering the excellent version is only possible if you created
 a copy of the old version of the paper. The danger of losing good
@@ -587,13 +587,23 @@ files.</div>
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div class="section level3 callout-title callout-inner">
-<h3 class="callout-title">Callout</h3>
+<h3 class="callout-title" id="data-files">data files<a class="anchor" aria-label="anchor" href="#data-files"></a></h3>
 <div class="callout-content">
-<p>We can use <code>Git</code> to track changes of these plain text
-files. However, for <a href="https://www.r4epi.com/importing-plain-text-files.html" class="external-link">plain text
-data files</a> (like <code>.csv</code> and <code>.tsv</code>) we prefer
-different version control systems.</p>
-</div>
+<p>We can use <code>Git</code> to track changes of <strong>data
+files</strong> (like <code>.csv</code> and <code>.tsv</code>). However,
+if we consider data files as <strong>raw files</strong>, which should
+not change in time, then we may not be needed to use Git with them.
+We’ll take a look into this in the chapter on <a href="06-ignore.html">Ignoring things</a>.</p>
+<p>Also, if you consider your data file <strong>large</strong> with
+respect to your computer, you can opt to use:</p>
+<ul><li>a file hosting service like Google Drive and the <a href="https://r4ds.hadley.nz/spreadsheets#google-sheets" class="external-link"><code>{googlesheets4}</code>
+R package</a> to import data,</li>
+<li>a different version control system like <a href="https://git-lfs.github.com/" class="external-link">Git Large File Storage (LFS)</a>,
+or</li>
+<li>a different data format like the <code>parquet</code> format using
+<a href="https://r4ds.hadley.nz/arrow.html" class="external-link">the <code>{arrow}</code> R
+package</a>.</li>
+</ul><!-- [plain text data files](https://www.r4epi.com/importing-plain-text-files.html) --></div>
 </div>
 </div>
 <p>Plain text files like Markdown files (<code>.md</code>) and R files
@@ -612,7 +622,7 @@ From: “Ciencia reproducible: qué, por qué, cómo” <a href="https://www.rev
   <h3 class="accordion-header" id="headingInstructor3">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Concept map</h3>
 </button>
-<div id="collapseInstructor3" class="accordion-collapse collapse" aria-labelledby="headingInstructor3" data-bs-parent="#accordionInstructor3">
+<div id="collapseInstructor3" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor3" aria-labelledby="headingInstructor3">
 <div class="accordion-body">
 <figure><img src="../fig/git-concept-03.drawio.png" alt="Concept map for automatic version control." class="figure mx-auto d-block"><div class="figcaption">Concept map for automatic version control.</div>
 </figure></div>
@@ -645,7 +655,7 @@ and classify them as non-plain or plain text files;</li>
   <h3 class="accordion-header" id="headingInstructor4">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Instructor Note</h3>
 </button>
-<div id="collapseInstructor4" class="accordion-collapse collapse" aria-labelledby="headingInstructor4" data-bs-parent="#accordionInstructor4">
+<div id="collapseInstructor4" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor4" aria-labelledby="headingInstructor4">
 <div class="accordion-body">
 <p>This exercise can be solved in the shared document of the
 training.</p>
@@ -728,7 +738,7 @@ text files, like <code>.R</code> and <code>.Rmd</code> files.</li>
   "url": "https://epiverse-trace.github.io/git-rstudio-basics/instructor/01-basics.html",
   "identifier": "https://epiverse-trace.github.io/git-rstudio-basics/instructor/01-basics.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2024-03-04",
+  "dateModified": "2024-03-05",
   "datePublished": "2024-03-05"
 }
 

@@ -456,7 +456,7 @@ follow the instructions on the screen.</p></li>
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div class="section level3 callout-title callout-inner">
-<h3 class="callout-title">Callout</h3>
+<h3 class="callout-title" id="on-updates">On updates<a class="anchor" aria-label="anchor" href="#on-updates"></a></h3>
 <div class="callout-content">
 <p>While this may sound scary, it is <strong>far more common</strong> to
 run into issues due to using out-of-date versions of R or R packages.
@@ -479,6 +479,7 @@ window</a>, then press the <kbd>Enter</kbd> (Windows and Linux) or
 <code class="sourceCode R"><span><span class="kw">if</span><span class="op">(</span><span class="op">!</span><span class="kw">require</span><span class="op">(</span><span class="st">"pak"</span><span class="op">)</span><span class="op">)</span> <span class="fu">install.packages</span><span class="op">(</span><span class="st">"pak"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">new</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">"gh"</span>,</span>
+<span>         <span class="st">"gitcreds"</span>,</span>
 <span>         <span class="st">"usethis"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu">pak</span><span class="fu">::</span><span class="fu">pak</span><span class="op">(</span><span class="va">new</span><span class="op">)</span></span></code></pre>
@@ -496,6 +497,7 @@ by pasting the following code into the console:</p>
 </h3>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw">library</span><span class="op">(</span><span class="va">gh</span><span class="op">)</span></span>
+<span><span class="kw">library</span><span class="op">(</span><span class="va">gitcreds</span><span class="op">)</span></span>
 <span><span class="kw">library</span><span class="op">(</span><span class="va">usethis</span><span class="op">)</span></span></code></pre>
 </div>
 <p>If you do NOT see an Error like

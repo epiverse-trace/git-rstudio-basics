@@ -201,7 +201,8 @@
       <div class="accordion-body">
         <ul><li><a href="#what-not-to-put-under-version-control">What not to put under Version Control?</a></li>
 <li><a href="#ignore-files">Ignore files</a></li>
-<li><a href="#challenges">Challenges</a></li>
+<li><a href="#live-challenges">Live challenges</a></li>
+<li><a href="#home-challenges">Home challenges</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
         
@@ -356,7 +357,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Ignoring Things</h1>
-        <p>Last updated on 2023-11-27 |
+        <p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/epiverse-trace/git-rstudio-basics/edit/main/episodes/06-ignore.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -515,6 +516,14 @@ adding files to the repository that we don’t want to track:</p>
 a.csv
 Use -f if you really want to add them.</code></pre>
 </div>
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">
+<div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>How to override our ignore settings?</h3>
+</button>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div class="accordion-body">
 <p>If we really want to override our ignore settings, we can use
 <code>git add -f</code> to force Git to add something. For example,
 <code>git add -f a.csv</code>. We can also always see the status of
@@ -538,6 +547,10 @@ Ignored files:
 
 nothing to commit, working tree clean</code></pre>
 </div>
+</div>
+</div>
+</div>
+</div>
 <div id="good-practice" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
@@ -553,7 +566,23 @@ nothing to commit, working tree clean</code></pre>
 </ul></div>
 </div>
 </div>
-</section><section id="challenges"><h2 class="section-heading">Challenges<a class="anchor" aria-label="anchor" href="#challenges"></a>
+<div id="your-turn" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<div id="your-turn" class="callout-inner">
+<h3 class="callout-title">Your turn!<a class="anchor" aria-label="anchor" href="#your-turn"></a>
+</h3>
+<div class="callout-content">
+<p>Take 5 minutes to the following two challenges:</p>
+<ul><li>Ignoring Nested Files</li>
+<li>Including Specific Files</li>
+</ul><p>If you want to keep practicing, move to the last one:</p>
+<ul><li>Home challenges</li>
+</ul></div>
+</div>
+</div>
+</section><section id="live-challenges"><h2 class="section-heading">Live challenges<a class="anchor" aria-label="anchor" href="#live-challenges"></a>
 </h2>
 <hr class="half-width"><div id="ignoring-nested-files" class="callout challenge">
 <div class="callout-square">
@@ -629,9 +658,9 @@ directory except for <code>final.csv</code>?</p>
 </button>
 <div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
-<p>Find out what <code>!</code> (the exclamation point operator) does in
-the <a href="reference.html">Git Reference documentation</a> for
-<code>gitignore</code>.</p>
+<p>Find out what <code>!</code> (the exclamation point operator) does
+for <code>gitignore</code> in the <a href="reference.html">Git Reference
+documentation</a>.</p>
 </div>
 </div>
 </div>
@@ -660,7 +689,9 @@ will be ignored.</p>
 </div>
 </div>
 </div>
-<div id="ignoring-nested-files-variation" class="callout challenge">
+</section><section id="home-challenges"><h2 class="section-heading">Home challenges<a class="anchor" aria-label="anchor" href="#home-challenges"></a>
+</h2>
+<hr class="half-width"><div id="ignoring-nested-files-variation" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -958,7 +989,7 @@ ignore.</li>
   "url": "https://epiverse-trace.github.io/git-rstudio-basics/06-ignore.html",
   "identifier": "https://epiverse-trace.github.io/git-rstudio-basics/06-ignore.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2023-11-27",
+  "dateModified": "2024-03-05",
   "datePublished": "2024-03-05"
 }
 

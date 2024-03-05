@@ -195,9 +195,10 @@
 <li><a href="#show-the-history">Show the history</a></li>
 <li><a href="#compare-changes">Compare changes</a></li>
 <li><a href="#staging-area">Staging area</a></li>
+<li><a href="#group-challenges">Group Challenges</a></li>
 <li><a href="#practice-the-workflow">Practice the workflow</a></li>
 <li><a href="#relevant-callouts">Relevant callouts</a></li>
-<li><a href="#challenges">Challenges</a></li>
+<li><a href="#individual-challenges">Individual Challenges</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
         
@@ -361,7 +362,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Tracking Changes</h1>
-        <p>Last updated on 2023-11-27 |
+        <p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/epiverse-trace/git-rstudio-basics/edit/main/episodes/04-changes.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -627,7 +628,7 @@ hit <kbd>Enter</kbd> or <kbd>↵</kbd> or on Macs, <kbd>Return</kbd>.</p>
   <h3 class="accordion-header" id="headingSpoiler1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Do we need to change git core editor?</h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>With Rstudio you don’t need to do change any editor. You can open all
 your files in the Source pane.</p>
@@ -949,7 +950,7 @@ keeps track of things that have been added to the current <a href="reference.htm
   <h3 class="accordion-header" id="headingInstructor1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Definition: Staging area</h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>The staging area is the middle ground between what you have done to
 your files (also known as the working directory) and what you had last
@@ -1006,12 +1007,114 @@ Use the <code>git log</code> to get the history of changes in it. Use
 </figure></div>
 </div>
 </div>
+</section><section id="group-challenges"><h2 class="section-heading">Group Challenges<a class="anchor" aria-label="anchor" href="#group-challenges"></a>
+</h2>
+<hr class="half-width"><div id="choosing-a-commit-message" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="choosing-a-commit-message" class="callout-inner">
+<h3 class="callout-title">Choosing a Commit Message<a class="anchor" aria-label="anchor" href="#choosing-a-commit-message"></a>
+</h3>
+<div class="callout-content">
+<p>Which of the following commit messages would be most appropriate for
+the last commit made to <code>sitrep.Rmd</code>?</p>
+<ol style="list-style-type: decimal"><li>“Changes”</li>
+<li>“Added line ‘Maps illustrate the spread and impact of outbreak’ to
+sitrep.Rmd”</li>
+<li>“Discuss effects of Sitrep’ climate on the Mummy”</li>
+</ol></div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<p>Answer 1 is not descriptive enough, and the purpose of the commit is
+unclear; and answer 2 is redundant to using “git diff” to see what
+changed in this commit; but answer 3 is good: short, descriptive, and
+imperative.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="committing-changes-to-git" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="committing-changes-to-git" class="callout-inner">
+<h3 class="callout-title">Committing Changes to Git<a class="anchor" aria-label="anchor" href="#committing-changes-to-git"></a>
+</h3>
+<div class="callout-content">
+<p>Which command(s) below would save the changes of
+<code>myfile.txt</code> to my local Git repository?</p>
+<ol style="list-style-type: decimal"><li><div class="codewrapper sourceCode" id="cb27">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" tabindex="-1"></a>  <span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code></pre>
+</div></li>
+<li><div class="codewrapper sourceCode" id="cb28">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" tabindex="-1"></a>  <span class="ex">$</span> git init myfile.txt</span>
+<span id="cb28-2"><a href="#cb28-2" tabindex="-1"></a>  <span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code></pre>
+</div></li>
+<li><div class="codewrapper sourceCode" id="cb29">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" tabindex="-1"></a>  <span class="ex">$</span> git add myfile.txt</span>
+<span id="cb29-2"><a href="#cb29-2" tabindex="-1"></a>  <span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code></pre>
+</div></li>
+<li><div class="codewrapper sourceCode" id="cb30">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" tabindex="-1"></a>  <span class="ex">$</span> git commit <span class="at">-m</span> myfile.txt <span class="st">"my recent changes"</span></span></code></pre>
+</div></li>
+</ol></div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<ol style="list-style-type: decimal"><li>Would only create a commit if files have already been staged.</li>
+<li>Would try to create a new repository.</li>
+<li>Is correct: first add the file to the staging area, then
+commit.</li>
+<li>Would try to commit a file “my recent changes” with the message
+myfile.txt.</li>
+</ol></div>
+</div>
+</div>
+</div>
+<div id="your-turn" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<div id="your-turn" class="callout-inner">
+<h3 class="callout-title">Your turn!<a class="anchor" aria-label="anchor" href="#your-turn"></a>
+</h3>
+<div class="callout-content">
+<p>Take 10 minutes to the following two sections:</p>
+<ul><li>Practice the workflow</li>
+<li>Relevant callouts</li>
+</ul><p>If you want to keep practicing, move to the last one:</p>
+<ul><li>Individual Challenges</li>
+</ul></div>
+</div>
+</div>
 </section><section id="practice-the-workflow"><h2 class="section-heading">Practice the workflow<a class="anchor" aria-label="anchor" href="#practice-the-workflow"></a>
 </h2>
 <hr class="half-width"><p>Let’s watch as our changes to a file move from our editor to the
 staging area and into long-term storage. First, <strong>in the
 Console</strong>, we’ll add another line to the file:</p>
-<div class="codewrapper sourceCode" id="cb27">
+<div class="codewrapper sourceCode" id="cb31">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -1026,10 +1129,10 @@ Maps illustrate the spread and impact of outbreak</code></pre>
 </div>
 <p>Save the file.</p>
 <p><strong>In the Terminal</strong>, check the difference:</p>
-<div class="codewrapper sourceCode" id="cb29">
+<div class="codewrapper sourceCode" id="cb33">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" tabindex="-1"></a><span class="ex">$</span> git diff</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb33-1"><a href="#cb33-1" tabindex="-1"></a><span class="ex">$</span> git diff</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1046,19 +1149,19 @@ index 315bf3a..b36abfd 100644
 <p>So far, so good: we’ve added one line to the end of the file (shown
 with a <code>+</code> in the first column). Now let’s put that change in
 the staging area and see what <code>git diff</code> reports:</p>
-<div class="codewrapper sourceCode" id="cb31">
+<div class="codewrapper sourceCode" id="cb35">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" tabindex="-1"></a><span class="ex">$</span> git add sitrep.Rmd</span>
-<span id="cb31-2"><a href="#cb31-2" tabindex="-1"></a><span class="ex">$</span> git diff</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb35-1"><a href="#cb35-1" tabindex="-1"></a><span class="ex">$</span> git add sitrep.Rmd</span>
+<span id="cb35-2"><a href="#cb35-2" tabindex="-1"></a><span class="ex">$</span> git diff</span></code></pre>
 </div>
 <p>There is no output: as far as Git can tell, there’s no difference
 between what it’s been asked to save permanently and what’s currently in
 the directory. However, if we do this:</p>
-<div class="codewrapper sourceCode" id="cb32">
+<div class="codewrapper sourceCode" id="cb36">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb32-1"><a href="#cb32-1" tabindex="-1"></a><span class="ex">$</span> git diff <span class="at">--staged</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb36-1"><a href="#cb36-1" tabindex="-1"></a><span class="ex">$</span> git diff <span class="at">--staged</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1074,10 +1177,10 @@ index 315bf3a..b36abfd 100644
 </div>
 <p>it shows us the difference between the last committed change and
 what’s in the staging area. Let’s save our changes:</p>
-<div class="codewrapper sourceCode" id="cb34">
+<div class="codewrapper sourceCode" id="cb38">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb34-1"><a href="#cb34-1" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add geospatial visualization objective"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb38-1"><a href="#cb38-1" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add geospatial visualization objective"</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1086,10 +1189,10 @@ what’s in the staging area. Let’s save our changes:</p>
  1 file changed, 1 insertion(+)</code></pre>
 </div>
 <p>check our status:</p>
-<div class="codewrapper sourceCode" id="cb36">
+<div class="codewrapper sourceCode" id="cb40">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb36-1"><a href="#cb36-1" tabindex="-1"></a><span class="ex">$</span> git status</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb40-1"><a href="#cb40-1" tabindex="-1"></a><span class="ex">$</span> git status</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1098,10 +1201,10 @@ what’s in the staging area. Let’s save our changes:</p>
 nothing to commit, working tree clean</code></pre>
 </div>
 <p>and look at the history of what we’ve done so far:</p>
-<div class="codewrapper sourceCode" id="cb38">
+<div class="codewrapper sourceCode" id="cb42">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb38-1"><a href="#cb38-1" tabindex="-1"></a><span class="ex">$</span> git log</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb42-1"><a href="#cb42-1" tabindex="-1"></a><span class="ex">$</span> git log</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1172,10 +1275,10 @@ screen, you can limit the number of commits that Git lists by using
 <code>-N</code>, where <code>N</code> is the number of commits that you
 want to view. For example, if you only want information from the last
 commit you can use:</p>
-<div class="codewrapper sourceCode" id="cb40">
+<div class="codewrapper sourceCode" id="cb44">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb40-1"><a href="#cb40-1" tabindex="-1"></a><span class="ex">$</span> git log <span class="at">-1</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb44-1"><a href="#cb44-1" tabindex="-1"></a><span class="ex">$</span> git log <span class="at">-1</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1188,10 +1291,10 @@ Date:   Thu Aug 22 10:14:07 2013 -0400
 </div>
 <p>You can also reduce the quantity of information using the
 <code>--oneline</code> option:</p>
-<div class="codewrapper sourceCode" id="cb42">
+<div class="codewrapper sourceCode" id="cb46">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb42-1"><a href="#cb42-1" tabindex="-1"></a><span class="ex">$</span> git log <span class="at">--oneline</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb46-1"><a href="#cb46-1" tabindex="-1"></a><span class="ex">$</span> git log <span class="at">--oneline</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1206,10 +1309,10 @@ history as a text-based graph and to indicate which commits are
 associated with the current <code>HEAD</code>, the current branch
 <code>main</code>, or <a href="https://git-scm.com/book/en/v2/Git-Internals-Git-References" class="external-link">other
 Git references</a>:</p>
-<div class="codewrapper sourceCode" id="cb44">
+<div class="codewrapper sourceCode" id="cb48">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb44-1"><a href="#cb44-1" tabindex="-1"></a><span class="ex">$</span> git log <span class="at">--oneline</span> <span class="at">--graph</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb48-1"><a href="#cb48-1" tabindex="-1"></a><span class="ex">$</span> git log <span class="at">--oneline</span> <span class="at">--graph</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1233,13 +1336,13 @@ Git references</a>:</p>
 <h3 id="git-track-files-not-empty-directories">Git track files, not empty directories<a class="anchor" aria-label="anchor" href="#git-track-files-not-empty-directories"></a></h3>
 <ol style="list-style-type: decimal"><li>Git does not track directories on their own, only files within them.
 Try it for yourself using the Terminal:</li>
-</ol><div class="codewrapper sourceCode" id="cb46">
+</ol><div class="codewrapper sourceCode" id="cb50">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb46-1"><a href="#cb46-1" tabindex="-1"></a><span class="ex">$</span> mkdir analyses</span>
-<span id="cb46-2"><a href="#cb46-2" tabindex="-1"></a><span class="ex">$</span> git status</span>
-<span id="cb46-3"><a href="#cb46-3" tabindex="-1"></a><span class="ex">$</span> git add analyses</span>
-<span id="cb46-4"><a href="#cb46-4" tabindex="-1"></a><span class="ex">$</span> git status</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb50-1"><a href="#cb50-1" tabindex="-1"></a><span class="ex">$</span> mkdir analyses</span>
+<span id="cb50-2"><a href="#cb50-2" tabindex="-1"></a><span class="ex">$</span> git status</span>
+<span id="cb50-3"><a href="#cb50-3" tabindex="-1"></a><span class="ex">$</span> git add analyses</span>
+<span id="cb50-4"><a href="#cb50-4" tabindex="-1"></a><span class="ex">$</span> git status</span></code></pre>
 </div>
 <p>Note, our newly created empty directory <code>analyses</code> does
 not appear in the list of untracked files even if we explicitly add it
@@ -1251,25 +1354,25 @@ that Git adds it to the repository. In fact, you can name such files
 anything you like.</p>
 <ol start="2" style="list-style-type: decimal"><li>If you create a directory in your Git repository and populate it
 with files, you can add all files in the directory at once by:</li>
-</ol><div class="codewrapper sourceCode" id="cb47">
+</ol><div class="codewrapper sourceCode" id="cb51">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb47-1"><a href="#cb47-1" tabindex="-1"></a><span class="fu">git</span> add <span class="op">&lt;</span>directory-with-files<span class="op">&gt;</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb51-1"><a href="#cb51-1" tabindex="-1"></a><span class="fu">git</span> add <span class="op">&lt;</span>directory-with-files<span class="op">&gt;</span></span></code></pre>
 </div>
 <p>Try it for yourself:</p>
-<div class="codewrapper sourceCode" id="cb48">
+<div class="codewrapper sourceCode" id="cb52">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb48-1"><a href="#cb48-1" tabindex="-1"></a><span class="ex">$</span> touch analyses/attack-rate.R analyses/geospatial.R</span>
-<span id="cb48-2"><a href="#cb48-2" tabindex="-1"></a><span class="ex">$</span> git status</span>
-<span id="cb48-3"><a href="#cb48-3" tabindex="-1"></a><span class="ex">$</span> git add analyses</span>
-<span id="cb48-4"><a href="#cb48-4" tabindex="-1"></a><span class="ex">$</span> git status</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb52-1"><a href="#cb52-1" tabindex="-1"></a><span class="ex">$</span> touch analyses/attack-rate.R analyses/geospatial.R</span>
+<span id="cb52-2"><a href="#cb52-2" tabindex="-1"></a><span class="ex">$</span> git status</span>
+<span id="cb52-3"><a href="#cb52-3" tabindex="-1"></a><span class="ex">$</span> git add analyses</span>
+<span id="cb52-4"><a href="#cb52-4" tabindex="-1"></a><span class="ex">$</span> git status</span></code></pre>
 </div>
 <p>Before moving on, we will commit these changes.</p>
-<div class="codewrapper sourceCode" id="cb49">
+<div class="codewrapper sourceCode" id="cb53">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb49-1"><a href="#cb49-1" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add analysis scripts on attack rate and geospatial"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb53-1"><a href="#cb53-1" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add analysis scripts on attack rate and geospatial"</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -1279,93 +1382,9 @@ with files, you can add all files in the directory at once by:</li>
 need to add the changed files to the staging area (<code>git add</code>)
 and then commit the staged changes to the repository
 (<code>git commit</code>):</p>
-<figure><img src="../fig/git-committing.svg" alt="The Git Commit Workflow" class="figure mx-auto d-block"></figure></section><section id="challenges"><h2 class="section-heading">Challenges<a class="anchor" aria-label="anchor" href="#challenges"></a>
+<figure><img src="../fig/git-committing.svg" alt="The Git Commit Workflow" class="figure mx-auto d-block"></figure></section><section id="individual-challenges"><h2 class="section-heading">Individual Challenges<a class="anchor" aria-label="anchor" href="#individual-challenges"></a>
 </h2>
-<hr class="half-width"><div id="choosing-a-commit-message" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="choosing-a-commit-message" class="callout-inner">
-<h3 class="callout-title">Choosing a Commit Message<a class="anchor" aria-label="anchor" href="#choosing-a-commit-message"></a>
-</h3>
-<div class="callout-content">
-<p>Which of the following commit messages would be most appropriate for
-the last commit made to <code>sitrep.Rmd</code>?</p>
-<ol style="list-style-type: decimal"><li>“Changes”</li>
-<li>“Added line ‘Maps illustrate the spread and impact of outbreak’ to
-sitrep.Rmd”</li>
-<li>“Discuss effects of Sitrep’ climate on the Mummy”</li>
-</ol></div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
-<div class="accordion-body">
-<p>Answer 1 is not descriptive enough, and the purpose of the commit is
-unclear; and answer 2 is redundant to using “git diff” to see what
-changed in this commit; but answer 3 is good: short, descriptive, and
-imperative.</p>
-</div>
-</div>
-</div>
-</div>
-<div id="committing-changes-to-git" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="committing-changes-to-git" class="callout-inner">
-<h3 class="callout-title">Committing Changes to Git<a class="anchor" aria-label="anchor" href="#committing-changes-to-git"></a>
-</h3>
-<div class="callout-content">
-<p>Which command(s) below would save the changes of
-<code>myfile.txt</code> to my local Git repository?</p>
-<ol style="list-style-type: decimal"><li><div class="codewrapper sourceCode" id="cb50">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb50-1"><a href="#cb50-1" tabindex="-1"></a>  <span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code></pre>
-</div></li>
-<li><div class="codewrapper sourceCode" id="cb51">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb51-1"><a href="#cb51-1" tabindex="-1"></a>  <span class="ex">$</span> git init myfile.txt</span>
-<span id="cb51-2"><a href="#cb51-2" tabindex="-1"></a>  <span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code></pre>
-</div></li>
-<li><div class="codewrapper sourceCode" id="cb52">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb52-1"><a href="#cb52-1" tabindex="-1"></a>  <span class="ex">$</span> git add myfile.txt</span>
-<span id="cb52-2"><a href="#cb52-2" tabindex="-1"></a>  <span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code></pre>
-</div></li>
-<li><div class="codewrapper sourceCode" id="cb53">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb53-1"><a href="#cb53-1" tabindex="-1"></a>  <span class="ex">$</span> git commit <span class="at">-m</span> myfile.txt <span class="st">"my recent changes"</span></span></code></pre>
-</div></li>
-</ol></div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
-<div class="accordion-body">
-<ol style="list-style-type: decimal"><li>Would only create a commit if files have already been staged.</li>
-<li>Would try to create a new repository.</li>
-<li>Is correct: first add the file to the staging area, then
-commit.</li>
-<li>Would try to commit a file “my recent changes” with the message
-myfile.txt.</li>
-</ol></div>
-</div>
-</div>
-</div>
-<div id="committing-multiple-files" class="callout challenge">
+<hr class="half-width"><div id="committing-multiple-files" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -1389,7 +1408,7 @@ changes.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>The output below from <code>sitrep.Rmd</code> reflects only content
 added during this exercise. Your output may vary.</p>
@@ -1475,7 +1494,7 @@ state.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4">Show me the solution</h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>If needed, create a project out of the <code>cases</code> folder:</p>
 <div class="codewrapper sourceCode" id="cb62">
@@ -1611,7 +1630,7 @@ changes.</li>
   "url": "https://epiverse-trace.github.io/git-rstudio-basics/instructor/04-changes.html",
   "identifier": "https://epiverse-trace.github.io/git-rstudio-basics/instructor/04-changes.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2023-11-27",
+  "dateModified": "2024-03-05",
   "datePublished": "2024-03-05"
 }
 
