@@ -455,8 +455,7 @@
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="a-story-of-two-collaborators">A story of two collaborators<a class="anchor" aria-label="anchor" href="#a-story-of-two-collaborators"></a>
-<a class="anchor" aria-label="anchor" href="#a-story-of-two-collaborators"></a></h2>
+<section><h2 class="section-heading" id="a-story-of-two-collaborators">A story of two collaborators<a class="anchor" aria-label="anchor" href="#a-story-of-two-collaborators"></a></h2>
 <hr class="half-width"><p>Two users can make independent sets of changes on the same
 document.</p>
 <figure><img src="../fig/versions.svg" alt="Different Versions Can be Saved" class="figure mx-auto d-block"></figure><p>If multiple users make changes to different sections of the document
@@ -472,15 +471,13 @@ giving us tools to <a href="reference.html#resolve">resolve</a>
 overlapping changes.</p>
 <p>Before resolving conflicts, we’ll review two features that a
 <strong>good collaborator</strong> puts in practice: <a href="09-conflict.html#create-branches">Create branches</a> and make <a href="09-conflict.html#atomic-commits">Atomic commits</a>.</p>
-</section><section><h2 class="section-heading" id="group-challenge">Group Challenge<a class="anchor" aria-label="anchor" href="#group-challenge"></a>
-<a class="anchor" aria-label="anchor" href="#group-challenge"></a></h2>
+</section><section><h2 class="section-heading" id="group-challenge">Group Challenge<a class="anchor" aria-label="anchor" href="#group-challenge"></a></h2>
 <hr class="half-width"><div id="a-typical-work-session" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="a-typical-work-session" class="callout-inner">
-<h3 class="callout-title">A Typical Work Session<a class="anchor" aria-label="anchor" href="#a-typical-work-session"></a>
-</h3>
+<h3 class="callout-title">A Typical Work Session</h3>
 <div class="callout-content">
 <p>You sit down at your computer to work on a shared project that is
 tracked in a remote Git repository. During your work session, you take
@@ -561,8 +558,7 @@ started.</p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="create-a-conflict">Create a conflict<a class="anchor" aria-label="anchor" href="#create-a-conflict"></a>
-<a class="anchor" aria-label="anchor" href="#create-a-conflict"></a></h2>
+</section><section><h2 class="section-heading" id="create-a-conflict">Create a conflict<a class="anchor" aria-label="anchor" href="#create-a-conflict"></a></h2>
 <hr class="half-width"><p>To see how we can resolve conflicts, we must first create one. The
 file <code>sitrep.Rmd</code> currently looks like this in both partners’
 copies of our <code>cases</code> repository:</p>
@@ -694,8 +690,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.</code
 has new updates that have not been incorporated into the local branch.
 What we have to do is <code>pull</code> the changes from GitHub, <a href="reference.html#merge"><code>merge</code></a> them into the copy
 we’re currently working in, and then push that.</p>
-</section><section><h2 class="section-heading" id="resolve-conflict">Resolve conflict<a class="anchor" aria-label="anchor" href="#resolve-conflict"></a>
-<a class="anchor" aria-label="anchor" href="#resolve-conflict"></a></h2>
+</section><section><h2 class="section-heading" id="resolve-conflict">Resolve conflict<a class="anchor" aria-label="anchor" href="#resolve-conflict"></a></h2>
 <hr class="half-width"><p>The <strong>owner</strong> need to solve this conflict to be able to
 push to the remote repository.</p>
 <p>Let’s start by pulling:</p>
@@ -829,8 +824,7 @@ remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
 To https://github.com/vlad/cases.git
    dabb4c8..2abf2b1  main -&gt; main</code></pre>
 </div>
-</section><section><h2 class="section-heading" id="pull-before-editing">Pull before editing<a class="anchor" aria-label="anchor" href="#pull-before-editing"></a>
-<a class="anchor" aria-label="anchor" href="#pull-before-editing"></a></h2>
+</section><section><h2 class="section-heading" id="pull-before-editing">Pull before editing<a class="anchor" aria-label="anchor" href="#pull-before-editing"></a></h2>
 <hr class="half-width"><p>Git keeps track of what we’ve merged with what, so we don’t have to
 fix things by hand again when the <strong>collaborator</strong> who made
 the first change pulls again:</p>
@@ -909,8 +903,7 @@ tools (e.g. <code>htmltidy</code>, <code>perltidy</code>,
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="solving-conflicts-that-you-create" class="callout-inner">
-<h3 class="callout-title">Solving Conflicts that You Create<a class="anchor" aria-label="anchor" href="#solving-conflicts-that-you-create"></a>
-</h3>
+<h3 class="callout-title">Solving Conflicts that You Create</h3>
 <div class="callout-content">
 <p>Clone the repository created by your instructor. Add a new file to
 it, and modify an existing file (your instructor will tell you which
@@ -924,8 +917,7 @@ repository to create a conflict, then resolve it.</p>
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="conflicts-on-non-textual-files" class="callout-inner">
-<h3 class="callout-title">Conflicts on Non-textual files<a class="anchor" aria-label="anchor" href="#conflicts-on-non-textual-files"></a>
-</h3>
+<h3 class="callout-title">Conflicts on Non-textual files</h3>
 <div class="callout-content">
 <p>What does Git do when there is a conflict in an image or some other
 non-textual file that is stored in version control?</p>
@@ -1099,8 +1091,7 @@ files:</p>
 <i class="callout-icon" data-feather="check-square"></i>
 </div>
 <div id="good-practices" class="callout-inner">
-<h3 class="callout-title">Good practices<a class="anchor" aria-label="anchor" href="#good-practices"></a>
-</h3>
+<h3 class="callout-title">Good practices</h3>
 <div class="callout-content">
 <p>A good collaborator:</p>
 <ul><li>Pull from upstream frequently before new edits.</li>
@@ -1112,8 +1103,7 @@ files:</p>
 </ul></div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="create-branches">Create branches<a class="anchor" aria-label="anchor" href="#create-branches"></a>
-<a class="anchor" aria-label="anchor" href="#create-branches"></a></h2>
+</section><section><h2 class="section-heading" id="create-branches">Create branches<a class="anchor" aria-label="anchor" href="#create-branches"></a></h2>
 <hr class="half-width"><p>Sometimes you want to experiment with your project without affecting
 the main version. You can do this by using branches. A branch is a local
 copy of the main project (also called the <code>main</code> branch)
@@ -1245,8 +1235,7 @@ branches:</p>
 <pre class="output" tabindex="0"><code>Switched to branch 'main'
 Your branch is up to date with 'origin/main'.</code></pre>
 </div>
-</section><section><h2 class="section-heading" id="atomic-commits">Atomic commits<a class="anchor" aria-label="anchor" href="#atomic-commits"></a>
-<a class="anchor" aria-label="anchor" href="#atomic-commits"></a></h2>
+</section><section><h2 class="section-heading" id="atomic-commits">Atomic commits<a class="anchor" aria-label="anchor" href="#atomic-commits"></a></h2>
 <hr class="half-width"><p>A good commit is also an <strong>atomic commit</strong>, like in the
 commit of the last challenge:</p>
 <div class="codewrapper sourceCode" id="cb62">
@@ -1273,8 +1262,7 @@ commits.</div>
 <i class="callout-icon" data-feather="check-square"></i>
 </div>
 <div id="good-practice" class="callout-inner">
-<h3 class="callout-title">Good practice<a class="anchor" aria-label="anchor" href="#good-practice"></a>
-</h3>
+<h3 class="callout-title">Good practice</h3>
 <div class="callout-content">
 <p>A good atomic commit:</p>
 <ul><li><p>Includes more than one file that involves one unit of
@@ -1290,8 +1278,7 @@ button in Rstudio.</p></li>
 <i class="callout-icon" data-feather="key"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
-</h3>
+<h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
 <ul><li>Version control also allows many people to work in parallel.</li>
 <li>Conflicts occur when two or more people change the same lines of the
@@ -1341,7 +1328,7 @@ of changes.</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/epiverse-trace/sandpaper/tree/patch-renv-github-bug" class="external-link">sandpaper (0.16.5)</a>, <a href="https://github.com/carpentries/pegboard/tree/ad2542f7f7b9c3f90cc871b355ff81ec14a09ca9" class="external-link">pegboard (0.7.6)</a>, and <a href="https://github.com/epiverse-trace/varnish/tree/epiversetheme" class="external-link">varnish (1.0.3)</a></p>
+        <p>Built with <a href="https://github.com/epiverse-trace/sandpaper/tree/patch-renv-github-bug" class="external-link">sandpaper (0.16.6)</a>, <a href="https://github.com/carpentries/pegboard/tree/ad2542f7f7b9c3f90cc871b355ff81ec14a09ca9" class="external-link">pegboard (0.7.6)</a>, and <a href="https://github.com/epiverse-trace/varnish/tree/epiversetheme" class="external-link">varnish (1.0.3)</a></p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -1364,7 +1351,7 @@ of changes.</li>
   "identifier": "https://epiverse-trace.github.io/git-rstudio-basics/instructor/09-conflict.html",
   "dateCreated": "2014-12-04",
   "dateModified": "2024-03-12",
-  "datePublished": "2024-08-27"
+  "datePublished": "2024-09-03"
 }
 
   </script><script>

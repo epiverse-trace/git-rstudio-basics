@@ -455,8 +455,7 @@
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="the-head">The HEAD<a class="anchor" aria-label="anchor" href="#the-head"></a>
-<a class="anchor" aria-label="anchor" href="#the-head"></a></h2>
+<section><h2 class="section-heading" id="the-head">The HEAD<a class="anchor" aria-label="anchor" href="#the-head"></a></h2>
 <hr class="half-width"><p>As we saw in the previous episode, we can <a href="04-changes.html#commit-changes">refer to commits by their
 identifiers</a>. You can refer to the <em>most recent commit</em> of the
 working directory by using the identifier <code>HEAD</code>.</p>
@@ -535,8 +534,7 @@ index df0654a..b36abfd 100644
 +Maps illustrate the spread and impact of outbreak
 +Maps can aid in the identification of hotspots</code></pre>
 </div>
-</section><section><h2 class="section-heading" id="show-changes-in-old-commits">Show changes in old commits<a class="anchor" aria-label="anchor" href="#show-changes-in-old-commits"></a>
-<a class="anchor" aria-label="anchor" href="#show-changes-in-old-commits"></a></h2>
+</section><section><h2 class="section-heading" id="show-changes-in-old-commits">Show changes in old commits<a class="anchor" aria-label="anchor" href="#show-changes-in-old-commits"></a></h2>
 <hr class="half-width"><p>We could also use <code>git show</code> which shows us what changes
 we made at an older commit as well as the commit message, rather than
 the <em>differences</em> between a commit and our working directory that
@@ -568,8 +566,7 @@ of the chain is referred to as <code>HEAD</code>; we can refer to
 previous commits using the <code>~</code> notation, so
 <code>HEAD~1</code> means “the previous commit”, while
 <code>HEAD~123</code> goes back 123 commits from where we are now.</p>
-</section><section><h2 class="section-heading" id="use-commit-unique-id">Use commit unique ID<a class="anchor" aria-label="anchor" href="#use-commit-unique-id"></a>
-<a class="anchor" aria-label="anchor" href="#use-commit-unique-id"></a></h2>
+</section><section><h2 class="section-heading" id="use-commit-unique-id">Use commit unique ID<a class="anchor" aria-label="anchor" href="#use-commit-unique-id"></a></h2>
 <hr class="half-width"><p>We can also refer to commits using those long strings of digits and
 letters that <code>git log</code> displays. These are unique IDs for the
 changes, and “unique” really does mean unique: every change to any set
@@ -616,8 +613,7 @@ index df0654a..93a3e13 100644
 +Maps illustrate the spread and impact of outbreak
 +Maps can aid in the identification of hotspots</code></pre>
 </div>
-</section><section><h2 class="section-heading" id="restore-old-versions">Restore old versions<a class="anchor" aria-label="anchor" href="#restore-old-versions"></a>
-<a class="anchor" aria-label="anchor" href="#restore-old-versions"></a></h2>
+</section><section><h2 class="section-heading" id="restore-old-versions">Restore old versions<a class="anchor" aria-label="anchor" href="#restore-old-versions"></a></h2>
 <hr class="half-width"><p>All right! So we can save changes to files and see what we’ve
 changed. Now, how can we restore older versions of things? Let’s suppose
 we change our mind about the last update to <code>sitrep.Rmd</code> (the
@@ -713,8 +709,7 @@ can put things back the way they were by using
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="dont-lose-your-head" class="callout-inner">
-<h3 class="callout-title">Don’t Lose Your HEAD<a class="anchor" aria-label="anchor" href="#dont-lose-your-head"></a>
-</h3>
+<h3 class="callout-title">Don’t Lose Your HEAD</h3>
 <div class="callout-content">
 <p>Above we used</p>
 <div class="codewrapper sourceCode" id="cb25">
@@ -768,8 +763,7 @@ we want to retrieve the state from before the most recent commit
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="simplifying-the-common-case" class="callout-inner">
-<h3 class="callout-title">Simplifying the Common Case<a class="anchor" aria-label="anchor" href="#simplifying-the-common-case"></a>
-</h3>
+<h3 class="callout-title">Simplifying the Common Case</h3>
 <div class="callout-content">
 <p>If you read the output of <code>git status</code> carefully, you’ll
 see that it includes this hint:</p>
@@ -792,15 +786,13 @@ it’s hard (but not impossible) to undo changes to the introduction
 without also undoing changes made later to the conclusion. If the
 introduction and conclusion are stored in separate files, on the other
 hand, moving backward and forward in time becomes much easier.</p>
-</section><section><h2 class="section-heading" id="challenges">Challenges<a class="anchor" aria-label="anchor" href="#challenges"></a>
-<a class="anchor" aria-label="anchor" href="#challenges"></a></h2>
+</section><section><h2 class="section-heading" id="challenges">Challenges<a class="anchor" aria-label="anchor" href="#challenges"></a></h2>
 <hr class="half-width"><div id="recovering-older-versions-of-a-file" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="recovering-older-versions-of-a-file" class="callout-inner">
-<h3 class="callout-title">Recovering Older Versions of a File<a class="anchor" aria-label="anchor" href="#recovering-older-versions-of-a-file"></a>
-</h3>
+<h3 class="callout-title">Recovering Older Versions of a File</h3>
 <div class="callout-content">
 <p>Jennifer has made changes to the Python script that she has been
 working on for weeks, and the modifications she made this morning
@@ -852,8 +844,7 @@ you don’t want to be there.</p>
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="reverting-a-commit" class="callout-inner">
-<h3 class="callout-title">Reverting a Commit<a class="anchor" aria-label="anchor" href="#reverting-a-commit"></a>
-</h3>
+<h3 class="callout-title">Reverting a Commit</h3>
 <div class="callout-content">
 <p>Jennifer is collaborating with colleagues on her Python script. She
 realizes her last commit to the project’s repository contained an error,
@@ -899,8 +890,7 @@ changes to the repository.</p>
 <i class="callout-icon" data-feather="heart"></i>
 </div>
 <div id="these-commands-are-so-similar" class="callout-inner">
-<h3 class="callout-title">These commands are so similar!<a class="anchor" aria-label="anchor" href="#these-commands-are-so-similar"></a>
-</h3>
+<h3 class="callout-title">These commands are so similar!</h3>
 <div class="callout-content">
 <p>Commands like <code>git checkout</code> and <code>git revert</code>
 are useful but so similar that it’s very easy to mix them up!</p>
@@ -915,8 +905,7 @@ commits and changes</a>.</p>
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="understanding-workflow-and-history" class="callout-inner">
-<h3 class="callout-title">Understanding Workflow and History<a class="anchor" aria-label="anchor" href="#understanding-workflow-and-history"></a>
-</h3>
+<h3 class="callout-title">Understanding Workflow and History</h3>
 <div class="callout-content">
 <p>What is the output of the last command in</p>
 <div class="codewrapper sourceCode" id="cb29">
@@ -990,7 +979,7 @@ the most recently committed version of <code>clean.Rmd</code>.</p>
 </div>
 <div id="checking-understanding-of-git-diff" class="callout-inner">
 <h3 class="callout-title">Checking Understanding of
-<code>git diff</code><a class="anchor" aria-label="anchor" href="#checking-understanding-of-git-diff"></a>
+<code>git diff</code>
 </h3>
 <div class="callout-content">
 <p>Consider this command: <code>git diff HEAD~9 sitrep.Rmd</code>. What
@@ -1007,8 +996,7 @@ What do you think will happen, and what does happen?</p>
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="getting-rid-of-staged-changes" class="callout-inner">
-<h3 class="callout-title">Getting Rid of Staged Changes<a class="anchor" aria-label="anchor" href="#getting-rid-of-staged-changes"></a>
-</h3>
+<h3 class="callout-title">Getting Rid of Staged Changes</h3>
 <div class="callout-content">
 <p><code>git checkout</code> can be used to restore a previous commit
 when unstaged changes have been made, but will it also work for changes
@@ -1097,8 +1085,7 @@ nothing to commit, working tree clean</code></pre>
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="explore-and-summarize-histories" class="callout-inner">
-<h3 class="callout-title">Explore and Summarize Histories<a class="anchor" aria-label="anchor" href="#explore-and-summarize-histories"></a>
-</h3>
+<h3 class="callout-title">Explore and Summarize Histories</h3>
 <div class="callout-content">
 <p>Exploring history is an important part of Git, and often it is a
 challenge to find the right commit ID, especially if the commit is from
@@ -1141,8 +1128,7 @@ both commit messages and the difference between each commit.</p>
 <i class="callout-icon" data-feather="check-square"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Checklist<a class="anchor" aria-label="anchor" href="#checklist1"></a>
-</h3>
+<h3 class="callout-title">Checklist</h3>
 <div class="callout-content">
 <figure><img src="fig/cut-git-verb_map-08.png" alt="Use git diff to compare changes since last commit or between commits. Use git checkout to undo changes by restoring the staging area (committed changes) or the local repository (last commit)" class="figure mx-auto d-block"><div class="figcaption">Use <code>git diff</code> to compare changes
 since last commit or between commits. Use <code>git checkout</code> to
@@ -1156,8 +1142,7 @@ local repository (last commit)</div>
 <i class="callout-icon" data-feather="key"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
-</h3>
+<h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
 <ul><li>
 <code>git diff</code> displays differences between commits.</li>
@@ -1202,7 +1187,7 @@ local repository (last commit)</div>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/epiverse-trace/sandpaper/tree/patch-renv-github-bug" class="external-link">sandpaper (0.16.5)</a>, <a href="https://github.com/carpentries/pegboard/tree/ad2542f7f7b9c3f90cc871b355ff81ec14a09ca9" class="external-link">pegboard (0.7.6)</a>, and <a href="https://github.com/epiverse-trace/varnish/tree/epiversetheme" class="external-link">varnish (1.0.3)</a></p>
+        <p>Built with <a href="https://github.com/epiverse-trace/sandpaper/tree/patch-renv-github-bug" class="external-link">sandpaper (0.16.6)</a>, <a href="https://github.com/carpentries/pegboard/tree/ad2542f7f7b9c3f90cc871b355ff81ec14a09ca9" class="external-link">pegboard (0.7.6)</a>, and <a href="https://github.com/epiverse-trace/varnish/tree/epiversetheme" class="external-link">varnish (1.0.3)</a></p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -1225,7 +1210,7 @@ local repository (last commit)</div>
   "identifier": "https://epiverse-trace.github.io/git-rstudio-basics/05-history.html",
   "dateCreated": "2014-12-04",
   "dateModified": "2023-11-27",
-  "datePublished": "2024-08-27"
+  "datePublished": "2024-09-03"
 }
 
   </script><script>
