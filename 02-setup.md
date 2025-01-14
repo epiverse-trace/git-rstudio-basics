@@ -107,6 +107,22 @@ If you elect to use a private email address with GitHub, then use that same emai
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+Let's confirm your setting. Run:
+
+```r
+usethis::git_sitrep()
+```
+
+In the `── Git global (user)` section, the two first lines of the output should look like this:
+
+```output
+── Git global (user) 
+• Name: 'Vlad Dracula'
+• Email: 'vlad@tran.sylvan.ia'
+```
+
+To complete the configuration, let's follow the steps suggested in the situation report.
+
 <!--
 
 :::::::::::::::::::::::::::::::::::::::::  callout
