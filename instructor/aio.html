@@ -562,7 +562,7 @@ you?</p></li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>We can use the comments or live participation as ice-breaker.</p>
 </div>
@@ -635,7 +635,7 @@ easily.</p></li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
   <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> The Long History of Version Control Systems </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
 <div class="accordion-body">
 <p>Automated version control systems are nothing new. Tools like <a href="https://en.wikipedia.org/wiki/Revision_Control_System" class="external-link">RCS</a>, <a href="https://en.wikipedia.org/wiki/Concurrent_Versions_System" class="external-link">CVS</a>,
 or <a href="https://en.wikipedia.org/wiki/Apache_Subversion" class="external-link">Subversion</a>
@@ -677,7 +677,7 @@ changes?</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul>
 <li><p>Recovering the excellent version is only possible if you created
@@ -761,7 +761,7 @@ From: “Ciencia reproducible: qué, por qué, cómo” <a href="https://www.rev
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor3" aria-expanded="false" aria-controls="collapseInstructor3">
   <h3 class="accordion-header" id="headingInstructor3">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Concept map </h3>
 </button>
-<div id="collapseInstructor3" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor3" aria-labelledby="headingInstructor3">
+<div id="collapseInstructor3" class="accordion-collapse collapse" aria-labelledby="headingInstructor3" data-bs-parent="#accordionInstructor3">
 <div class="accordion-body">
 <figure><img src="../fig/git-concept-03.drawio.png" alt="Concept map for automatic version control." class="figure mx-auto d-block"><div class="figcaption">Concept map for automatic version control.</div>
 </figure>
@@ -795,7 +795,7 @@ and classify them as non-plain or plain text files;</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor4" aria-expanded="false" aria-controls="collapseInstructor4">
   <h3 class="accordion-header" id="headingInstructor4">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor4" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor4" aria-labelledby="headingInstructor4">
+<div id="collapseInstructor4" class="accordion-collapse collapse" aria-labelledby="headingInstructor4" data-bs-parent="#accordionInstructor4">
 <div class="accordion-body">
 <p>This exercise can be solved in the shared document of the
 training.</p>
@@ -824,7 +824,7 @@ text files, like <code>.R</code> and <code>.Rmd</code> files.</li>
 </div>
 </section></section><section id="aio-02-setup"><p>Content from <a href="02-setup.html">Setting Up Git</a></p>
 <hr>
-<p>Last updated on 2025-01-14 |
+<p>Last updated on 2025-04-09 |
 
         <a href="https://github.com/epiverse-trace/git-rstudio-basics/edit/main/episodes/02-setup.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
@@ -878,7 +878,7 @@ metadata make up a <a href="reference.html#repository">repository</a>.
 Repositories can be kept in sync across different computers,
 facilitating collaboration among different people.</p>
 <p>Before creating our first repository, we need to setup Git. So, let’s
-open Rstudio and introduce yourself to Git!</p>
+open RStudio and introduce yourself to Git!</p>
 <!--
 ![Each record of changes is
 called a `commit`.](fig/play-changes.svg){alt='Changes Are Saved Sequentially'}
@@ -888,9 +888,9 @@ called a `commit`.](fig/play-changes.svg){alt='Changes Are Saved Sequentially'}
 <i class="callout-icon" data-feather="check"></i>
 </div>
 <div id="the-rstudio-console" class="callout-inner">
-<h3 class="callout-title">The Rstudio Console</h3>
+<h3 class="callout-title">The RStudio Console</h3>
 <div class="callout-content">
-<p>In this episode, we are going to use the <a href="https://docs.posit.co/ide/user/ide/guide/code/console.html" class="external-link">Rstudio
+<p>In this episode, we are going to use the <a href="https://docs.posit.co/ide/user/ide/guide/code/console.html" class="external-link">RStudio
 Console</a>.</p>
 <figure><img src="../fig/rstudio-tab-console.png" alt="Visual appearance of the Console." class="figure mx-auto d-block"><div class="figcaption">Visual appearance of the Console.</div>
 </figure>
@@ -913,7 +913,7 @@ project).</li>
 </ul>
 <p>You can set your Git user name and email from within R using the
 <a href="https://usethis.r-lib.org" class="external-link">usethis</a> package.</p>
-<p>Using the <a href="https://docs.posit.co/ide/user/ide/guide/code/console.html" class="external-link">Rstudio
+<p>Using the <a href="https://docs.posit.co/ide/user/ide/guide/code/console.html" class="external-link">RStudio
 Console</a>, here is how Dracula sets up his new laptop:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1235,7 +1235,7 @@ $ git config --global init.defaultBranch main
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Default Git branch naming </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Source file changes are associated with a “branch.” For new learners
 in this lesson, it’s enough to know that branches exist, and this lesson
@@ -1348,7 +1348,7 @@ $ git help
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
   <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
 <div class="accordion-body">
 <p>When using <code>usethis::git_sitrep()</code>, check if there is no
 <code>✖ ...</code> line in the output with an error message.</p>
@@ -1391,7 +1391,7 @@ If you are interested on this, [take a look to this chapter of the happygitwithr
 <li>Use the <a href="https://usethis.r-lib.org" class="external-link">usethis</a> package to configure a user name,
 email address, and other preferences once per machine.</li>
 <li>Use <code>usethis::use_git_config()</code> to configure Git in
-Rstudio.</li>
+RStudio.</li>
 <li>Use <code>usethis::git_sitrep()</code> to verify your
 configuration.</li>
 </ul>
@@ -1400,7 +1400,7 @@ configuration.</li>
 </div>
 </section></section><section id="aio-03-create"><p>Content from <a href="03-create.html">Creating a Repository</a></p>
 <hr>
-<p>Last updated on 2025-01-14 |
+<p>Last updated on 2025-04-09 |
 
         <a href="https://github.com/epiverse-trace/git-rstudio-basics/edit/main/episodes/03-create.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 25 minutes</p>
@@ -1452,7 +1452,7 @@ create a Local Repository in our folder, also known as Working directory
 or Workspace.</p>
 <figure><img src="../fig/cut-git-verb_map-01.png" alt="Initialize a Local Repository in your Workspace with the git init command verb" class="figure mx-auto d-block"><div class="figcaption">Initialize a Local Repository in your Workspace
 with the <code>git init</code> command verb</div>
-</figure><p>Let’s start with a new R project in Rstudio.</p>
+</figure><p>Let’s start with a new R project in RStudio.</p>
 <div id="prerequisites" class="callout prereq">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check"></i>
@@ -1460,7 +1460,7 @@ with the <code>git init</code> command verb</div>
 <div id="prerequisites" class="callout-inner">
 <h3 class="callout-title">PREREQUISITES</h3>
 <div class="callout-content">
-<p>To start, you need to be out of any R project. In Rstudio, close you
+<p>To start, you need to be out of any R project. In RStudio, close you
 Project from <code>File</code> &gt; <code>Close Project</code>. You can
 confirm this in the upper right corner <code>Project: (None)</code>.</p>
 </div>
@@ -1550,11 +1550,11 @@ Select that Yes, you agree!</p>
 Restart now?</code></pre>
 </div>
 <p>Agree to restart your session to activate the Git pane in
-Rstudio:</p>
+RStudio:</p>
 <figure><img src="../fig/pane-git-01.png" alt="The Git tab in the Environments pane shows the status of your repository." class="figure mx-auto d-block"><div class="figcaption">The Git tab in the Environments pane shows the
 <code>status</code> of your repository.</div>
 </figure><p>The Git tab is in the <a href="https://docs.posit.co/ide/user/ide/guide/ui/ui-panes.html" class="external-link">Environments
-pane</a>, usually in the upper right corner of the Rstudio IDE.</p>
+pane</a>, usually in the upper right corner of the RStudio IDE.</p>
 <p>In this and next episodes you’ll learn the function of all those
 buttons on the top of the Git tab!</p>
 <!--
@@ -1611,7 +1611,7 @@ subdirectory, we will lose the project’s history.</p>
 <div id="from-the-console-to-the-terminal" class="callout-inner">
 <h3 class="callout-title">From the Console to the Terminal</h3>
 <div class="callout-content">
-<p>Now, we are going to use the <a href="https://docs.posit.co/ide/user/ide/guide/tools/terminal.html" class="external-link">Rstudio
+<p>Now, we are going to use the <a href="https://docs.posit.co/ide/user/ide/guide/tools/terminal.html" class="external-link">RStudio
 Terminal</a>. The Terminal tab is next to the Console tab.</p>
 <p>Click on the Terminal tab and a new terminal session will be created
 (if there isn’t one already).</p>
@@ -1620,7 +1620,7 @@ Terminal</a>. The Terminal tab is next to the Console tab.</p>
 </div>
 </div>
 </div>
-<p>Alternatively, in the Rstudio Terminal, with the <code>ls -a</code>
+<p>Alternatively, in the RStudio Terminal, with the <code>ls -a</code>
 command we can see the <em>hidden directory</em> called
 <code>.git/</code>:</p>
 <div class="codewrapper sourceCode" id="cb6">
@@ -1683,7 +1683,7 @@ Switched to a new branch 'main'
 </section><section><h2 class="section-heading" id="check-the-status">Check the status<a class="anchor" aria-label="anchor" href="#check-the-status"></a>
 </h2>
 <hr class="half-width">
-<p>To interact with Git, we can also use the <a href="https://docs.posit.co/ide/user/ide/guide/tools/terminal.html" class="external-link">Rstudio
+<p>To interact with Git, we can also use the <a href="https://docs.posit.co/ide/user/ide/guide/tools/terminal.html" class="external-link">RStudio
 Terminal</a>.</p>
 <p>In the RStudio Terminal, we can check that everything is set up
 correctly by asking Git to tell us the <code>git status</code> of our
@@ -1727,7 +1727,7 @@ prevent errors!</p>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> How to ask Git for help? </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
 <div class="accordion-body">
 <p><code>Git</code> has a verb command similar to the
 <code>help()</code> function in <code>R</code>.</p>
@@ -1769,7 +1769,7 @@ already created), Dracula would also like to track information about
 <strong>interventions</strong>. Despite Wolfman’s concerns, Dracula
 creates a <code>interventions</code> project inside his
 <code>cases</code> project and initialize Git. Dracula uses a sequence
-of commands <strong>in the Rstudio Console</strong>:</p>
+of commands <strong>in the RStudio Console</strong>:</p>
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1785,7 +1785,7 @@ stored in the <code>interventions</code> subdirectory?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>No. Dracula does not need to make the <code>interventions</code>
 subdirectory a Git repository because the <code>cases</code> repository
@@ -1839,7 +1839,7 @@ less error-prone!</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Using Bash commands </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Lastly, Dracula used a <em>Bash commands</em> in the Terminal to
 create a subdirectory.</p>
@@ -1900,9 +1900,9 @@ Therefore, always check your current directory using the command `pwd`.
 <!--
 ::::::::::::::::: testimonial
 
-### Use the Rstudio Git tab
+### Use the RStudio Git tab
 
-We invite you to [read the supplemental episode](14-supplemental-rstudio.md) on how to `git init` using Rstudio IDE.
+We invite you to [read the supplemental episode](14-supplemental-rstudio.md) on how to `git init` using RStudio IDE.
 
 :::::::::::::::::::::::::
 -->
@@ -1926,7 +1926,7 @@ repository.</li>
 </div>
 </section></section><section id="aio-04-changes"><p>Content from <a href="04-changes.html">Tracking Changes</a></p>
 <hr>
-<p>Last updated on 2024-03-12 |
+<p>Last updated on 2025-04-09 |
 
         <a href="https://github.com/epiverse-trace/git-rstudio-basics/edit/main/episodes/04-changes.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 45 minutes</p>
@@ -1989,7 +1989,7 @@ episode:</p>
 <section><h2 class="section-heading" id="add-changes">Add changes<a class="anchor" aria-label="anchor" href="#add-changes"></a>
 </h2>
 <hr class="half-width">
-<p>First, in the <strong>Rstudio Console</strong>, let’s make sure we’re
+<p>First, in the <strong>RStudio Console</strong>, let’s make sure we’re
 still in the right R project. You should be in the <code>cases</code>
 directory.</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -2203,11 +2203,11 @@ hit <kbd>Enter</kbd> or <kbd>↵</kbd> or on Macs, <kbd>Return</kbd>.</p>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Do we need to change git core editor? </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
 <div class="accordion-body">
-<p>With Rstudio you don’t need to do change any editor. You can open all
+<p>With RStudio you don’t need to do change any editor. You can open all
 your files in the Source pane.</p>
-<p>Also, to write commit messages you can use the Rstudio IDE. We invite
+<p>Also, to write commit messages you can use the RStudio IDE. We invite
 you to <a href="14-supplemental-rstudio.html">read the supplemental
 episode</a>.</p>
 <p>However, if needed, Dracula can set his favorite text editor
@@ -2569,7 +2569,7 @@ keeps track of things that have been added to the current <a href="reference.htm
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Definition: Staging area </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>The staging area is the middle ground between what you have done to
 your files (also known as the working directory) and what you had last
@@ -2653,7 +2653,7 @@ sitrep.Rmd”</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Answer 1 is not descriptive enough, and the purpose of the commit is
 unclear; and answer 2 is redundant to using “git diff” to see what
@@ -2704,7 +2704,7 @@ imperative.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Would only create a commit if files have already been staged.</li>
@@ -3047,7 +3047,7 @@ changes.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>The output below from <code>sitrep.Rmd</code> reflects only content
 added during this exercise. Your output may vary.</p>
@@ -3134,7 +3134,7 @@ state.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>If needed, create a project out of the <code>cases</code> folder:</p>
 <div class="codewrapper sourceCode" id="cb62">
@@ -3150,7 +3150,7 @@ state.</li>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu">use_git</span><span class="op">(</span><span class="op">)</span></span></code></pre>
 </div>
-<p>Create your biography file <code>me.md</code> using the Rstudio
+<p>Create your biography file <code>me.md</code> using the RStudio
 editor.</p>
 <div class="codewrapper sourceCode" id="cb64">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3182,9 +3182,9 @@ state, use <code>git diff</code>:</p>
 <!--
 ::::::::::::::::: testimonial
 
-### Use the Rstudio Git tab
+### Use the RStudio Git tab
 
-We invite you to [read the supplemental episode](14-supplemental-rstudio.md) on how to `git commit`, `git log`, and `git diff` using the Rstudio Git tab.
+We invite you to [read the supplemental episode](14-supplemental-rstudio.md) on how to `git commit`, `git log`, and `git diff` using the RStudio Git tab.
 
 :::::::::::::::::::::::::
 -->
@@ -3795,7 +3795,7 @@ ignore.</li>
 </div>
 </section></section><section id="aio-07-github"><p>Content from <a href="07-github.html">Remotes in GitHub</a></p>
 <hr>
-<p>Last updated on 2024-03-12 |
+<p>Last updated on 2025-04-09 |
 
         <a href="https://github.com/epiverse-trace/git-rstudio-basics/edit/main/episodes/07-github.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 45 minutes</p>
@@ -3918,7 +3918,7 @@ talking about how they might be used for collaboration.</p>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> How to connect from GitHub to Local? </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <div class="section level3">
 <h3 id="create-a-remote-repository">1. Create a remote repository<a class="anchor" aria-label="anchor" href="#create-a-remote-repository"></a>
@@ -4125,7 +4125,7 @@ To https://github.com/vlad/cases.git
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
   <h3 class="accordion-header" id="headingSpoiler2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Password Managers </h3>
 </button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
+<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
 <div class="accordion-body">
 <p>If your operating system has a password manager configured,
 <code>git push</code> will try to use it when it needs your username and
@@ -4155,7 +4155,7 @@ for usernames and passwords.</p>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler3" aria-expanded="false" aria-controls="collapseSpoiler3">
   <h3 class="accordion-header" id="headingSpoiler3">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> The ‘-u’ Flag </h3>
 </button>
-<div id="collapseSpoiler3" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler3" aria-labelledby="headingSpoiler3">
+<div id="collapseSpoiler3" class="accordion-collapse collapse" aria-labelledby="headingSpoiler3" data-bs-parent="#accordionSpoiler3">
 <div class="accordion-body">
 <p>You may see a <code>-u</code> option used with <code>git push</code>
 in some documentation. This option is synonymous with the
@@ -4186,7 +4186,7 @@ connect it with a remote repository.</p></li>
 <li><p>Push that change to the remote repository.</p></li>
 </ol>
 <div class="solutions">
-<p>First, if you are in Rstudio, close your R Project from
+<p>First, if you are in RStudio, close your R Project from
 <code>File</code> &gt; <code>Close Project</code>.</p>
 <p>In the Console, run:</p>
 <div class="codewrapper sourceCode" id="cb17">
@@ -4271,7 +4271,7 @@ repository.</p></li>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <p>Click in the <strong>Add README</strong> option.</p>
 <figure><img src="../fig/readme-github-01.png" class="figure mx-auto d-block"></figure><p>Copy and paste this minimal template of a <code>README.md</code>
@@ -4297,7 +4297,7 @@ This is a report for a disease outbreak investigation by Outbreak Missions.
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>To pull changes from remote to local, use this command:</p>
 <div class="codewrapper sourceCode" id="cb23">
@@ -4370,7 +4370,7 @@ shell?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>The left-most button (with the picture of a clipboard) copies the
 full identifier of the commit to the clipboard. In the shell,
@@ -4429,7 +4429,7 @@ GitHub record times, and why?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>GitHub displays timestamps in a human readable relative format
 (i.e. “22 hours ago” or “three weeks ago”). However, if you hover over
@@ -4456,7 +4456,7 @@ push” different from “git commit”?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>When we push changes, we’re interacting with a remote repository to
 update it with the changes we’ve made locally (often this corresponds to
@@ -4493,7 +4493,7 @@ local repository.</li>
 </div>
 </section></section><section id="aio-08-collab"><p>Content from <a href="08-collab.html">Collaborating</a></p>
 <hr>
-<p>Last updated on 2024-03-05 |
+<p>Last updated on 2025-04-09 |
 
         <a href="https://github.com/epiverse-trace/git-rstudio-basics/edit/main/episodes/08-collab.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 25 minutes</p>
@@ -4605,7 +4605,7 @@ different location than her own repository with the same name.</p>
 <div class="callout-inner">
 <h3 class="callout-title">Callout</h3>
 <div class="callout-content">
-<p>First, if you are in Rstudio, close your R Project from
+<p>First, if you are in RStudio, close your R Project from
 <code>File</code> &gt; <code>Close Project</code>.</p>
 </div>
 </div>
@@ -4657,7 +4657,7 @@ $ cat dashboard.Rmd
 ```
 -->
 <p>First, open the <code>vlad-cases</code> R project. If you are in
-Rstudio: <code>File</code> &gt; <code>New Project...</code> and navigate
+RStudio: <code>File</code> &gt; <code>New Project...</code> and navigate
 to the directory location.</p>
 <p>Now, let’s create a new file called <code>dashboard.Rmd</code> to
 complement our Situation report!</p>
@@ -4715,7 +4715,7 @@ refresh your browser to see the new commit.</p>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Some more about remotes </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
 <div class="accordion-body">
 <p>In this episode and the previous one, our local repository has had a
 single “remote”, called <code>origin</code>. A remote is a copy of the
@@ -4831,7 +4831,7 @@ has changed with command line? And on GitHub?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p><strong>On GitHub</strong>, the Collaborator can go to the repository
 and click on “commits” to view the most recent commits pushed to the
@@ -4921,7 +4921,7 @@ introduce you to other contributors on GitHub:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>To create this, go to the <a href="https://github.com/" class="external-link">GitHub Home
 page</a>, identify the section called <strong>Introduce yourself with a
@@ -4969,7 +4969,7 @@ up.</li>
 </div>
 </section></section><section id="aio-09-conflict"><p>Content from <a href="09-conflict.html">Conflicts</a></p>
 <hr>
-<p>Last updated on 2024-03-12 |
+<p>Last updated on 2025-04-09 |
 
         <a href="https://github.com/epiverse-trace/git-rstudio-basics/edit/main/episodes/09-conflict.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
@@ -5107,7 +5107,7 @@ started.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <table class="table">
 <colgroup>
@@ -5538,7 +5538,7 @@ non-textual file that is stored in version control?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Let’s try it. Suppose Dracula takes a picture of the laboratory test
 and calls it <code>lab.jpg</code>.</p>
@@ -5866,7 +5866,7 @@ Turing Way Community</a>). Atomic commits prioritize one unit of change
 instead of the quantity of changes.</p>
 <figure><img src="../fig/git-rstudio-27.png" alt="Two related modified lines must be part of the same commit." class="figure mx-auto d-block"><div class="figcaption">Two related modified lines must be part of the
 same commit.</div>
-</figure><p>In Rstudio, the Review changes window has a button called “Stage
+</figure><p>In RStudio, the Review changes window has a button called “Stage
 chunk”. This helps to make atomic commits, even if you change a lot of
 lines in a single edit. You can either select them to make isolated
 commits or to unite them to be part of the same commit.</p>
@@ -5884,7 +5884,7 @@ commits.</div>
 <li><p>Includes more than one file that involves one unit of
 change.</p></li>
 <li><p>Isolate or includes multiple edited lines using the “Stage chunk”
-button in Rstudio.</p></li>
+button in RStudio.</p></li>
 <li><p>Does not include all the files in one commit.</p></li>
 </ul>
 </div>
@@ -5913,7 +5913,7 @@ of changes.</li>
 </div>
 </section></section><section id="aio-15-wrapup"><p>Content from <a href="15-wrapup.html">Wrap-up</a></p>
 <hr>
-<p>Last updated on 2024-03-12 |
+<p>Last updated on 2025-04-09 |
 
         <a href="https://github.com/epiverse-trace/git-rstudio-basics/edit/main/episodes/15-wrapup.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 5 minutes</p>
@@ -5984,7 +5984,7 @@ of changes.</li>
 <hr class="half-width">
 <p>Good job! We recommend you to <strong>read the supplemental
 episode</strong> on how to <a href="14-supplemental-rstudio.html">use
-Git with the Rstudio IDE</a>. It can make some steps easier to interact
+Git with the RStudio IDE</a>. It can make some steps easier to interact
 with! For topics like <a href="09-conflict.html">resolving
 conflicts</a>, we suggest to use Desktop software like <a href="https://code.visualstudio.com/" class="external-link">VScode</a>. (However, you may need
 to close RStudio when using VScode to avoid some git error
@@ -6091,7 +6091,7 @@ after the workshop.</li>
 </div>
 </section></section><section id="aio-14-supplemental-rstudio"><p>Content from <a href="14-supplemental-rstudio.html">Supplemental: Using RStudio for Git</a></p>
 <hr>
-<p>Last updated on 2024-03-05 |
+<p>Last updated on 2025-04-09 |
 
         <a href="https://github.com/epiverse-trace/git-rstudio-basics/edit/main/episodes/14-supplemental-rstudio.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
@@ -6136,7 +6136,7 @@ for many common Git operations.</p>
 <h3 class="callout-title">Testimonial</h3>
 <div class="callout-content">
 <p>We also invite you to read this blog post about <a href="https://rviews.rstudio.com/2020/04/23/10-commands-to-get-started-with-git/" class="external-link">10
-Commands to Get Started with Git</a> with screenshots of the Rstudio
+Commands to Get Started with Git</a> with screenshots of the RStudio
 web-based interface.</p>
 </div>
 </div>
@@ -6148,7 +6148,7 @@ web-based interface.</p>
 associated with a given directory to keep track of various related
 files. To be able to track the development of the project over time, to
 be able to revert to previous versions, and to collaborate with others,
-we version control the Rstudio project with Git. To get started using
+we version control the RStudio project with Git. To get started using
 Git in RStudio, we create a new project:</p>
 <figure><img src="../fig/RStudio_screenshot_newproject.png" alt='RStudio screenshot showing the file menu dropdown with "New Project..." selected' class="figure mx-auto d-block"></figure><p>This opens a dialog asking us how we want to create the project. We
 have some options here. Let’s say that we want to use RStudio with the
@@ -6157,7 +6157,7 @@ a directory on our computer, we choose the option “Existing
 Directory”:</p>
 <figure><img src="../fig/RStudio_screenshot_existingdirectory.png" alt='RStudio screenshot showing New Project dialog window with "Create project from existing directory" selected' class="figure mx-auto d-block"></figure><p>For a new directory, <a href="https://nceas.github.io/oss-lessons/version-control/4-getting-started-with-git-in-RStudio.html#versioning_new_work" class="external-link">follow
 the steps in this section about “Versioning new work”</a>.</p>
-<figure><img src="../fig/git-rstudio-init-02.png" class="figure mx-auto d-block"></figure><p>To clone a remote repository from Rstudio, follow these steps:</p>
+<figure><img src="../fig/git-rstudio-init-02.png" class="figure mx-auto d-block"></figure><p>To clone a remote repository from RStudio, follow these steps:</p>
 <figure><img src="../fig/git-rstudio-init-03.png" class="figure mx-auto d-block"></figure><div id="do-you-see-a-version-control-option" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -6262,7 +6262,7 @@ tell Git to ignore these files and directories.</p>
 </div>
 </div>
 </div>
-<p>In the <code>Rstudio: Review changes</code> window, you can also open
+<p>In the <code>RStudio: Review changes</code> window, you can also open
 the <code>.gitignore</code> files from the <code>Ignore</code> button.
 You can use the <code>Revert</code> button to do a
 <code>git checkout HEAD</code>, i.e., to undo changes not yet on staging
@@ -6326,9 +6326,9 @@ directory is not version controlled.</li>
   Solution to Challenge
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
-<p>This can be done in Rstudio:</p>
+<p>This can be done in RStudio:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -6336,7 +6336,7 @@ directory is not version controlled.</li>
 <code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu">use_directory</span><span class="op">(</span><span class="st">"tests"</span><span class="op">)</span></span></code></pre>
 </div>
 <p>Then open up the <code>.gitignore</code> file from the right-hand
-panel of Rstudio and add <code>tests/</code> to the list of files to
+panel of RStudio and add <code>tests/</code> to the list of files to
 ignore.</p>
 </div>
 </div>
@@ -7702,8 +7702,8 @@ information apply no matter where code and data are hosted.</li>
   "url": "https://epiverse-trace.github.io/git-rstudio-basics/instructor/aio.html",
   "identifier": "https://epiverse-trace.github.io/git-rstudio-basics/instructor/aio.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2025-04-08",
-  "datePublished": "2025-04-08"
+  "dateModified": "2025-04-09",
+  "datePublished": "2025-04-09"
 }
 
   </script><script>
