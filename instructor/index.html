@@ -677,11 +677,7 @@ window</a>, then press the <kbd>Enter</kbd> (Windows and Linux) or
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw">if</span><span class="op">(</span><span class="op">!</span><span class="kw">require</span><span class="op">(</span><span class="st">"pak"</span><span class="op">)</span><span class="op">)</span> <span class="fu">install.packages</span><span class="op">(</span><span class="st">"pak"</span><span class="op">)</span></span>
 <span></span>
-<span><span class="va">new</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">"gh"</span>,</span>
-<span>         <span class="st">"gitcreds"</span>,</span>
-<span>         <span class="st">"usethis"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu">pak</span><span class="fu">::</span><span class="fu">pak</span><span class="op">(</span><span class="va">new</span><span class="op">)</span></span></code></pre>
+<span><span class="fu">pak</span><span class="fu">::</span><span class="fu">pak</span><span class="op">(</span><span class="st">"usethis"</span><span class="op">)</span></span></code></pre>
 </div>
 <p>These installation steps could ask you
 <code>? Do you want to continue (Y/n)</code> write <code>Y</code> and
@@ -695,9 +691,8 @@ by pasting the following code into the console:</p>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw">library</span><span class="op">(</span><span class="va">gh</span><span class="op">)</span></span>
-<span><span class="kw">library</span><span class="op">(</span><span class="va">gitcreds</span><span class="op">)</span></span>
-<span><span class="kw">library</span><span class="op">(</span><span class="va">usethis</span><span class="op">)</span></span></code></pre>
+<code class="sourceCode R"><span><span class="kw">library</span><span class="op">(</span><span class="va">usethis</span><span class="op">)</span></span>
+<span><span class="kw">library</span><span class="op">(</span><span class="va">gitcreds</span><span class="op">)</span></span></code></pre>
 </div>
 <p>If you do NOT see an Error like
 <code>there is no package called ‘...’</code> you are good to go! If you
