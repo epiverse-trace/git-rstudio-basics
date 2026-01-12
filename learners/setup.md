@@ -165,10 +165,11 @@ Several options exist for setting up 2FA, which are summarised here:
    [add GitHub to that app](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-mobile-app).
 2. If you have access to a smartphone but do not already use an authenticator app, install one and 
    [add GitHub to the app](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-mobile-app).
-3. If you do not have access to a smartphone or do not want to install an authenticator app, you have two options:
+3. If you do not have access to a smartphone or do not want to install an authenticator app, you have three options:
     1. [set up 2FA via text message](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-text-messages) 
        ([list of countries where authentication by SMS is supported](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/countries-where-sms-authentication-is-supported)), or
-    2. [use a hardware security key](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-security-key) 
+    2. [use a passkey](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-passkey) through platforms like Windows Hello, Face ID, or Touch ID (recommended when standard authentication methods fail).
+    3. [use a hardware security key](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-security-key) 
        like [YubiKey](https://www.yubico.com/products/yubikey-5-overview/) 
        or the [Google Titan key](https://store.google.com/us/product/titan_security_key?hl=en-US&pli=1).
 
